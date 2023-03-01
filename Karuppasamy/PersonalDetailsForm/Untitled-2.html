@@ -1,0 +1,168 @@
+<html>
+    <head>
+      <style>
+        body{
+          background-color: rgb(248, 249, 249);
+        }
+        table{
+          border: 2px solid black;
+        }
+       tr,td,th{
+    text-align: center;
+    border:  2px solid rgb(2, 2, 20);
+    padding: 8px;
+   
+  }
+  button:hover{
+    background-color: aqua;
+
+  }
+  button{
+   
+    
+    border-radius: 6px;
+    padding: 4px;
+  }
+  img{
+    width: 15px;
+  }
+      </style>
+  
+    </head> <body> 
+   
+  <form >
+    
+  </form>
+    <table align="center"> 
+      <thead>
+        <tr>
+          <th>no</th>
+      <th>firstName</th>
+      <th>lastName</th>
+      <th>email</th>
+      <th>phone</th>
+      <th>dob</th>
+      <th>address-line1</th>
+      <th>address-line2</th>
+      <th>city</th>
+      <th>state</th>
+      <th>zip</th>
+      <th>country</th>
+      <th>gender</th>
+      <th>occupation</th>
+      <th>company</th>
+  </tr>
+</thead>
+  <tbody>
+    <script>
+      let saveobj = localStorage.getItem("testJSON");
+      let obj = JSON.parse(saveobj);
+      for(let i=0;i<obj.length;i++){
+        var user = obj[i];
+        j=i+1;
+
+      document.write('<tr><td>'+j
+      +'</td><td>'+user.firstname
+        +'</td><td>'+user.lastname
+          +'</td><td>'+user.email
+            +'</td><td>'+user.phone
+              +'</td><td>'+user.dob
+                +'</td><td>'+user.addressline1
+                  +'</td><td>'+user.addressline2
+                    +'</td><td>'+user.city
+                      +'</td><td>'+user.state
+                        +'</td><td>'+user.zip
+                          +'</td><td>'+user.country
+                            +'</td><td>'+user.gender
+                              +'</td><td>'+user.occupation
+                                +'</td><td>'+user.company
+                                  +'</td></tr>');
+    }
+
+   function edit(){ 
+  
+    var obj=JSON.parse(localStorage.getItem("testJSON"));
+    var index=document.getElementById("noofuser").value;
+if(obj){
+
+  if(obj[0]==null){
+    alert("Empty arr[] but not an Edit")
+  }
+  else{
+   if(index!=0){
+    var userlength=obj.length;
+    var valid=index <=userlength;
+    Boolean(valid);
+    if(index && valid){
+
+    if(confirm("Are U sure U want to Edit this Row?"))
+  {
+    
+  }
+      else{
+       window.location.href("Untitled-2.html");
+    
+      }
+    
+    localStorage.setItem("getno",JSON.stringify(index));
+    window.open("Untitled-3.html",'_blank');
+   }
+   else{
+    alert("Valid Number. Enter")
+   }
+  }
+  else {
+    
+    alert(" Enter UserRow Number.!");
+   }
+
+  }
+}
+
+
+  else{
+    alert("No Objects to the Localstorage")
+  }
+    
+  }
+
+
+  
+function remove(){
+  var obj=JSON.parse(localStorage.getItem("testJSON"));
+
+  var row=document.getElementById("noofuser").value;
+if(obj){
+  if(row!=0){
+    var userlength=obj.length;
+    var valid=row<=userlength;
+    Boolean(valid);
+    if(row && valid){
+  if(confirm("Are U sure U want to Remove this Row?"))
+ 
+  obj.splice(row-1,1);
+  localStorage.setItem("testJSON",JSON.stringify(obj));
+  location.reload();
+ 
+  }
+  else{
+    alert("Valid Number Enter!")
+  }
+}
+  else{
+    alert(" Enter UserRow Number.!");
+}
+}
+}
+   </script>
+   </tbody>
+   </table>
+   <br><br>
+   
+   <div>
+   <input type="number" id="noofuser" required>
+   <button onclick="edit()"><img src="edit-button-svgrepo-com.svg"></button>
+   <button onclick="remove()"><img src="trash.svg"></button>
+   </div>
+   </body>
+   </html>

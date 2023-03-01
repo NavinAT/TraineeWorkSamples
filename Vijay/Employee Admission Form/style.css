@@ -1,0 +1,245 @@
+.bdy{
+    background-image:url('bg.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+
+    padding: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(210, 212, 212);
+    box-shadow: 0px 0px 4px 4px rgb(0, 225, 255);
+    border-radius: 10px;
+    margin-left:30vh;
+    margin-top: 40px;
+    margin-right: 20px;  
+    position:fixed;
+    padding-left:60vh;
+    padding-right:60vh;
+}
+h2 {
+    padding-top:20vh;
+    text-align:center;
+    font-size:4vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p {
+    text-align:center;
+    font-size:3vh;
+    padding-bottom:5vh;
+}
+form {
+  
+    padding-top:8vh;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(210, 212, 212);
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-left:70px;
+    margin-right:100vh;
+    padding-left:15vh;
+    position:absolute;
+    z-index: -1;
+}
+.nm input{
+    margin-left:50px;
+    padding-left:15px;
+    font-size:17px;
+}
+.nm1 input{
+    margin-left:60px;
+    padding-left:15px;
+    font-size:17px;
+}
+.db input{
+    margin-left:20vh;
+    font-size:17px;
+}
+.cnt input{
+    margin-left:82px;
+    padding-left:15px;
+    font-size:17px;
+}
+.addr textarea{
+    margin-left:82px;
+    padding-left:15px;
+    padding-bottom:40px;
+    font-size:17px;
+}
+.gm input{
+    margin-left:110px;
+    padding-left:15px;
+    font-size:17px;
+}
+.qua select{
+    margin-left:90px;
+    font-size:17px;
+}
+.dep select{
+    margin-left:15px;
+    font-size:17px;
+    margin-top:10px;
+    padding-right:-40px;
+
+}
+.dep label{
+    padding-left:17vh;
+}
+.sta input{
+    margin-left:115px;
+    padding-left:15px;
+    font-size:17px;
+}
+.cit input{
+    margin-left:135px;
+    padding-left:15px;
+    font-size:17px;
+}
+.gend select{
+    margin-left:150px;
+    padding-left:15px;
+    font-size:17px;
+}
+.res input{
+    margin-left:100px;
+    padding-left:15px;
+    font-size:17px;
+}
+
+img {
+    width:10%;
+    height:40px;
+    padding-top:67px;
+    padding-left:400px;
+    position:fixed; 
+}
+table ,th,td{
+    border:2px solid black;
+    padding:10px;
+    text-align:center;
+    background-color: aliceblue;
+    size:auto;
+}
+table {
+    margin-left:0vh;
+}
+
+.subm {
+    font-size:large;
+    cursor: pointer;
+    margin-left:25vh;
+    margin-bottom:10px;
+}
+.subm:hover{
+    background-color:rgb(0, 229, 255);
+}
+.reset {
+    font-size:large;
+    cursor: pointer;
+    margin-left:8vh;
+    margin-bottom:10px;
+}
+.reset:hover{
+    background-color:rgb(112, 205, 215);
+}
+.delbu {
+    margin-left:30vh;
+    margin-top:10vh;
+    border:2px solid rgb(0, 0, 0);
+    font-size:2vh;
+    cursor: pointer;
+    
+}
+.delbu:hover {
+    background-color:aqua;
+}
+.ind {
+    margin-left:30vh;
+
+}
+.fin {
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    position:fixed;
+    margin-top:-35vh;
+    margin-left:5vh;
+    padding-right:84vh;
+    background-color:rgb(194, 218, 232);
+    box-shadow:0px 0px 1px 1px;
+
+}
+.edibu {
+    float: right;
+    margin-left:390px;
+    margin-right: -60vh;
+    margin-top:20vh;
+    font-size:2vh;
+    border:2px solid rgb(0, 0, 0);
+    cursor: pointer;
+
+    
+}
+.edibu:hover {
+    background-color:aqua;
+}
+table {
+    margin-top:40vh;
+    overflow-y: scroll;
+}
+.tabes:hover {
+    background-color: rgb(89, 243, 243);
+}
+.spbg {
+    background-color: rgb(81, 212, 212);
+}
+.tabsp , tr, td{
+    margin-top:-35vh;
+    margin-left:0vh;
+    margin-right:0vh;
+}
+.savebu {
+    margin-top:40vh;
+    margin-left:85vh;
+    font-size:20px;
+    cursor: pointer;
+}
+.savebu:hover {
+    background-color: aqua;
+}
+.cancel {
+    font-size:20px;
+    cursor: pointer;
+    margin-left:10vh;
+}
+.cancel:hover {
+    background-color: aqua;
+}
+.View{
+    margin-left:147vh;
+    margin-top:50vh;
+    position:fixed;
+    font-size: 20px;
+    cursor:pointer;
+}
+.View:hover {
+    background-color: aqua;
+}
+.backbut {
+    margin-left:50vh;
+    margin-top:20vh;
+    margin-bottom:5vh;
+    position: relative;
+    font-size:2vh;
+    border:2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+.backbut:hover {
+    background-color: aqua;
+}

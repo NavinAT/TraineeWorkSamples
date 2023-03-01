@@ -1,0 +1,274 @@
+*{
+	margin: o;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}body,html{
+	
+	background-size: cover	;
+	background-repeat: none;
+}
+.header{
+	background-image: linear-gradient(#033747,#012744);
+	width: 100%;
+	position: fixed;
+
+}
+
+.menu{
+
+}
+.menu ul{
+       padding: 0;
+       margin: 0;
+       list-style: none;
+}
+.menu ul li{
+	float: left;
+	margin: 20px; 
+
+	list-style: none; }
+
+.menu ul li a{
+	
+	font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+	padding:10px;
+    text-decoration: none;
+    cursor: pointer;
+    	
+}
+.menu ul li a:hover{
+	color: #FFA500;
+	transition: all 0.4s ease 0s;
+}
+.logo{
+display: inline-flex;
+ margin-left: 30px;
+
+
+}
+.logoimg{margin-top: 100px;
+	 width: 20%;
+
+
+}
+.sn h2{
+margin: 100px;
+
+	width: 100%;
+ font-size: 80px;
+background: linear-gradient(
+            to right ,#b78628, #c69320, #dba514, #eeb609);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+  text-align: center;
+  
+
+font-family: 'Dancing Script', cursive;
+
+
+
+}.sn span{
+	text-align: center;
+	font-size: 32PX;
+}
+.register{
+	text-align: center;
+    font-size: 20px;
+
+}
+.form{
+	border: 2px solid #233;
+	width: 120vh;
+height: fit-content;
+	margin-left: 40vh;
+    background-color: lightblue;
+border-radius: 30px;
+color: darkblue;}
+.form input{}
+
+.std label{
+	font-size: 25px;
+}
+.pi input::placeholder{
+		font-size: 15px;
+} 
+.pi input{
+	text-align: center;
+}.std option{
+	
+}.std .std1{
+	font-size: 20px;
+	border-radius: 50px;
+	color: darkblue;
+}
+.form h1{	text-align: left;
+	margin-left: 80px;}
+.fn input{
+	margin-left: 170px ;
+	font-size: 20px;
+}
+.mn input{margin-left: 140px ;
+	font-size: 20px;}
+.ln input{margin-left: 170px ;
+	font-size: 20px;}
+
+.dob input{margin-left: 220px ;
+	font-size: 20px;
+
+}
+.age input{margin-left: 240px ;
+	font-size: 20px;
+
+}
+.fan input{margin-left: 140px ;
+	font-size: 20px;}
+.man input{margin-left: 130px ;
+	font-size: 20px;}
+.bg input{margin-left: 160px ;
+	font-size: 20px;}
+
+.address{
+	text-align: center;
+	border-bottom: 10vh;
+}
+.address input{
+	text-align: center;
+	
+}
+.a input{margin-left: 150px ;
+	font-size: 20px;}
+.b input{margin-left: 150px ;
+	font-size: 20px;}
+.c input{margin-left: 250px ;
+	font-size: 20px;}
+.d input{margin-left: 220px ;
+	font-size: 20px;}
+.e input{margin-left: 250px ;
+	font-size: 20px;}
+.f input{margin-left: 210px ;
+	font-size: 20px;}
+.g input{ margin-left: 50px ;
+font-size: 15px;
+}.address div input::placeholder{
+		font-size: 15px;
+		text-align: center;
+} 
+
+
+	
+	
+.oppage{
+	margin:20px;
+	border: 2px solid #666;
+	height: 95vh;
+	
+}	
+.btn1 {
+	width: 10%;
+	height: 20px;
+	border-radius: 20px;
+	background: green;
+	border: none;
+	cursor: pointer; 
+
+
+}.btn1 span:hover{
+color: whitesmoke;}
+.btn2 {
+	width: 10%;
+	height: 20px;
+	border-radius: 20px;
+	background: red;
+	border: none;
+	cursor: pointer; 
+
+}.btn2 span:hover{
+color: whitesmoke;}
+.delete {
+   margin-top : 40px;
+	transform: translateX(170vh);
+	text-align: right;
+	font-size: 30px;
+	width: 3%;
+	background-color: white;
+
+	
+	
+	border: none;
+	cursor: pointer; 
+}.delete span:hover{
+color: red;}
+
+
+.btn1 button:hover{
+transform: translateX(10px);
+
+}.fn input:: placeholder{
+	font-size: 5PX;
+}
+.table1 span{
+	color: orange;
+	
+}.table{
+	width: 100%;
+	font-size: 20px;
+	border-radius: 10px;
+
+}.oppage{
+
+
+
+	}
+.homepage{
+	background-image: url("img8.jpg");
+	border: 2px solid #666;
+}
+.homelogo{
+	margin: 100px;
+
+}.homelogo h2{
+
+	margin: 100px;
+margin-left: -18px;
+	width: 100%;
+ font-size: 120px;
+text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+.homelogoimg{
+margin-top: -60px;
+	margin-left: 70vh;
+	 width: 40%;
+
+}.homebtn {
+	border: none;
+
+
+
+	margin-left: 85vh;
+	border-radius: 20px;
+	margin-bottom: 85px;
+}.homebtn1{
+  background-color: goldenrod;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.homebtn :hover{
+	transform: translate3d(-2px, -2px, -2px);
+	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+

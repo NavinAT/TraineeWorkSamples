@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>VJ SOFTWARES</h1>
+    <link rel="stylesheet" href="style.css">
+    <link rel="sp" href="sp.html">
+</head>
+<body class="bdy">
+<button class="View" onclick="View()" > VIEW DATA</button>
+<blockquote>
+    <img src="pngegg.png">
+    <h2>WELCOME TO THE REGISTERATION PAGE</h2>
+    <p> Please provide the correct information.Then,click SUBMIT button.</p>
+    <form>
+    <div class="res">
+        <label for="resume">RESUME</label>
+        <input type="file" id="resume" name="resume" ><br><br>
+    </div>
+    <div class="nm">
+        <label for="fname">FIRST NAME</label>
+        <input type="text" id="fname" name="fname" ><br><br>
+    </div>
+    <div class="nm1">
+        <label for="lname">LAST NAME</label>
+        <input type="text" id="lname" name="lname" ><br><br>
+    </div>
+    <div class="db">
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob" ><br><br>
+    </div>
+    <div class="cnt">
+        <label for="cont">CONTACT</label>
+        <input type="text" id="cont" name="cont" ><br><br>
+    </div>
+    <div class="addr">
+        <label for="addr">ADDRESS</label>
+        <textarea type="text" id="address" name="address" ></textarea><br><br>
+    </div>
+    <div class="gm">
+        <label for="gmail">GMAIL</label>
+        <input type="email" id="gmail" name="gmail" ><br><br>
+    </div>
+    <div class="gend">
+        <label for="gen">GENDER</label>
+        <select id="gend" name="gend" >
+            <option value="NONE">NONE</option>
+            <option value="MALE">MALE</option>
+            <option value="FEMALE">FEMALE</option>
+        </select><br><br>
+
+    </div><br>
+    <div class="sta">
+        <label for="state">STATE</label>
+        <input type="text" id="state" name="state" ><br><br>
+    </div>
+    <div class="cit">
+        <label for="city">CITY</label>
+        <input type="text" id="city" name="city" ><br><br>
+    </div>
+    <div class="qua">
+        <label for="qua">QUALIFICATION</label>
+        <select id="qua" name="qua" >
+            <option value="NONE">NONE</option>
+            <option value="B.E">B.E</option>
+            <option value="M.E">M.E</option>
+        </select><br><br>
+    </div>
+    <div class="dep">
+        <label for="dept">DEPARTMENT</label>
+        <select id="dept" name="dept" >
+            <option value="NONE">NONE</option>
+            <option value="CSE">COMPUTER SCIENCE AND ENGINEERING</option>
+            <option value="ECE">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+            <option value="EEE">ELECTRICAL AND ELECTRONICS ENGINEERING</option>
+            <option value="CIVIL">CIVIL ENGINEERING</option>
+            <option value="MECH">MECHANICAL ENGINEERING</option>
+        </select><br><br>
+    <input class="subm" type="submit" onclick="submitForm()">
+    
+    
+    </div>
+    </form>
+    <script>
+        function View (){
+            window.location.href="final.html";
+        }
+
+        function submitForm() {
+
+            var Resume = document.getElementById("resume").value;
+            var Fname = document.getElementById("fname").value;
+            var Lname = document.getElementById("lname").value;
+            var DOB = document.getElementById("dob").value; 
+            var Contact = document.getElementById("cont").value;  
+            var Address = document.getElementById("address").value; 
+            var Gmail = document.getElementById("gmail").value; 
+            var Gender = document.getElementById("gend").value;          
+            var State = document.getElementById("state").value; 
+            var City = document.getElementById("city").value; 
+            var Qualification = document.getElementById("qua").value; 
+            var Department = document.getElementById("dept").value;
+            
+            
+            let text = {Resume:Resume,Fname:Fname,Lname:Lname,DOB:DOB,Contact:Contact,Address:Address,
+            Gmail:Gmail,Gender:Gender,State:State,City:City,Qualification:Qualification,Department:Department};
+            var arrObj = [];          
+            var obj = localStorage.getItem("testJSON");
+            if(obj)
+            {
+            var arr = JSON.parse(obj);     
+            arr.push(text);
+            localStorage.setItem("testJSON", JSON.stringify(arr));
+            }
+            else
+            {
+            arrObj.push(text);
+            localStorage.setItem("testJSON", JSON.stringify(arrObj));
+            }
+          
+
+            } 
+
+        
+          
+
+          
+    </script>
+</blockquote>
+</body>
+</html>

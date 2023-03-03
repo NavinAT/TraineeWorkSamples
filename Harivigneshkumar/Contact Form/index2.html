@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editing page for contact form</title>
+    <style>
+        table,th,td {
+            border: 1px solid rgb(218, 152, 218);
+            text-align: center;
+            background-color: rgb(247, 206, 247);
+            border-width: 5px;
+        }
+        #table{
+            font-size: x-large;
+            margin-top: 12%;
+        }
+        body{
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1{
+            color: rgb(122, 66, 150);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Contact Form (Editing Page)</h1>
+    </div><br><br><br><br>
+    <center>
+        <form action="index.html" method="get" target="_blank">
+    <div class="form1">
+        <label>First Name :</label><input type="text" id="fname" placeholder="Enter your First Name"><br><br>
+        <label>Last Name :</label><input type="text" id="lname" placeholder="Enter your Last Name"><br><br>
+        <label>Mobile Number :</label><input type="text" id="mobilenumber" placeholder="Enter your Mobile Number"><br><br>
+        <label>Date of Birth :</label><input type="date" id="dob" placeholder="Enter your date of birth"><br><br>
+        <label>Gender :</label><select id="Gender">
+            <option value="male">male</option>
+            <option value="female">female </option></select><br><br>
+        <label>Email :</label><input type="email" id="email" placeholder="Enter Your Email Id" required><br><br> 
+        <label>Website :</label><input type="url" id="website" placeholder="Enter Your Website Name"><br><br>
+        <label>Groups :</label><select id="Groups">
+            <option value="Important">Important</option>
+            <option value="Emergency">Emergency </option>
+            <option value="Not Assigned">Not Assigned </option></select><br><br>
+            <label>Messager Accounts :</label>
+            <select id="messager">
+                <option value="Hangouts">Hangouts</option>
+                <option value="Skype">Skype </option>
+                <option value="Windows Live">Windows Live </option>
+                <option value="Yahoo">Yahoo </option>
+                <option value="QQ">QQ </option>
+            </select><br><br>
+        <label>State :</label><select id="state">
+        <option value="TamilNadu">TamilNadu </option>
+        <option value="AndhraPradesh">AndhraPradesh </option>
+        <option value="Kerala">Kerala </option>
+        <option value="Karnataka">Karnataka </option>
+        </select><br></br>
+        <label>Address :</label>
+        <input type="text" id="address" placeholder="Enter your Address"><br><br>
+        <label>Work Info :</label>
+        <input type="text" id="work"placeholder="Enter your Job Title"><br>
+        <button type="submit"  onclick="savebutton()" class ="accept">Save</button>
+
+        <br><br><br></div></center></form>
+      <script>
+                     var obj5 = localStorage.getItem("testJSON");
+                     
+                     var user1= JSON.parse(obj5);
+                     var delrow = localStorage.getItem("z");
+                     var z = JSON.parse(delrow);
+                    var user = user1[z-1];
+
+                                           document.getElementById("fname").value=user.fname;
+                                           document.getElementById("lname").value=user.lname; 
+                                           document.getElementById("email").value=user.email;   
+                                           document.getElementById("dob").value=user.dob;
+                                           document.getElementById("website").value=user.website;
+                                           document.getElementById("mobilenumber").value=user.mobilenumber;
+                                           document.getElementById("work").value=user.work; 
+                                           document.getElementById("Gender").value=user.Gender;
+                                           document.getElementById("address").value=user.address;
+                                           document.getElementById("Groups").value=user.Groups;
+                                           document.getElementById("messager").value=user.messager;
+                                           document.getElementById("state").value=user.state;
+
+
+
+
+      function savebutton(){
+        var fname=document.getElementById("fname").value;
+                var lname=document.getElementById("lname").value;
+                var email=document.getElementById("email").value;
+                var dob=document.getElementById("dob").value;
+                var website=document.getElementById("website").value;
+                var mobilenumber=document.getElementById("mobilenumber").value;
+                var work=document.getElementById("work").value;
+                var Gender=document.getElementById("Gender").value
+                var Address=document.getElementById("address").value;
+                var Groups=document.getElementById("Groups").value;
+                var Messager=document.getElementById("messager").value;
+                var state=document.getElementById("state").value;
+
+                var myobj7 = {fname: fname, lname: lname, email: email,dob:dob, website:website,mobilenumber:mobilenumber,
+            Address:Address, work:work,Groups:Groups,messager:Messager,state:state,Gender:Gender};
+           
+            var obj6 = localStorage.getItem("testJSON");
+                     localStorage.removeItem("z");
+                     var arr6= JSON.parse(obj6);
+                     arr6.splice(z-1,1,myobj7);
+                     localStorage.setItem("testJSON", JSON.stringify(arr6));  
+                     
+                     
+            
+                   
+        }
+        
+            
+                     
+
+            
+      </script>
+</body>
+</html>

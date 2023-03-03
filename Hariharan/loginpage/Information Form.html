@@ -1,0 +1,171 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+    <title>Information Details</title>
+    <style>
+        form {
+            
+            padding: 50px;
+            line-height: 3.5;
+            font-size: 20px;
+            border: double black;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+        }
+
+        form input {
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 15px;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        form input :hover {
+            background-color: lightblue;
+        }
+
+
+
+        body {
+            background-image: url(images/pexels-lukas-317355.jpg);
+            background-size: cover;
+            position: absolute;
+            width: 1920px;
+            height: 1080px;
+            backdrop-filter: blur(1px);
+        }
+
+        h1 {
+            margin: 10px;
+            color: black;
+            text-shadow: 2px 2px 2px black;
+            font-style: inherit;
+            font-size: 300%;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 50px;
+            color: black;
+            text-shadow: 2px 2px 2px black;
+            font-style: italic;
+            text-align: center;
+        }
+
+        h1:hover {
+            text-shadow: 5px 5px 5px rgb(8, 4, 0);
+        }
+
+        h2:hover {
+            text-shadow: 5px 5px 5px rgb(8, 4, 0);
+        }
+
+        form {
+            position: absolute;
+            left: 600px;
+            top: 200px;
+            -webkit-text-fill-color: rgb(26, 12, 2);
+            accent-color: blue;
+        }
+
+       
+
+        textarea {
+            font-size: 15px;
+        }
+
+        button {
+            width: 60%;
+            background-color: rgb(247, 189, 114);
+            font-weight: bolder;
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+   
+
+    <h1>User Informations</h1>
+    
+    <h2><label id="lable">
+
+    </label>Enter the follwing Informations</h2>
+
+    <form   name="info" action="Information List.html" method="get"> 
+
+        <div> <label><b>Name:</b>
+                <input type="text" name="firstname" id="firstname" placeholder="first name" required>
+                <input type="text" name="lastname" id="lastname" placeholder="Last name"></label>
+        </div>
+
+        <label><b>Gender :</b>
+            <input type="radio" name="Gender" id="male" value="Male" required>Male
+            <input type="radio" name="Gender" id="female" value="Female">female
+        </label><br>
+
+        <label><b>Age :</b>
+            <input type="number" name="age" id="age" min="18" max="99" placeholder="Age" >
+        </label><br>
+
+        <label><b>Date Of Birth :</b>
+            <input type="date" name="dob" id="dob" >
+        </label><br>
+
+        <lable><b>Education</b>
+            <select name="education" id="education" >
+                <option>Education</option>
+                <option id="B.E">B.E</option>
+                <option id="B.Sc">B.Sc</option>
+                <option id="B.Com">B.Com</option>
+                <option id="B.C.A">B.C.A</option>
+            </select>
+        </lable><br>
+
+        <label><b>Interested Domain</b>
+            <select name="Domain" id="domain" >
+                <option id="HTML">HTML</option>
+                <option id="CSS">CSS</option>
+                <option id="Java script">Java Script</option>
+                <option id="c#">C#</option>
+                <option id="ASP.NET">ASP.NET</option>
+            </select>
+        </label><br>
+
+        <label><b>Email :</b>
+            <input type="email" name="email" id="email" placeholder="abcd@gmail.com" required>
+        </label><br>
+
+        <label><b>Are you Interested to Study? </b>
+            <input type="radio" name="yes" id="yes" value="yes" required>yes
+            <input type="radio" name="yes" id="no" value="no" >no
+        </label><br>
+
+        <label><b>Upload Resume :</b>
+            <input type="file" name="Resume" id="Resume" placeholder="upload resume">
+        </label><br>
+
+
+        <p><b>Comments :</b><br>
+            <textarea cols="30" rows="5" name="comments" id="comments" placeholder="Enter your Comments..." required></textarea>
+        </p>
+        <button   id="btn" value="submit Information">Submit Details...</button>
+
+    </form>
+
+
+  <script type="text/javascript" src="java script/example.js" ></script>
+ 
+ 
+ 
+
+</body>
+
+
+</html>

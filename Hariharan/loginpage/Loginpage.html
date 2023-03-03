@@ -1,0 +1,74 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css">
+
+
+
+
+</head>
+
+<body>
+    <h1>Welcome Our Login Page</h1>
+
+    <div class="menu">
+        <ul class="dropdown">
+            <li><a href="Inline bar.html">Home</a></li>
+            <li><a href="https://www.m-s.ch/akis.aspx">Products</a>
+                <ul class="products">
+                    <li><a href="#">Web development</a></li>
+                    <li><a href="#">Networking</a></li>
+                    <li><a href="#">Cloud support</a>
+                        <ul class="book">
+                            <li><a href="#">Azur</a></li>
+                            <li><a href="#">AWS</a></li>
+                            <li><a href="#">IBM</a></li>
+                            <li><a href="#">Google cloud</a></li>
+                            <li><a href="#">others..</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Windows365</a></li>
+                    <li><a href="#">Others..</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="mailto:contact@m-s.in">Contact</a></li>
+            <li><a href="#">Help</a></li>
+
+        </ul>
+
+
+
+        <h2>User Informatoins</h2>
+        <form id="form" action="Information List.html" autocomplete="off" method="post">
+            <div class="username"> <label><b>User name:</b> <input type="text" minlength="5" max="15" name="username"
+                        id="username" placeholder="username"></label></div>
+
+            <div class="password"><label> <b>Password :</b> <input type="password" minlength="6" name="password" id="password"
+                        placeholder="password" required><br></label></div>
+            <div class="submit"><label>
+                    <button type="button" value="submit" onclick="next()" > Sign in...</button>
+                    <br></label> </div>
+        </form>
+
+        
+        <form id="comments">
+            <div class="comments">
+                <lable><b>Comments :</b> <br>
+                    <textarea cols="30" rows="5" placeholder="Enter your comments..."></textarea><br>
+                    <button type="submit" value="submit commends">submit comments</button>
+
+                </lable>
+            </div>
+        </form>
+        <div class="mail">
+            <p><b>For Contact Email :</b></p>
+            <a class="maillink" href="mailto:hariharanvkl941@gmail.com">Click it...</a>
+        </div>
+
+        <script type="text/javascript" src="java script/login.js" ></script>
+</body>
+
+</html>

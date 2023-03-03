@@ -1,0 +1,17 @@
+Find the minimum value you can't create with the given array.
+
+Test Case 1 :
+	Input 	- [1, 5, 1, 1, 1, 10, 15, 20, 100]
+	Output 	- 55
+
+Test Case 2 :
+	Input 	- [5, 6, 1, 1, 2, 3, 4, 9]
+	Output 	- 32
+
+Test Case 3:
+	Input 	- []
+	Output 	- -1
+
+Test Case 3:
+	Input 	- [1, 1, 1, 1, 1]
+	Output 	- 6

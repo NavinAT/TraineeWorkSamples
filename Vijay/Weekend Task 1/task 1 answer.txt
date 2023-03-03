@@ -1,0 +1,53 @@
+#include <stdio.h>
+void main(){
+int arr[4] ={0,1,2,3};
+int arr1[3][4] = {{0,17,28}, {41,48}, {51,65,72,95}};
+int arr2[7][5]={{0,15,72,75,79},{17, 19, 21},{28, 31, 35},{51, 58, 62},{65,69},{95},{10,22}};
+int arr3[2]={{{{{{{{{5, 6}}}}}}}}};
+int i, j, k;
+for(i=0;i<4;i++)
+{
+    printf("0-%d,",arr[i]);
+}
+printf("\n");
+{
+    for(i=0;i<3;i++)
+    {
+       for(j=0;j<4;j++)
+       {
+           printf("1-%d,",arr1[i][j]);
+       }
+    }
+printf("\n");
+}
+for(i=0;i<7;i++)
+{
+    for(j=0;j<5;j++)
+    {
+        if(arr2[i][j]==10 || arr2[i][j]==22)
+        {
+            printf("0-%d,",arr2[i][j]);
+        } 
+        else
+        {
+            printf("2-%d,",arr2[i][j]);
+        }
+        
+    }
+    if(arr2[i][j]==0 || arr2[i][j]==15 || arr2[i][j]==72 || arr2[i][j]==75 || arr2[i][j]==79 )
+    {
+        printf("1-%d,",arr2[i][j]);
+    }
+    if(arr2[i][j]<0)
+    {
+        printf (" arr[%d] = ", i);  
+        printf (" %d \n", arr[i]);  
+    }
+
+}
+printf("\n");
+for(i=0;i<2;i++)
+{
+    printf("8-%d,",arr3[i]);
+}
+}

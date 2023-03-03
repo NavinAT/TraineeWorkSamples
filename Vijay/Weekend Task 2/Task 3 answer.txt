@@ -1,0 +1,86 @@
+#include <stdio.h>
+int main() {
+    
+    {
+    int arr1[] = {};
+    int n = sizeof(arr1)/sizeof(arr1[0]);
+    int min = 1;
+    for (int i=0; i<n; i++) 
+    {
+        if (arr1[i] > min) 
+        {
+            break;
+        }
+        min = min + arr1[i];
+    }
+    printf("%d\n", min);
+    }
+   
+    {
+    int arr2[] = {1, 1, 1, 1, 1};
+    int n = sizeof(arr2)/sizeof(arr2[0]);
+    int min=1;
+    for (int i=0; i<n; i++)
+    {
+        if (arr2[i] > min) 
+        {
+            break;
+        }
+        min = min + arr2[i];
+    }
+    printf("%d\n", min);
+    }
+    {
+    int arr3[] = {5, 6, 1, 1, 2, 3, 4, 9};
+    int n = sizeof(arr3)/sizeof(arr3[0]);
+    int min= 1;
+    int temp;
+    for (int i=0; i<n; i++) {    
+        for (int j = i+1; j < n; j++) 
+        {    
+           if(arr3[i] > arr3[j])
+           {    
+               temp = arr3[i];    
+               arr3[i] = arr3[j];    
+               arr3[j] = temp;    
+           }    
+        }    
+    }
+    for (int i=0; i<n; i++) 
+    {
+        if (arr3[i]>min) 
+        {
+            break;
+        }
+        min = min + arr3[i];
+    }
+    printf("%d\n", min);
+    }
+    int arr4[] = {1, 5, 1, 1, 1, 10, 15, 20, 100};
+    int n = sizeof(arr4)/sizeof(arr4[0]);
+    int min = 1;
+    int temp;
+    for (int i=0; i<n; i++) 
+    {    
+        for (int j=i+1; j<n; j++)
+        {    
+           if(arr4[i]>arr4[j])
+           {    
+               temp = arr4[i];    
+               arr4[i] = arr4[j];    
+               arr4[j] = temp;    
+           }    
+        }    
+    }  
+    for (int i=0; i<n; i++) 
+    {
+        if (arr4[i] > min) 
+        {
+            break;
+        }
+        min = min + arr4[i];
+    }
+    printf(" %d\n", min);
+   
+    return 0;
+}

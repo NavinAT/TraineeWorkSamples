@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+    
+</head>
+<body>
+
+ 
+ <table id="table" border="">
+    <tr>
+        <th>S.NO</th>
+        <th><span id="Mem">Member of Institude</span></th>
+        <th><span id="name1">Candidate</span></th>
+        <th><span id="name2">Fathername</span></th>
+        <th><span id="name3">Mothername</span></th>
+        <th><span id="year">completeyear</span></th>
+        <th><span id="adde">Address</span></th>
+        <th><span id="email">Mail Id</span></th>
+        <th><span id="mobile1">Mobile number</span></th>
+        <th><span id="mobile">Mobile</span></th>
+        <th><span id="status">Status</span></th>
+        <th><span id="work">Work</span></th>
+        <th><span id="card">Id Proof</span></th>
+        
+    </tr>
+ 
+<script>
+    var ls = localStorage.getItem("value1");
+    var obj = JSON.parse(ls);
+
+    for(let i=0; i<obj.length; i++)
+    {
+        var nav = obj[i];
+        var num = 1;
+        num +=i;
+        
+
+        document.write('<tr><td>'+ num +'</td><td id="mem">'+ nav.member +'</td><td id="name1">'+nav.candidate+'</td><td id="name2">'+nav.fathername+'</td><td id="name3">'+nav.mothername+'</td><td id="completeyear">'+nav.year+
+       '</td><td id="adde">'+nav.address+'</td><td id="email">'+nav.mail+'</td><td id="mobile1">'+nav.mobile1+'</td><td id="mobile">'+nav.mobile+'</td><td id="status">'+nav.status+'</td><td id="work">'+nav.work+'</td><td id="card">'+ nav.card +'</td></tr>');
+    }
+
+    function delRow() {
+        var numberofuser = document.getElementById("number").value;
+        var ls = localStorage.getItem("value1");
+        var obj = JSON.parse(ls);
+
+        if(numberofuser == ''){
+
+            alert('please enter the delete row');
+
+        }else if(numberofuser){
+       
+          obj.splice(numberofuser -1, 1);
+          location.reload();
+          localStorage.setItem("value1",JSON.stringify(obj));
+        }
+    }
+    function myfunction(){
+    
+      var row = prompt("Enter the Row");
+      
+        if(row =='')
+        {
+            alert('Please enter the row');
+           
+        }else  if(row){
+            location.href = "edit.html";
+
+
+        }
+
+    
+    }
+
+</script>
+ 
+</table><br>
+
+<div>
+<button  id="delRow" onclick="delRow()" >Delete</button>
+<input type="number" id="number">
+</div><br>
+
+<div>
+<button type="submit"  onclick="myfunction()" formaction="edit.html" target="_parent">Go to Edit Page</button>
+
+</div>
+
+</body>
+</html>

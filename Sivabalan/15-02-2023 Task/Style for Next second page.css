@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(247, 247, 247);
+}
+#heading{
+    font-size: 60px; 
+    color: red; 
+    margin: 0 auto;
+}
+table,th,tr,td{
+    font-size: 30px;
+    text-align: center;
+    width: max-content;
+    border: 4px solid rgb(15, 24, 26);
+    border-collapse: collapse;
+}
+button{
+    background-color: black;
+    width:max-content;
+    height: 50px;
+    font-size: 30px;
+    border:none;
+    color: white;
+}
+input{
+    height: 40px;
+    width: 231px;
+}
+img{
+    width: 70px;
+    height: 70px;
+}
+img:hover{
+    transform: scale(1.2);
+}

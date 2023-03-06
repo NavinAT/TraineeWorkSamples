@@ -1,0 +1,42 @@
+Please fix the below points.
+
+
+
+
+Common points:
+
+Need better design for form and table.
+
+Text box style.
+
+Radio button style.
+
+Table Style.
+
+Button Style.
+
+Label Style.
+
+
+Prepare a proper layout for the form and table page.
+
+
+Finished task.
+
+Create Case:
+
+1. Validation Required.
+
+Delete Case:
+
+1. Need to ask user permission to delete such as confirmation box.
+
+2. Wrong user number for delete should show alert and should stay in table page.
+
+Edit Case:
+
+1. Entering wrong input number should not navigate to the form page, should show alert like user is not exists.
+
+2. Should show all the values in the form after clicking the Edit button.
+
+3. Should not validate Middle name.

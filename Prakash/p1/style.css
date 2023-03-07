@@ -1,0 +1,93 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+body{
+    height: vh;
+    width: vw;
+    background-image: url(/Web/Practice/p1/img/TIME.jpg);
+    background-position: 50% 0%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+   
+
+
+
+}
+.head{
+    width: vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:underline;
+    text-decoration-style:dashed ;
+    text-decoration-color:  rgb(255, 4, 50);
+    text-underline-offset: 6px;    
+    letter-spacing: 5px;
+    font-weight:bolder;
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(157, 157, 252), 0 0 0.2em rgb(146, 250, 177);
+}
+.content{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        height: vh;
+        background-image: url(/Web/Practice/p1/img/g1.jpg);
+        background-position: center;
+        padding: 5% 2%;
+        margin-left: 25%;
+        border-color: coral;
+        border-radius: 30px;
+        
+        
+
+        
+}
+table{
+    background-color: rgb(255, 255, 255);
+    border-collapse: collapse;
+
+    
+}
+table:hover{
+    
+    scale: 120%;
+}
+
+th{
+    text-indent: 5px;
+    min-width: 5px;
+    padding-top: 5px;
+    padding: 8px;
+    color: blueviolet;
+    background-color:blanchedalmond;
+    
+}
+
+tr,td{
+    letter-spacing: 2px;
+    padding: 5px;
+
+
+}
+td{
+    color: rgb(0, 38, 255);
+
+}
+.day{
+    background-image: url(/Web/Practice/p1/img/g2.jpg);
+}
+    
+.break,.lunch{
+    color: red;
+    border-color: black; /* it affect the next coloumn border*/
+    background-image: url(/Web/Practice/p1/img/g1.jpg);
+}
+

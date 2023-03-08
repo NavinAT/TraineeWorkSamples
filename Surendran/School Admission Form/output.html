@@ -3,14 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style\style.css">
+    <script type="text/javascript" src="js/intex.js"></script>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 	<title>output</title>
 </head>
 <body class="oppage">
+
+
+
+   <div class="oppage_text"> <p>data center</p></div>
  <button class="delete" id="btn" onclick="btn()" ><span title="delete"><i class="fa fa-trash"></i></span></button>
 <button class="delete" type="button" onclick="btnedit()"><span title="edit"><i class="fa fa-edit"></i></span></button> 
 <button class="delete" type="button" onclick="home()"><span title="home"><i class="fa fa-home"></i></span></button> 
@@ -42,101 +49,35 @@
 	<script>
      var op=localStorage.getItem("txtvalue");
      var obj=JSON.parse(op);
+
+
+ 
+
      for(let i=0; i<obj.length;i++)
           {
               var obj1 = obj[i];
                var id=i+1;
 
-         
-           document.write('<tr id="table" onmouseover="on(this)" onmouseout="out(this)" onclick="select(this)" onclick="deselect(this)"><td>'+id+'</td><td>'+obj1.std+ '</td><td>'+obj1.sec+'</td><td>'+obj1. medium+'</td><td>'+obj1.fname +'</td><td>'+obj1.mname+'</td><td>'+obj1.lname+'</td><td>'+obj1.DOB+'</td><td>'+obj1.age +'</td><td>'+obj1.farname+'</td><td>'+obj1.momname+'</td><td>'+obj1.bldgp +'</td><td>'+obj1.mrf+'</td><td>'+obj1.adds+","+obj1.adds2+","+obj1.cty+","+obj1.dt+","+obj1.st+","+obj1.pc+'</td><td>'+obj1.mf+'</td></tr>') };
-     
-      function btn() {
-          
-          var obj = localStorage.getItem("txtvalue");
-          var arr = JSON.parse(obj);
-          var delrow = localStorage.getItem("row");
-            var row = JSON.parse(delrow);
-           
-             if(arr[0]==null){
-              alert("Their is no Data for delete");
-                                   }
-                                  
-                else if (row === null){
-                                    alert("pls select the row")
-                                 }
-                else{
-                     
-                                arr.splice(row-1, 1);
-                                   
-                                     localStorage.setItem("txtvalue",JSON.stringify(arr));
-                                   location.reload();
-                                 }
-
-                } ;               
+        document.write('<tr class="optable" id="table"  onclick="select(this)" ondblclick="deselect(this)"><td>'+id+'</td><td>'+obj1.std+ '</td><td>'+obj1.sec+'</td><td>'+obj1. medium+'</td><td>'+obj1.fname +'</td><td>'+obj1.mname+'</td><td>'+obj1.lname+'</td><td>'+obj1.DOB+'</td><td>'+obj1.age +'</td><td>'+obj1.farname+'</td><td>'+obj1.momname+'</td><td>'+obj1.bldgp +'</td><td>'+obj1.mrf+'</td><td>'+obj1.adds+","+obj1.adds2+","+obj1.cty+","+obj1.dt+","+obj1.st+","+obj1.pc+'</td><td>'+obj1.mf+'</td></tr>') ;
 
 
-                                     
-
-
-   function btnedit() {
-           var obj = localStorage.getItem("txtvalue");
-            var arr = JSON.parse(obj);
-             var editrow = localStorage.getItem("row");
-            var row = JSON.parse(editrow);
-                          if(arr[0]==null){
-                                    alert("Their is no Data for Edit")
-                                   }
-                          else if(row !=null){
-                            window.location.href = "edit.html";
-
-                                  
-                                 }
-                                 else {
-                                   /*var row=prompt("enter the row");
-                                    localStorage.setItem("row", JSON.stringify(row));*/
-                                     alert("pls select the row for Edit")
-                                    
-                                   }
-                                       };
-function on(x) {
-    x.style.background = 'lightblue';
-}
-
-function out(x) {
-  x.style.background = "white";
-
-}function select(x) {
-    var obj = localStorage.getItem("txtvalue");
-    var arr = JSON.parse(obj);
- 
-   x.style.color = "red";
-
-
-   var row=x.rowIndex-0;
-  localStorage.setItem("row", JSON.stringify(row));
-   
- }function deselect(){
-        localStorage.getItem("row");
-      
- }function home(){
-   window.location.href="home.html";
- }
+          };
 
 
 
-        
-         
 
-     
-       
 
-   
- 
 
-    </script>
+
+
+
+
+
+ </script>
             
        
 </table>
+
 
 
  

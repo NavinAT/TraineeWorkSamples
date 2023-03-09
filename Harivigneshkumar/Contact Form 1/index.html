@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        table,th,td {
+            border: 1px solid rgb(218, 152, 218);
+            text-align: center;
+            background-color: rgb(247, 206, 247);
+            border-width: 5px;
+
+        }
+        #table{
+            font-size: x-large;
+            margin-top: 12%;
+        }
+        body{
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #save:hover{
+          background-color: rgb(85, 134, 12);
+        }
+        #deleteRow:hover{
+          background-color: rgb(211, 55, 55);
+        }
+        #edit:hover{
+          background-color:#3373b3;
+        }
+        button{
+          color:cadetblue;
+        }
+        
+    </style>
+</head>
+<body>
+   <center>
+    <div id="table">
+        <table id="table1" contenteditable="true">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email ID</th>
+                <th>Date of Birth</th>
+                <th>Website</th>
+                <th>Mobile Number</th>
+                <th>Work</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Group</th>
+                <th>Messager</th>
+                <th>State</th>
+            </tr>
+            <!--<tr>
+               <td><span id="data"></span></td>
+               <td><span id="data1"></span></td>
+               <td><span id="data2"></span></td>
+               <td><span id="data3"></span></td>
+               <td><span id="data4"></span></td>
+               <td><span id="data5"></span></td>
+               <td><span id="data6"></span></td>
+               <td><span id="data7"></span></td>
+               <td><span id="data8"></span></td>
+               <td><span id="data9"></span></td>
+               <td><span id="data10"></span></td>
+               <td><span id="data11"></span></td>
+            </tr>-->
+            
+ 
+    <!--<span id="data"></span>-->
+    <script>
+        
+
+       /* const myobjectString = localStorage.getItem('txtvalue');
+        const myobject = JSON.parse(myobjectString);
+        document.getElementById("data").innerHTML=*/
+        /*document.write('<tr><td>'+ obj.fname+'</td><td>'+obj.lname+'</td><td>'+obj.email+'</td><td>'+obj.dob+'</td><td>'+obj.website+'</td><td>'+
+            obj.mobilenumber+'</td><td>'+obj.Address+'</td><td>'+obj.work+'</td><td>'+obj.Groups+'</td><td>'+obj.messager+
+                '</td><td>'+obj.state+'</td><td>'+obj.Gender+'</td></tr>');*/
+         
+
+        /*document.getElementById("data").innerHTML=obj.fname;
+        document.getElementById("data1").innerHTML=obj.lname;
+        document.getElementById("data2").innerHTML=obj.email;
+        document.getElementById("data3").innerHTML=obj.dob;
+        document.getElementById("data4").innerHTML=obj.website;
+        document.getElementById("data5").innerHTML=obj.mobilenumber;
+        document.getElementById("data6").innerHTML=obj.work;
+        document.getElementById("data7").innerHTML=obj.Gender;
+        document.getElementById("data8").innerHTML=obj.Address;
+        document.getElementById("data9").innerHTML=obj.Groups;
+        document.getElementById("data10").innerHTML=obj.messager;
+        document.getElementById("data11").innerHTML=obj.state;*/
+
+        let text = localStorage.getItem("testJSON");
+        let obj = JSON.parse(text);
+        
+        for(let i=0;i<obj.length;i++){
+            var client= obj[i];
+              document.write('<tr id="tr" onclick="select(this)"><td id="data">'+ client.fname+'</td><td id="data1">'+client.lname+
+                '</td><td id="data2">'+client.email+'</td><td id="data3">'+client.dob+'</td><td id="data4">'+
+              client.website+'</td><td id="data5">'+client.mobilenumber+'</td><td id="data6">'+client.work+
+                    '</td><td id="data7">'+client.Gender+'</td><td id="data8">'+client.Address+'</td><td id="data9">'
+                        +client.Groups+'</td><td id="data10">'+client.messager+'</td><td id="data11">'+client.state+'</td></tr>'
+                           );
+        }
+        function deleteRow() {
+        var users=document.getElementById("number").value;
+        var text=localStorage.getItem("testJSON");
+        var arr2=JSON.parse(text);
+        var lengthoftable=arr2.length;
+        if(users){
+          var validation = lengthoftable>=users;
+          Boolean(validation);
+          if(0<users && validation){
+            if (confirm("do u want to delete?")==true){
+        arr2.splice(users -1, 1);
+        location.reload();
+        localStorage.setItem("testJSON",JSON.stringify(arr2));
+    }
+  }
+  else{
+    alert("enter the no inside the table");
+  }
+}
+else{
+  alert("First enter the number in the box");
+}
+ }
+      function select(x){
+      x.style.color="red";
+      var y=x.rowIndex-0;
+      localStorage.setItem("z",JSON.stringify(y));
+      }
+
+
+
+
+     /*   function save(){
+                var fname=document.getElementById("data").innerHTML;
+                var lname=document.getElementById("data1").innerHTML;
+                var email=document.getElementById("data2").innerHTML;
+                var dob=document.getElementById("data3").innerHTML;
+                var website=document.getElementById("data4").innerHTML;
+                var mobilenumber=document.getElementById("data5").innerHTML;
+                var work=document.getElementById("data6").innerHTML;
+                var Gender=document.getElementById("data7").innerHTML;
+                var Address=document.getElementById("data8").innerHTML;
+                var Groups=document.getElementById("data9").innerHTML;
+                var Messager=document.getElementById("data10").innerHTML;
+                var state=document.getElementById("data11").innerHTML;*/
+
+
+
+        /*function save() {
+            const table=localStorage.getItem("testJSON");
+            var arr3=JSON.parse(table);
+            arr3.splice(table);
+            location.reload();
+            localStorage.setItem("testJSON",JSON.stringify(arr3));
+        }*/
+      
+        
+        /*function saveChanges(){
+                var fname=document.getElementById("fname").value;
+                var lname=document.getElementById("lname").value;
+                var email=document.getElementById("email").value;
+                var dob=document.getElementById("dob").value;
+                var website=document.getElementById("website").value;
+                var mobilenumber=document.getElementById("mobilenumber").value;
+                var work=document.getElementById("work").value;
+                if (document.getElementById('gendermale').checked == true){
+                var Gender = document.getElementById("gendermale").value;
+                }
+                else if(document.getElementById("genderfemale").checked==true)
+                {
+                var Gender = document.getElementById("genderfemale").value;
+                };
+              
+                
+                var Address=document.getElementById("address").value;
+                var Groups=document.getElementById("Groups").value;
+                var Messager=document.getElementById("messager").value;
+                var state=document.getElementById("state").value;*/
+
+                /*var persondetails={fname:fname,lname:lname,email:email,dob:dob,website:website,mobilenumber:mobilenumber,work:work,Gender:Gender,
+                    Address:Address,Groups:Groups,Messager:Messager,state:state};
+
+                var obj2=JSON.parse(localStorage.getItem("testJSON"));
+                localStorage.removeItem(y)
+                obj2.splice(y-1,1,persondetails);
+                localStorage.setItem("testJSON",JSON.stringify(obj2));
+                
+
+            }*/
+            function edit(){
+              window.location.href="index2.html";
+              
+            }
+           
+    /*function saveChanges() {
+      const table = document.getElementById('testJSON').value;
+      const data = [];
+    for (let i = 0; i < table.rows.length; i++) {
+      const rowData = [];
+    for (let j = 0; j < table.rows[i].cells.length; j++) {
+      const cell = table.rows[i].cells[j];
+      rowData.push(cell.innerHTML);
+    }
+    data.push(rowData);
+  }
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('tableData', jsonData);
+}*/
+/*function saveChanges() {
+  const table = document.getElementById('testJSON');
+  const data = [];
+  for (let i = 0; i < table.rows.length; i++) {
+    const rowData = [];
+    for (let j = 0; j < table.rows[i].cells.length; j++) {
+      const cell = table.rows[i].cells[j];
+      rowData.push(cell.textContent.trim());
+    }
+    data.push(rowData);
+  }
+  const jsonData = JSON.stringify(data);
+  localStorage.setItem('contentEditableTableData', jsonData);
+}*/
+/*function saveChanges() {
+  const table = document.getElementById('table1');
+  const rows = table.getElementsByTagName('tr');
+  for (let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const cells = row.getElementsByTagName('td');
+    for (let j = 0; j < cells.length; j++) {
+      const cell = cells[j];
+      const value = cell.innerText;
+      localStorage.setItem(`row${i}cell${j}`, value);
+    }
+  }
+}*/
+     
+        /*var sets = document.getElementById("testJSON");
+        var sets1=JSON.parse(sets);
+        var myData=[];
+        var ref = localStorage.getItem("obj");
+        if (ref == null) 
+        {
+            myData = sets1.innerHTML;
+            localStorage.setItem("obj", myData);
+            sets1.classList.remove('changed');
+        } else {
+            sets1.innerHTML = ref;
+            sets1.classList.add('changed');
+        }
+        function save() {
+            myData = sets1.innerHTML;
+            localStorage.setItem("obj", myData);
+            sets1.classList.add('changed');
+        }*/
+
+    </Script>
+        </div></center>
+    </table>
+    <button id="deleteRow" onclick="deleteRow()">delete</button>
+    <input type="number" id="number">
+    <button id="save" onclick="save()">save</button>
+    <button id="edit" onclick="edit()">edit</button>
+    
+
+</body>
+</html>

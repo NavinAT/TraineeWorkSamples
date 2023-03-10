@@ -1,36 +1,24 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reg_Form</title>
     <link rel="stylesheet" href="style.css">
-<div class="container">
-    <div class="header">
-        <h1>
-            Fill the Form
-        </h1>
-
-    </div>
-    <!--
-    <form id = "myform1" action="/Web/admin_project/index.html" method="get"> 
-        <div class="menu">
-            <div class="i_v_row"> 
-                <input class="v_value" type="text" id="verify_row" name="verify_row">
-            </div>
-            <div class="nxtpage">
-                <button class="nxtpage" type="submit" id="nxtpage"  onclick="myverify()">verify</button>
-            </div>
+    <script src="script.js"></script>
+    <div class="container">
+        <div class="header">
+            <h1>
+                Fill The Form
+            </h1>
         </div>
-    </form>
-    -->
+    </div>
 </head>
-<body>
-   
-    <div class="main">
-        
-        
-        <div class="content">
-           
-            <form id = "myform" action="/Web/admin_project/index.html" method="get">              
+<body>  
+    <div class="main">      
+        <div class="content">  
+            <form id = "myform" action="index.html" method="get">              
                 <div class="ifname">
                     <label class="Quary" for="fname">Name: </label>
                     <input class="value" type="text" id="fname" name="fname">                  
@@ -57,101 +45,24 @@
                 </div>          
                 <div class="button">
                     <div class="submit">
-
                         <button class="button1" type="submit" id="submit" onclick="myfun()">
                                 submit</button>
                     </div>
                     <div class="reset">
-            
-                        <form id = "myform" action="/Web/admin_project/index.html" method="get"> 
-                            <button class="button2" type="submit" id="clear" onclick="clear()" 
-                                value="Reset form">reset</button>
-                        </form>
+                            <button class="button2" type="reset" id="clear" 
+                                value="Reset form">Clear</button>
                     </div>
                 </div>
-            </form>
-            
-                
+            </form>              
         </div>
         <div class="viewform">
             <p>To view details Click here</p>
-            <form id = "iviewform" action="/Web/admin_project/output.html" method="get"> 
+            <form id = "iviewform" action="output.html" method="get"> 
                 <button class="viewform1" type="submit" id="viewform" onclick="viewform()">
                     view form</button>
             </form>
-
         </div>
-        
-    ś</div>
-    
-    <script>
-        function myfun(){
-            
-            var fname = document.getElementById("fname").value;
-            var email = document.getElementById("email").value;
-            var cno = document.getElementById("cno").value;
-            var city = document.getElementById("city").value;
-            var State = document.getElementById("State").value;
-            var age = document.getElementById("age").value;
-            
-
-            var object1={fname:fname,email:email,cno:cno,
-                        city:city,State:State,age:age};
-            var arrobj=[];
-            var obj=localStorage.getItem("testJSON");
-
-
-            if(obj){
-                var arr=JSON.parse(obj);
-                arr.push(object1)
-                localStorage.setItem("testJSON",JSON.stringify(arr));
-
-            }
-            else
-            {
-                arrobj.push(object1);
-                localStorage.setItem("testJSON",JSON.stringify(arrobj));
-            }
-            alert("Sucessfull");
-        }
-        /*
-        function myverify()
-            
-            { 
-                alert("test");
-                var v_row = document.getElementById("verify_row").value;
-                if (arrobj !== '' )
-                {
-                    alert("empty");
-                    for(var i = 0; i < arrobj.length; i++) 
-                    {
-                        if(arrobj[i].email === v_row) 
-                        {
-                            alert("Mail Exist\nchoose other One");                    
-                        }
-                        else{
-                            alert("Contiue with this mail");
-                        }
-                    }
-                }
-            }
-        */
-        function viewform()
-        {
-            window.location.href ="output.html";
-        }
-
-
-        function clear()
-        {
-            alert("Form Clear");
-            localStorage.clear();
-        }     
-        
-        
-
-
-
-    </script>
+    </div>
+    <script src="script.js"></script>        
 </body>
 </html>

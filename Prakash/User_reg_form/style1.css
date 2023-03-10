@@ -3,12 +3,13 @@
     padding: 0px;
     line-height: 1.5;
 }
-body{
-    background-image: url(/Web/admin_project/img/g2.jpg);
+body
+{
+    background-image: url(img/g2.jpg);
 }
-.head1{
-
-    width:vw ;
+.head1
+{
+    width:vw;
     height:vh;
     display:flex;
     justify-content: center;
@@ -21,64 +22,60 @@ body{
     font-feature-settings: "fina";
     text-decoration: underline;
     text-underline-offset: 5px;
-
-
 }
-.content{
+.content
+{
     font-family: sans-serif;
     font-style: oblique 20deg 50deg;
     align-items: center;
-
     justify-content: center;
     display: flex;
     display: block;
     padding-right: 20px;
 }
-
-.output{
+.output
+{
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
-.note{
+.note
+{
     font-style: italic;
     padding-right: 10px;
-
 }
-.opt_main{
+.opt_main
+{
     width: vw;
     display: block;
     justify-content: center;
     align-items: end;
-
 }
-.bar{
+.bar
+{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.check{
+.check
+{
     padding:0px 20px;
 }
-.button1,.button2,.button3{
+.button2,.button3
+{
     margin-top: 6px;
     margin-right: 5px;
     padding:2px 15px;
-    background-image: url(/Web/admin_project/img/delete.jpg);
+    background-image: url(img/delete.jpg);
 }
 .back{
     margin-top: 6px;
     margin-right: 5px;
     padding:2px 15px;
-    background-image: url(/Web/admin_project/img/g5.jpg);
+    background-image: url(img/g5.jpg);
     margin-bottom: 10px;
-
 }
-
-
-
-.options{
+.options
+{
     border-top: 2px;
     padding: 5px;
     width: vw;
@@ -89,9 +86,10 @@ body{
     align-items: center;
     padding-bottom: 25px;
 }
-table{
+table
+{
     margin-top: 5px;
-    background-image:url(/Web/admin_project/img/g5.jpg);
+    background-image:url(img/g5.jpg);
     width: 70%;
     height: 100px;
     padding:5px 5px;
@@ -99,20 +97,18 @@ table{
     border-spacing: 5px;
     justify-content: center;
 }
-td{
-    
+td
+{    
     justify-content: center;
     align-items: center;
-
-
     padding: 15px;
 }
-th{
+th
+{
     justify-content: center;
     height: 50px;
 }
-hr{
+hr
+{
     border-top: 2px dashed red;
-
 }
-

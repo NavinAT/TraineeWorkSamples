@@ -13,7 +13,6 @@
         </div>
         <div class="output">
             <center>
-
                 <table border="1px">
                 <tr>
                     <th>Name</th>
@@ -22,140 +21,44 @@
                     <th>City</th>
                     <th>State</th>
                     <th>Age</th>
-                </tr>
-
-                
-                
-                
+                </tr>                                    
             </center>
-        </div>  
-        
-           
-            <div class="options">
-                <div class="opt_main">
-                    <div class="note">
-                        <p style="color:red;"> <i>*Note:Use Mail ID</i></p>
+        </div>                  
+        <div class="options">
+            <div class="opt_main">
+                <div class="note">
+                    <p style="color:red;"> <i>*Note:Use Mail ID</i></p>
+                </div>
+                <div class="bar">
+                    <div class="check">
+                        <label for="verify">
+                            <div class="iedit_row"> 
+                                <input class="value" type="number" id="editrow" name="edit_row">
+                            </div>
+                            <button class="button2" type="submit" id="editrow"
+                                onclick="myedit()">Edit
+                            </button>       
+                        </label>               
                     </div>
-                    <div class="bar">
-                        <div class="check">
-                            <label for="verify">
-                                <!--<button class="button1" type="submit" id="verify"
-                                onclick="myverify()">Verify</button>-->
-                                <div class="iedit_row"> 
-                                    <input class="value" type="number" id="editrow" name="edit_row">
-                                </div>
-                                <button class="button2" type="submit" id="editrow"
-                                    onclick="myedit()">Edit
-                                </button>       
-                            </label>               
-                            
-
-                        </div>
-                        <div class="delete">
-                            <label for="delete">
-                                <div class="idelete_row"> 
-                                    <input class="value" type="number" id="delete_row" name="delete_row">
-                                </div>
-                                    
-                                    <button class="button3" type="submit" id="delete" onclick="mydel()" >Delete</button>
-                                    
-                            </label>   
-                                       
-                            
-
-                        </div>
+                    <div class="delete">
+                        <label for="delete">
+                            <div class="idelete_row"> 
+                                <input class="value" type="number" id="delete_row" name="delete_row">
+                            </div>                                    
+                             <button class="button3" type="submit" id="delete" onclick="mydel()" >Delete</button>    
+                        </label>   
                     </div>
                 </div>
-            </div>
-            
-        </form>
-    
+            </div>   
+        </div>    
         <div class="mainform">
-            <form id = "iback" action="/Web/admin_project/index.html" method="get"> 
-                <button class="back" type="submit" id="back" onclick="back()">
+            <form id = "iback" action="index.html" method="get"> 
+                <button class="back" type="submit" id="back" >
                     main form </button>
             </form>
-
         </div>
         <hr class="line">
     </div>
-
-    <script>
-//local_stroge_value_save
-        let myjson = localStorage.getItem("testJSON");
-        let myobj = JSON.parse(myjson);
-        //var test =[];
-
-        for(let i=0;i<myobj.length;i++)
-        {
-            var data=myobj[i];
-            document.write('<tr><td>'+ data.fname+'</td><td>'+data.email+'</td><td>'+ data.cno+
-                '</td><td>'+ data.city+'</td><td>'+ data.State+'</td><td>'+ data.age+'</tr><br>');
-            //test.push(data);    
-        }
-//backButton
-        function viewform()
-        {
-            alert("back To Form");
-            window.location.href ="index.html";
-        }
-
-//Delete_button
-        function mydel()
-        {  
-            var myobj1=JSON.parse(localStorage.getItem("testJSON"));
-            var d_row = document.getElementById("delete_row").value;
-            var len=myobj1.length;
-            if (d_row !== '' )
-            {   
-                if( d_row > len)
-                {            
-                    alert('Enter The  Valid Row To Delete');
-                }
-                else
-                {
-                    myobj1.splice(d_row-1,1);
-                    localStorage.setItem("testJSON",JSON.stringify(myobj1));
-                    location.reload();
-                }
-            }
-            else
-            {            
-                alert('Enter The Row No To Delete');
-            }
-        }
-//Edit_button
-         
-        function myedit()
-        {  
-            var myobj2=JSON.parse(localStorage.getItem("testJSON"));
-            var erow = document.getElementById("editrow").value;
-            var len=myobj2.length; 
-            if (erow !=='')
-            {   
-                if( erow > len)
-                {            
-                    alert('Enter The  Valid Row To Edit');
-                }
-                else
-                {
-                    localStorage.setItem("et_row",JSON.stringify(erow));
-                    window.open("edit.html",'_blank');
-                }
-            }
-            else
-            {            
-                alert("Enter The Row No To Edit");
-            }
-
-
-
-
-            // dont remove
-            //window.location.href ="edit.html";            
-        }
-            
-    </script>    
-          
+    <script src="script1.js"></script>              
 </body>
 </html>

@@ -1,31 +1,30 @@
-*{
+*
+{
     padding: 0;
     margin: 0; 
     font-family: sans-serif;
     font-size: 18px;
     line-height: 1.75;
 }
-.header{
-    background-image: url(/Web/admin_project/img/g3.jpg);
+.header
+{
+    background-image: url(img/g3.jpg);
     width: vw;
     height: 80px;
-
     font-family: 'Segoe UI', Tahoma;
     font-style: italic;
     font-weight: bolder;
     font-variant: small-caps;
     font-feature-settings: "fina";
-
     justify-content: center;
-    
     text-align: center;
     padding-top: 60px;
-
     text-decoration: underline;
     text-underline-offset: 8px; 
     text-decoration-color:  rgb(90, 255, 98);
 }
-.menu{
+.menu
+{
     width: vw;
     display: flex;
 }
@@ -33,11 +32,13 @@
 {
     height: 25px;
 }
-.i_v_row{
+.i_v_row
+{
     height: auto;
     height: 45px;
 }
-.nxtpage{
+.nxtpage
+{
     padding-top: 2px;
     padding-left: 5px;
     width: 50px;
@@ -48,50 +49,50 @@
     border-right-color: red;
     border-left-color: red;
     border-bottom-color: red;
-    
-
 }
-body{
-    background-image: url(/Web/admin_project/img/g4.jpg);
+body
+{
+    background-image: url(g4.jpg);
     background-position: 50%;
     justify-content: center;
-
 }
-
-.main{
-
+.main
+{
     width: vw;
     height: vh;
-    background-image: Url(/Web/admin_project/img/g2.jpg);
+    background-image: Url(g2.jpg);
     justify-content: center;
     align-items: center;
 }
-/*index.html*/
-.content{
+.content
+{
     min-width: 180px;
-    background-image: Url(/Web/admin_project/img/g2.jpg);
+    background-image: Url(g2.jpg);
     padding-left: 70px;
     padding-top: 50px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.Quary{
+.Quary
+{
     display: flex;
 }
-.value{
+.value
+{
     background-color: rgb(255, 255, 255);
-
     border-radius: 0px;
     border-color: none;
     padding-left: 15px;
 }
-.value:hover{
+.value:hover
+{
     scale:105%;
     border-color: rgb(255, 75, 75) ;
     background-color: rgb(195, 255, 198);
 }
-.button{
+.button
+{
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -104,49 +105,48 @@ body{
     margin: 5px 10px;
     cursor: pointer;
 }
-
-.reset{
+.reset
+{
     margin-left: 25px;
-
 }
-.submit:hover{
+.submit:hover
+{
     scale: 106%;
 }
-.reset:hover{
+.reset:hover
+{
     scale: 106%;
     border-color: rgb(66, 255, 48) ;
 }
-button{
+button
+{
     padding: 5px;
-    background-image: url(/Web/admin_project/img/g5.jpg);
+    background-image: url(g5.jpg);
     color: blue;
 }
-
-/*contact.html*/
-
-.sform, .Quary{
+.sform, .Quary
+{
     border-style: dashed 5px;
-
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.table{
+.table
+{
     background-color: brown;
     margin-top: 30px;
     padding-top: 30px;
 }
-
-.viewform{
-
+.viewform
+{
     align-items: center;
     justify-content: center;
     padding-left: 45%;
 }
-.viewform1{
-    background-image:  url(/Web/admin_project/img/delete.jpg);
+.viewform1
+{
+    background-image:  url(img/delete.jpg);
     margin-left: 50px;
-
 }
 
 

@@ -1,29 +1,50 @@
-.bdy{
+.BackgroundEmployee{
     background-image:url('bg.jpg');
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
 }
-
 h1 {
-
-    padding: 25px;
-    text-align: center;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(210, 212, 212);
-    box-shadow: 0px 0px 4px 4px rgb(0, 225, 255);
-    border-radius: 10px;
-    margin-left:30vh;
-    margin-top: 40px;
-    margin-right: 20px;  
+    position: fixed;
+    background-color: rgb(194, 218, 232);
+    padding: 2% 84% 7.5% 0%;
+    left: 0px;
+    right:-1px;
+    top:-23px;
+    border-bottom:3px solid rgb(6, 6, 6);
+}
+h2 span{
+    margin-top:-6vh;
+    margin-left:-70vh;
     position:fixed;
-    padding-left:60vh;
-    padding-right:60vh;
+    font-size:6vh;
+}
+.View{
+    margin-left:165vh;
+    margin-top:-10vh;
+    font-size: 20px;
+    cursor:pointer;
+    font-family:fantasy;
+    position:fixed;
+    padding-right:3vh;
+    padding-left:3vh;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    z-index: 1;
+    background-color: aqua;
+}
+.View:hover {
+    background-color: rgb(255, 255, 255);
 }
 h2 {
-    padding-top:20vh;
+    padding-top:9vh;
+    margin-left:5vh;
+    text-align:center;
+    font-size:4vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h3 {
+    padding-top:9vh;
     text-align:center;
     font-size:4vh;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -32,6 +53,7 @@ p {
     text-align:center;
     font-size:3vh;
     padding-bottom:5vh;
+    font-weight:bold;
 }
 form {
   
@@ -39,207 +61,223 @@ form {
     font-size: 22px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 2px solid rgb(255, 255, 255);
-    background-color: rgb(210, 212, 212);
+    background-color: rgb(194, 218, 232);
     box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
     border-radius: 10px;
-    margin-left:70px;
-    margin-right:100vh;
-    padding-left:15vh;
+    margin-left:50vh;
+    padding-left:20vh;
+    padding-right: 5vh;
     position:absolute;
     z-index: -1;
 }
-.nm input{
-    margin-left:50px;
-    padding-left:15px;
-    font-size:17px;
+.resume input{
+    margin-left:18vh;
 }
-.nm1 input{
-    margin-left:60px;
-    padding-left:15px;
-    font-size:17px;
+.fname input{
+    margin-left:20.5%;  
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
 }
-.db input{
-    margin-left:20vh;
-    font-size:17px;
+.lname input{
+    margin-left:22.5%;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
 }
-.cnt input{
-    margin-left:82px;
-    padding-left:15px;
-    font-size:17px;
-}
-.addr textarea{
-    margin-left:82px;
-    padding-left:15px;
-    padding-bottom:40px;
-    font-size:17px;
-}
-.gm input{
-    margin-left:110px;
-    padding-left:15px;
-    font-size:17px;
-}
-.qua select{
-    margin-left:90px;
-    font-size:17px;
-}
-.dep select{
-    margin-left:15px;
-    font-size:17px;
-    margin-top:10px;
-    padding-right:-40px;
-
-}
-.dep label{
-    padding-left:17vh;
-}
-.sta input{
-    margin-left:115px;
-    padding-left:15px;
-    font-size:17px;
-}
-.cit input{
-    margin-left:135px;
-    padding-left:15px;
-    font-size:17px;
-}
-.gend select{
-    margin-left:150px;
-    padding-left:15px;
-    font-size:17px;
-}
-.res input{
-    margin-left:100px;
-    padding-left:15px;
-    font-size:17px;
-}
-
-img {
-    width:10%;
-    height:40px;
-    padding-top:67px;
-    padding-left:400px;
-    position:fixed; 
-}
-table ,th,td{
-    border:2px solid black;
-    padding:10px;
+.dob input{
+    margin-left:38.5%;   
+    width:34%;
     text-align:center;
-    background-color: aliceblue;
-    size:auto;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
 }
-table {
-    margin-left:0vh;
+.contact input{
+    margin-left:27.5%; 
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
 }
-
-.subm {
-    font-size:large;
+.address textarea{
+    margin-left:28%; 
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
+}
+.gmail input{
+    margin-left:34%; 
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
+}
+.gender select{
+    margin-left:19vh;
+    width:34%;
+    text-align:center; 
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;  
+}
+.qualification select{
+    margin-left:13%;
+    width:35%;
+    text-align:center;  
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh; 
+}
+.department select{
+    margin-left:17.5%;
+    text-align:center;
+    width:35%;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
+}
+.state input{
+    margin-left:35.5%;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;  
+}
+.city input{
+    margin-left:39.5%;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;  
+}
+img {
+    position:fixed;
+    width:7%;
+    top:3vh;
+    left:15vh;
+}
+.submit {
     cursor: pointer;
-    margin-left:25vh;
+    margin-left:19vh;
     margin-bottom:10px;
+    font-family:fantasy;
+    font-size:2.5vh;
 }
-.subm:hover{
+.submit:hover{
     background-color:rgb(0, 229, 255);
 }
-.reset {
-    font-size:large;
-    cursor: pointer;
-    margin-left:8vh;
-    margin-bottom:10px;
-}
-.reset:hover{
-    background-color:rgb(112, 205, 215);
-}
-.delbu {
+.deletebutton {
     margin-left:30vh;
     margin-top:10vh;
     border:2px solid rgb(0, 0, 0);
-    font-size:2vh;
+    font-size:3vh;
     cursor: pointer;
-    
+    font-family:fantasy;
+    letter-spacing: 2px;
+    background-color: aqua;
 }
-.delbu:hover {
-    background-color:aqua;
+.deletebutton:hover {
+    background-color:rgb(255, 255, 255);
 }
 .ind {
     margin-left:30vh;
 
 }
-.fin {
+.finalbuttons {
     border:2px solid rgb(0, 0, 0);
-    border-radius: 20px;
     position:fixed;
-    margin-top:-35vh;
-    margin-left:5vh;
-    padding-right:84vh;
+    padding: 2% 1% 1% 0%;
+    left: 0px;
+    right:-1px;
+    top:-135px;
     background-color:rgb(194, 218, 232);
     box-shadow:0px 0px 1px 1px;
 
 }
-.edibu {
-    float: right;
-    margin-left:390px;
-    margin-right: -60vh;
+.editbutton {
+    margin-left:55vh;
     margin-top:20vh;
-    font-size:2vh;
+    font-size:3vh;
     border:2px solid rgb(0, 0, 0);
     cursor: pointer;
-
+    font-family:fantasy;
+    letter-spacing: 2px;
+    background-color: aqua;
     
 }
-.edibu:hover {
-    background-color:aqua;
+.editbutton:hover {
+    background-color:rgb(255, 255, 255);
 }
-table {
-    margin-top:40vh;
-    overflow-y: scroll;
-}
-.tabes:hover {
-    background-color: rgb(89, 243, 243);
-}
-.spbg {
+.backgroundsp {
     background-color: rgb(81, 212, 212);
 }
-.tabsp , tr, td{
-    margin-top:-35vh;
-    margin-left:0vh;
-    margin-right:0vh;
-}
-.savebu {
-    margin-top:40vh;
+.savebutton {
+    margin-top:10vh;
     margin-left:85vh;
     font-size:20px;
     cursor: pointer;
-}
-.savebu:hover {
+    font-family:fantasy;
+    letter-spacing: 2px;
+    position:fixed;
+    font-size: 3vh;
     background-color: aqua;
 }
-.cancel {
+.savebutton:hover {
+    background-color: rgb(255, 255, 255);
+}
+.cancelbutton {
     font-size:20px;
     cursor: pointer;
-    margin-left:10vh;
-}
-.cancel:hover {
-    background-color: aqua;
-}
-.View{
-    margin-left:147vh;
-    margin-top:50vh;
+    margin-left:110vh;
+    margin-top:10vh;
+    font-family:fantasy;
+    font-size: 3vh;
+    letter-spacing: 2px;
     position:fixed;
-    font-size: 20px;
-    cursor:pointer;
-}
-.View:hover {
     background-color: aqua;
 }
-.backbut {
+.cancelbutton:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.backbutton {
     margin-left:50vh;
     margin-top:20vh;
     margin-bottom:5vh;
     position: relative;
-    font-size:2vh;
+    font-size:3vh;
     border:2px solid rgb(0, 0, 0);
     cursor: pointer;
+    font-family:fantasy;
+    letter-spacing: 2px;
+    background-color: aqua;
 }
-.backbut:hover {
+.backbutton:hover {
+    background-color: rgb(255, 255, 255);
+}
+tr:hover {
+    background-color: rgb(255, 255, 255);
+}
+#table {
+    margin-top:25vh;
+    border:solid black;
+    border-collapse: collapse;
+    margin: 12% 0.5% 0% 0.5%;
+    position:unset;
+    height:40%;
+    text-align:center;
+    width:99%;
+}
+#table1 {
+    border:solid black;
+    border-collapse: collapse;
+    margin: 10% 0.5% 0% 0%;
+    position:absolute;
+    height:20%;
+    text-align:center;
+    width:99%;
+}
+td {
+    font-family:monospace;
+    font-weight: bold;
+    height:7vh;
+}
+th {
+    background-color: rgb(134, 222, 254);
+    height:8vh;
+}
+tr:nth-child(odd) {
+    background-color: rgb(243, 232, 105);
+}
+tr:nth-child(even) {
+    background-color:rgb(233, 233, 233);
+}
+.BackgroundFinal {
     background-color: aqua;
 }

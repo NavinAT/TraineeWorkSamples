@@ -1,42 +1,18 @@
-Please fix the below points.
+Create Form case:
+Textbox alignment should be same
+Form design need to be changed
+Text box style need to be changed
+Add proper Mail validation 
+Font family differs in form
+vertical scroll bar should not come (if form contains more fields, then vertical scroll bar can occur)
 
+Reference URL: https://getboo tstrap.com/docs/4.3/components/forms/ 
 
+Detail case:
+Icon should be small 
+Move search box and icons to the left top of the table
+Change table style, refer bootstrap table design.
+horizontal scroll ball should not come
 
-
-Common points:
-
-Need better design for form and table.
-
-Text box style.
-
-Radio button style.
-
-Table Style.
-
-Button Style.
-
-Label Style.
-
-
-Prepare a proper layout for the form and table page.
-
-
-Finished task.
-
-Create Case:
-
-1. Validation Required.
-
-Delete Case:
-
-1. Need to ask user permission to delete such as confirmation box.
-
-2. Wrong user number for delete should show alert and should stay in table page.
-
-Edit Case:
-
-1. Entering wrong input number should not navigate to the form page, should show alert like user is not exists.
-
-2. Should show all the values in the form after clicking the Edit button.
-
-3. Should not validate Middle name.
+Layout Design:
+Design should be same for all pages (Layout).

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Details</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="content">
+        <div class="head1">
+            <h1>
+                Details:
+            </h1>
+        </div>
+        <div class="output">
+            <center>
+                <table border="1px">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact Number</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Age</th>
+                </tr>                                    
+            </center>
+        </div>                  
+        <div class="options">
+            <div class="opt_main">
+                <div class="note">
+                    <p style="color:red;"> <i>*Note:Use Mail ID</i></p>
+                </div>
+                <div class="bar">
+                    <div class="check">
+                        <label for="verify">
+                            <div class="iedit_row"> 
+                                <input class="value" type="number" id="editrow" name="edit_row">
+                            </div>
+                            <button class="button2" type="submit" id="editrow"
+                                onclick="myedit()">Edit
+                            </button>       
+                        </label>               
+                    </div>
+                    <div class="delete">
+                        <label for="delete">
+                            <div class="idelete_row"> 
+                                <input class="value" type="number" id="delete_row" name="delete_row">
+                            </div>                                    
+                             <button class="button3" type="submit" id="delete" onclick="mydel()" >Delete</button>    
+                        </label>   
+                    </div>
+                </div>
+            </div>   
+        </div>    
+        <div class="mainform">
+            <form id = "iback" action="index.html" method="get"> 
+                <button class="back" type="submit" id="back" >
+                    main form </button>
+            </form>
+        </div>
+        <hr class="line">
+    </div>
+    <script src="script1.js"></script>              
+</body>
+</html>

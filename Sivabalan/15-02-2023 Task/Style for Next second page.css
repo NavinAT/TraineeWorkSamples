@@ -1,34 +1,59 @@
-body{
+body
+{
     background-color: rgb(247, 247, 247);
 }
-#heading{
-    font-size: 60px; 
-    color: red; 
-    margin: 0 auto;
+#sportslogo
+{
+    width: 300px;
+    margin-top: -65px;
+    position:fixed;
 }
-table,th,tr,td{
+h1
+{
+    text-align: center;
+    font-family: Calibri;
+    margin-top: 10px;
+    font-size: 60px;
+    color: rgb(29, 173, 16);
+    text-shadow: 3px 4px 4px rgb(130, 27, 161);
+}
+table,th,tr,td
+{
     font-size: 30px;
     text-align: center;
-    width: max-content;
-    border: 4px solid rgb(15, 24, 26);
+    width: 100px;
+    border: 4px solid rgb(219, 226, 228);
     border-collapse: collapse;
 }
-button{
-    background-color: black;
-    width:max-content;
-    height: 50px;
-    font-size: 30px;
-    border:none;
-    color: white;
+tr:hover{
+    background-color: rgb(187, 194, 201);
 }
-input{
-    height: 40px;
+input
+{
+    height: 30px;
     width: 231px;
+    margin-left: 10px;
+    margin-top: 4px;
+    position: fixed;
 }
-img{
-    width: 70px;
-    height: 70px;
+#editimage,#deleteimage
+{
+    width: 30px;
+    height: 30px;
 }
-img:hover{
+#editimage
+{
+    margin-left: 250px;
+    margin-top: 5px;
+    position: fixed;
+}
+#deleteimage
+{
+    margin-left: 285px;
+    margin-top: 3px;
+    position: fixed;
+}
+#editimage:hover,#deleteimage:hover
+{
     transform: scale(1.2);
 }

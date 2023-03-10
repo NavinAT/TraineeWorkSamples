@@ -4,122 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>VJ SOFTWARES</h1>
+    <h1></h1>
+    <h2><span>VJ SOFTWARES</span></h2>
+    <img src="lhg.png">
     <link rel="stylesheet" href="style.css">
     <link rel="sp" href="sp.html">
+    <script  type="text/javascript" src="employee.js"></script>
 </head>
-<body class="bdy">
+<body class="BackgroundEmployee">
 <button class="View" onclick="View()" > VIEW DATA</button>
 <blockquote>
-    <img src="pngegg.png">
-    <h2>WELCOME TO THE REGISTERATION PAGE</h2>
-    <p> Please provide the correct information.Then,click SUBMIT button.</p>
-    <form>
-    <div class="res">
+    <h3>WELCOME TO THE REGISTERATION PAGE</h3>
+    <p> Please provide the correct information before SUBMIT</p>
+    <form name="myform" id="frm" method="get" >
+    <div class="resume">
         <label for="resume">RESUME</label>
-        <input type="file" id="resume" name="resume" ><br><br>
-    </div>
-    <div class="nm">
+        <input type="file" id="resume" name="resume" onkeyup="checkfields()" required>
+    </div><br>
+    <div class="fname">
         <label for="fname">FIRST NAME</label>
-        <input type="text" id="fname" name="fname" ><br><br>
-    </div>
-    <div class="nm1">
+        <input type="text" id="fname" name="fname" onkeyup="checkfields()" required>
+    </div><br>
+    <div class="lname">
         <label for="lname">LAST NAME</label>
-        <input type="text" id="lname" name="lname" ><br><br>
-    </div>
-    <div class="db">
+        <input type="text" id="lname" name="lname" onkeyup="checkfields()" required>
+    </div><br>
+    <div class="dob">
         <label for="dob">DOB</label>
-        <input type="date" id="dob" name="dob" ><br><br>
-    </div>
-    <div class="cnt">
+        <input type="date" id="dob" name="dob" onkeyup="checkfields()" required>
+    </div><br>
+    <div class="contact">
         <label for="cont">CONTACT</label>
-        <input type="text" id="cont" name="cont" ><br><br>
-    </div>
-    <div class="addr">
+        <input type="tel" id="cont" name="cont" onkeyup="checkfields()" required>
+    </div><br>
+    <div class="address">
         <label for="addr">ADDRESS</label>
-        <textarea type="text" id="address" name="address" ></textarea><br><br>
-    </div>
-    <div class="gm">
+        <textarea type="text" id="address" name="address" onkeyup="checkfields()" required></textarea>
+    </div><br>
+    <div class="gmail">
         <label for="gmail">GMAIL</label>
-        <input type="email" id="gmail" name="gmail" ><br><br>
-    </div>
-    <div class="gend">
+        <input type="email" id="gmail" name="gmail" onkeyup="checkfields()" required>
+    </div><br>
+    <div class="gender">
         <label for="gen">GENDER</label>
-        <select id="gend" name="gend" >
-            <option value="NONE">NONE</option>
+        <select id="gend" name="gend" onkeyup="checkfields()">
+            <option required></option>
             <option value="MALE">MALE</option>
             <option value="FEMALE">FEMALE</option>
-        </select><br><br>
-
+        </select><br>
     </div><br>
-    <div class="sta">
-        <label for="state">STATE</label>
-        <input type="text" id="state" name="state" ><br><br>
-    </div>
-    <div class="cit">
-        <label for="city">CITY</label>
-        <input type="text" id="city" name="city" ><br><br>
-    </div>
-    <div class="qua">
+    <div class="qualification">
         <label for="qua">QUALIFICATION</label>
-        <select id="qua" name="qua" >
-            <option value="NONE">NONE</option>
+        <select id="qua" name="qua" onkeyup="checkfields()">
+            <option required></option>
             <option value="B.E">B.E</option>
             <option value="M.E">M.E</option>
-        </select><br><br>
-    </div>
-    <div class="dep">
+        </select>
+    </div><br>
+    <div class="department">
         <label for="dept">DEPARTMENT</label>
-        <select id="dept" name="dept" >
-            <option value="NONE">NONE</option>
-            <option value="CSE">COMPUTER SCIENCE AND ENGINEERING</option>
-            <option value="ECE">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
-            <option value="EEE">ELECTRICAL AND ELECTRONICS ENGINEERING</option>
-            <option value="CIVIL">CIVIL ENGINEERING</option>
-            <option value="MECH">MECHANICAL ENGINEERING</option>
-        </select><br><br>
-    <input class="subm" type="submit" onclick="submitForm()">
-    
-    
-    </div>
+        <select id="dept" name="dept" onkeyup="checkfields()">
+            <option required></option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="MECH">MECH</option>
+        </select>
+    </div><br>
+    <div class="state">
+        <label for="state">STATE</label>
+        <input type="text" id="state" name="state" onkeyup="checkfields()" required>
+    </div><br>
+    <div class="city">
+        <label for="city">CITY</label>
+        <input type="text" id="city" name="city" onkeyup="checkfields()" required>
+    </div><br><br>
+    <button type="submit" id="submit" class="submit" onclick="submitForm()" formaction="final.html" disabled>SUBMIT</button>   
     </form>
-    <script>
-        function View (){
-            window.location.href="final.html";
-        }
-
-        function submitForm() {
-
-            var Resume = document.getElementById("resume").value;
-            var Fname = document.getElementById("fname").value;
-            var Lname = document.getElementById("lname").value;
-            var DOB = document.getElementById("dob").value; 
-            var Contact = document.getElementById("cont").value;  
-            var Address = document.getElementById("address").value; 
-            var Gmail = document.getElementById("gmail").value; 
-            var Gender = document.getElementById("gend").value;          
-            var State = document.getElementById("state").value; 
-            var City = document.getElementById("city").value; 
-            var Qualification = document.getElementById("qua").value; 
-            var Department = document.getElementById("dept").value;
-            
-            let text = {Resume:Resume,Fname:Fname,Lname:Lname,DOB:DOB,Contact:Contact,Address:Address,
-            Gmail:Gmail,Gender:Gender,State:State,City:City,Qualification:Qualification,Department:Department};
-            var arrObj = [];          
-            var obj = localStorage.getItem("testJSON");
-            if(obj)
-            {
-            var arr = JSON.parse(obj);     
-            arr.push(text);
-            localStorage.setItem("testJSON", JSON.stringify(arr));
-            }
-            else
-            {
-            arrObj.push(text);
-            localStorage.setItem("testJSON", JSON.stringify(arrObj));
-            }
-            } 
-    </script>
 </blockquote>
 </body>
 </html>

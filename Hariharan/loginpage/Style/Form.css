@@ -1,0 +1,87 @@
+form
+{
+            
+    padding: 50px;
+    line-height: 3.5;
+    font-size: 20px;
+    border: double black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
+form input 
+{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+form input :hover 
+{
+    background-color: lightblue;
+}
+
+body 
+{
+    background-image: url(/images/pexels-lukas-317355.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    backdrop-filter: blur(1px);
+}
+
+h1
+{
+    margin: 10px;
+    color: black;
+    text-shadow: 2px 2px 2px black;
+    font-style: inherit;
+    font-size: 300%;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 50px;
+    color: black;
+    text-shadow: 2px 2px 2px black;
+    font-style: italic;
+    text-align: center;
+}
+
+h1:hover 
+{
+    text-shadow: 5px 5px 5px rgb(8, 4, 0);
+}
+
+h2:hover 
+{
+    text-shadow: 5px 5px 5px rgb(8, 4, 0);
+}
+
+form
+{
+    position: absolute;
+    left: 600px;
+    top: 200px;
+    -webkit-text-fill-color: rgb(26, 12, 2);
+    accent-color: blue;
+}
+
+textarea
+{
+    font-size: 15px;
+}
+
+button 
+{
+    width: 60%;
+    background-color: rgb(247, 189, 114);
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}

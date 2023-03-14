@@ -1,45 +1,38 @@
 let btnin = document.getElementById("btn");
 let formel = document.forms.info;
 
-
-const hand = (event) => {
-
-    // event.preventDefault();
-
+const hand = (event) => 
+{
     let formdata = ([...new FormData(formel)]);
-
     let json = {};
-    formdata.forEach((e) => {
-
+    formdata.forEach((e) =>
+    {
         json[e[0]] = e[1];
-    })
+    });
     localStorage.setItem(
         "userdata",
         JSON.stringify([
-            ...JSON.parse(localStorage.getItem("userdata") || '[]'), (json)]))
-
-
+            ...JSON.parse(localStorage.getItem("userdata") || '[]'), (json)]));
 }
-//form submit event
-formel.addEventListener('submit', hand);
 
+//FORM SUBMIT EVENT
+formel.addEventListener('submit', hand);
 let firstnamein = document.getElementById("firstname");
 let lable = document.getElementById("lable");
 
-
-firstnamein.addEventListener("change", () => {
+//NAME CHANGEING
+firstnamein.addEventListener("change", () =>
+{
     lable.innerText = `Welcome ${firstnamein.value} `;
-})
+});
 
+//EDITING
 document.addEventListener("DOMContentLoaded", () => {
     let fetcheddata = [...JSON.parse(localStorage.getItem("userdata"))];
     let fetchedid = [...JSON.parse(localStorage.getItem("editing"))];
     let x = fetchedid[fetchedid.length - 1];
     var data = fetcheddata[x];
-
     const data2 = Object.values(data);
-    console.log(data2);
-
     let firstnamein = document.getElementById("firstname");
     let lastnamein = document.getElementById("lastname");
     let btnin = document.getElementById("btn");
@@ -61,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     edu.value = data2[5];
     domain.value = data2[6];
     email.value = data2[7];
-    studtinst.value = data2[8]
+    studtinst.value = data2[8];
     cmts.value = data2[10];
 
     //To get the edting data and clear it from local storage    
@@ -71,36 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem(
         "userdata",
         JSON.stringify(
-            ...JSON.parse(localStorage.getItem("userdata") || '[]'), (updated)))
-
+            ...JSON.parse(localStorage.getItem("userdata") || '[]'), (updated)));
+    localStorage.removeItem("editing");
 });
-
-
-// const data = [...formdata.entries()];
-    // console.log(data);
-
-    //json
-    // const datastring2 = JSON.stringify(Object.fromEntries(formdata));
-    // console.log(datastring2);
-    // const xhr = new XMLHttpRequest();
-    // xhr.open("get", "https://reqres.in/api/users/2", true);
-    // xhr.onload = function () {
-    //     const obj = JSON.parse(xhr.responseText);
-    //     console.log(obj.data);
-    // }
-    // xhr.send();
-
-    // fetch("https://reqres.in/api/users/2", {
-    //     method: "get"
-
-
-    // })
-    //     .then((res) => res.json())
-
-    //     .then((data) => {
-    //         console.log(data)
-
-    //     })
 
 
 

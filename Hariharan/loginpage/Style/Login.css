@@ -1,0 +1,221 @@
+
+*
+{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body 
+{
+    background:  url(pexels-jeshootscom-442580.jpg) no-repeat  fixed ;
+    backdrop-filter: blur(0px);
+    position: absolute;
+    line-height: 3;
+    background-size: 100%;
+}
+
+ h1 
+ {
+    font-size: 300%;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px black;
+    color: black;
+    width:auto;
+    transform: translateX(600px);
+ }
+
+h1:hover 
+{
+    text-shadow: 2px 2px 2px black;
+}
+
+h2 
+{ 
+    font-size: 200%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 2px black;
+    color: black;
+    padding-top: 100px;
+    text-align: center;
+    transform: translateX(600px);
+}
+
+ h2:hover
+ {
+    text-shadow: 2px 2px 2px black;
+ }   
+
+ button
+ {
+   font-size: 20px;
+   border-radius: 5px 5px;
+   margin: 8px;
+   transform: translateX(100px);
+   font-weight: bold;
+   font-family: serif;
+   cursor: pointer;
+   width: 120px;
+   height: 45px;
+   background-color: rgb(231, 225, 225);
+   box-shadow: 3px 3px 3px black;
+ }
+
+
+
+ button:hover
+ {
+    box-shadow:2px 2px 5px rgb(0, 63, 3);
+    color: rgb(255, 255, 255);
+    background-color: darkgreen;
+ }
+
+.comments
+{
+    font-size: 20px;
+}
+
+.comments:hover 
+{
+    text-shadow:1px 1px 1px black ;
+}
+
+.links 
+{
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+}  
+        
+ form
+  {
+   backdrop-filter: blur(5px);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transform: translateX(600px);
+   border: solid black;
+   width: 500px;
+   height: 300px;
+   box-shadow: 3px 3px 3px black;
+   font-size: 20px;
+  }
+ 
+ form input 
+ {
+   border-radius: 10px 10px;
+   padding: 10px ;
+   font-size: 14px;
+   align-items: center;
+   background-color: rgb(248, 246, 246);
+   transform: translateX(30px);
+   align-items: center;
+ }
+
+ form textarea 
+ {
+   border-radius: 10px;
+   padding: 10px;
+   font-size: 15px;
+   background-color:rgb(247, 247, 247);
+ }
+
+ *
+ {
+   margin: 0px;
+   padding: 0px;
+ }
+
+ .dropdown 
+ {
+   transform: translateX(500px);
+   display: flex;
+   list-style: none;
+   position: absolute;
+   border-radius: 20px 20px 20px 20px;
+   z-index: 2;
+}
+
+a 
+{
+   display: block;
+   width: 200px;
+   border-bottom: 2px groove black;
+   color: black;
+   text-align: center;
+   text-decoration: none;
+   font-size: 1.5rem;
+   font-weight: bold;  
+}
+
+a:hover
+{
+   background-color: rgb(66, 157, 231);
+   box-shadow: 2px 2px 5px 5px black;
+   transition-duration: 0.5s;
+   border-radius: 10px;
+}
+
+.products
+{
+   list-style-type: none;
+   display: none; 
+}
+
+.dropdown li:nth-child(2):hover .products 
+{
+   display: block;
+   background-color: azure;
+}
+
+.book 
+{
+    list-style-type: none;
+    display: none;
+}
+
+.products li:nth-child(3):hover .book 
+{
+    display: block;
+    transform: translateX(200px) translateY(-43px);
+    position: absolute;
+    background-color: azure;
+}
+
+.mail
+{
+   transform: translateX(700px); 
+}
+
+.maillink 
+{
+   transform: translateX(00px);
+}
+
+#signinbtn
+{
+    margin-top: 35px;
+    transform: translateX(-8px);
+    width: 250px;
+}
+
+#registerbtn
+{
+    margin-top: 1px;
+    transform: translateX(-8px);
+    width: 250px;
+}
+
+input
+{
+   display: inline-block;
+}
+ 
+#counter
+{
+  margin-left: -100px;
+  font-size:20px;
+  font-weight: 400;
+  background-color: rgb(43, 255, 0);
+  border: solid ;
+}

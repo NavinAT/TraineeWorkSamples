@@ -1,0 +1,43 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="Style/Login.css">
+
+
+
+
+</head>
+
+<body>
+    <h2>User Register</h2>
+    <form id="form" name="rig" autocomplete="off" method="post">
+        <div class="username"> <label><b>User name:</b> <input type="text" minlength="5" max="15" name="username"
+                    id="username" placeholder="username" required></label></div>
+
+        <div class="Email"> <label><b>Email   :</b> <input type="email" name="email" id="email" placeholder="Email"
+                    required /></label></div>
+
+        <div class="password2"><label><b>Password :</b> <input type="password" minlength="6" name="password"
+                    id="password1" placeholder="password" required /><br></label></div>
+
+        <div class="password1"><label><b>Password : </b><input type="password" minlength="6" name="password"
+                    id="password2" placeholder="Retype password" required /><br></label></div>
+
+        <div class="submit"><label>
+                <button type="button" value="submit" id="registerbtn"> Register User</button>
+                <br></label> </div>
+    </form>
+
+    <div class="mail">
+        <h3><b>Already You Have a Account :</b></h3>
+        <button type="button"  onclick="signin()"> Sign In </button>
+    </div>
+
+   
+       
+    <script type="text/javascript" src="java script/Rigister.js" ></script>
+</body>
+
+</html>

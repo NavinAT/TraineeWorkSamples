@@ -1,30 +1,71 @@
-var m1 = localStorage.getItem("testJSON");
+var m1 = localStorage.getItem("prakshJSON");
 var myobj2 = JSON.parse(m1);
 var len0 = localStorage.getItem("et_row");
 var len1 = JSON.parse(len0);      
 localStorage.removeItem("et_row");
-
 document.getElementById("fname").value=myobj2[len1-1].fname;
 document.getElementById("email").value=myobj2[len1-1].email;
 document.getElementById("cno").value=myobj2[len1-1].cno;
-document.getElementById("city").value=myobj2[len1-1].city;
-document.getElementById("State").value=myobj2[len1-1].State;
 document.getElementById("age").value=myobj2[len1-1].age;
+document.getElementById("gender").value=myobj2[len1-1].gender;
+document.getElementById("dob").value=myobj2[len1-1].dob;
+document.getElementById("address").value=myobj2[len1-1].address;
 function fsave()
 {
     var fname=document.getElementById("fname").value;
     var email=document.getElementById("email").value;
     var cno=document.getElementById("cno").value;
-    var city=document.getElementById("city").value;
-    var State=document.getElementById("State").value;
     var age=document.getElementById("age").value;
+    var gender=document.getElementById("gender").value;
+    var dob=document.getElementById("dob").value;
+    var address=document.getElementById("address").value;
     var details =
     {   
-        fname:fname,email:email,cno:cno,city:city,State:State,age:age           
+        fname:fname,email:email,cno:cno,age:age,
+        gender:gender,dob:dob,cno:cno,address:address
     };
-    var myobj2=JSON.parse(localStorage.getItem("testJSON"));
+    var myobj2=JSON.parse(localStorage.getItem("prakshJSON"));
     myobj2.splice(len1-1,1,details);
-    localStorage.setItem("testJSON",JSON.stringify(myobj2));
+    localStorage.setItem("prakshJSON",JSON.stringify(myobj2));
     alert(":) changes Updated\n:) verify In Details Page");
-    window.location.href=("output.html");
+    window.open("output.html");
+}
+function details_table()
+{
+    window.location.href="output.html";
+}
+function main_form()
+{
+    window.location.href="index.html";
+}
+function validateForm()
+{
+    let x = document.forms["myform"]["fname"].value;
+    let y = document.forms["myform"]["email"].value;
+    let z = document.forms["myform"]["cno"].value;
+    if (x != "")
+    {
+        if (y != "")
+        {
+            if (z != "")
+            {
+                fsave();
+            }
+            else
+            {
+                alert("Contact No must be filled out");
+                return false;
+            }
+        }
+        else
+        {
+            alert("Email must be filled out");
+            return false; 
+        }   
+    }
+    else
+    {
+        alert("Name must be filled out");
+        return false;
+    }    
 }

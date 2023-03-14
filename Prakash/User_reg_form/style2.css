@@ -2,169 +2,147 @@
 {
     padding: 0;
     margin: 0; 
-    font-family: sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.75;
 }
 .header
-{    
-    width: vw;
-    height: 60px;
+{
+    background-image: url(img/g3.jpg);
+    height: 130px;
     font-family: 'Segoe UI', Tahoma;
+    font-weight: 900;
     font-style: italic;
     font-weight: bolder;
     font-variant: small-caps;
     font-feature-settings: "fina";
-    justify-content: center;  
+    display: flex;
     text-align: center;
     padding-top: 40px;
-    padding-left: 45px;
     text-decoration: underline;
-    text-underline-offset: 8px; 
+    text-underline-offset: 8px;
     text-decoration-color:  rgb(90, 255, 98);
 }
-.menu
+.logobanner
 {
-    width: vw;
+    margin-left: 2%;
+    height: 100px;
+    border-radius: 30%;
+    opacity: 50%;   
+}
+img
+{
+    object-fit: cover;  
+}
+h1
+{
+    font-size: 28px;
+    padding-left: 40%;
+}
+.navbar
+{
+    background-color: rgb(195, 195, 195);
+    min-height: 10px;
     display: flex;
+    justify-content: end;
+    align-items: center;
 }
-.v_value
+li
 {
-    height: 25px;
-}
-.i_v_row
-{
+    display: inline;
+    padding:5px;
     height: auto;
-    height: 45px;
 }
-.nxtpage
+.nav_btn
 {
-    padding-top: 2px;
-    padding-left: 5px;
-    width: 50px;
-    text-justify: newspaper;
-    font-size: 10px;
-    border-radius:  20px;
-    border-top-color: red;
-    border-right-color: red;
-    border-left-color: red;
-    border-bottom-color: red;
-}
-body
-{
-    background-position: 50%;
+    padding:10px;
     justify-content: center;
-    background-image: url(img/g4.jpg);
+    background-color: rgb(195, 195, 195);
+    border: 2px solid;
+    border: unset;
+    cursor: pointer;
+}
+.nav_btn:hover
+{
+    scale: 105%;
+    border-radius: 20%;
+    border: 1px solid rgba(139, 133, 133, 0.596);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .main
 {
     width: vw;
+    height: vh;
+    background-image: Url(g2.jpg);
     justify-content: center;
     align-items: center;
 }
 .content
 {
-    min-width: 100px;
-    padding-left: 70px;
-    padding-top: 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: oblique 20deg 50deg;
+    min-width: 180px;
+    background-image: Url(g2.jpg);
+    padding: 5% 15%;
     justify-content: center;
     align-items: center;
     display: flex;
+    height: 100%;
 }
 .Quary
 {
     display: flex;
+    border: 2px;
+    border-color: black;
+}
+.Quary1
+{
+    width: 105%;
+    border: 2px solid black;
 }
 .value
 {
     background-color: rgb(255, 255, 255);
-    border-radius: 0px;
+    width: 100%;
+    border-radius: 0%;
     border-color: none;
     padding-left: 15px;
+    cursor: pointer;
 }
 .value:hover
 {
     scale:105%;
-    border-color: rgb(255, 75, 75) ;
-    background-color: rgb(195, 255, 198);
+    border-color:rgb(98, 98, 98);
+    border-radius: 7%;
 }
 .button
 {
-    color: white;
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
     display: block;
     display: flex;
-    font-size: 16px;
-    font: weight 80%;
-    font-style: italic;
-    margin: 5px 10px;
-    cursor: pointer;
+    margin: 5px 5px;
+    margin-bottom:0%;
+}
+.submit
+{
+    cursor: pointer; 
+    opacity: 80%;      
+}
+.submit:hover
+{
+    scale: 110%;
+    opacity: 150%;
+    border-radius: 20%;
 }
 .reset
 {
     margin-left: 25px;
-}
-.submit:hover
-{
-    scale: 106%;
+    cursor: pointer;
+    opacity: 80%; 
 }
 .reset:hover
 {
-    scale: 106%;
-    border-color: rgb(66, 255, 48) ;
-}
-.button1
-{
-    background-image: url(img/g6.jpg);
-    color: rgb(0, 38, 255);
-}
-.sform, .Quary
-{
-    border-style: dashed 5px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.table
-{
-    margin-top: 30px;
-    padding-top: 30px;
-}
-.fbar
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 70px;
-}
-.foot
-{
-    display: block;
-}
-.Quary1
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Quary1
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-}
-button
-{
-    padding:6px;
-}
-.viewform1
-{
-    background-image: url(img/g6.jpg);
-}
-.back
-{
-    background-image: url(img/g6.jpg);
+    scale: 110%;
+    opacity: 150%;
+    border-radius: 20%;
 }

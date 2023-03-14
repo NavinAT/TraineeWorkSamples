@@ -7,21 +7,75 @@ body
 {
     background-image: url(img/g2.jpg);
 }
-.head1
+.header
 {
-    width:vw;
-    height:vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 70px;
+    background-image: url(img/g3.jpg);
+    height: 130px;
     font-family: 'Segoe UI', Tahoma;
+    font-weight: 900;
     font-style: italic;
     font-weight: bolder;
     font-variant: small-caps;
     font-feature-settings: "fina";
+    display: flex;
+    text-align: center;
+    padding-top: 40px;
     text-decoration: underline;
-    text-underline-offset: 5px;
+    text-underline-offset: 8px;
+    text-decoration-color:  rgb(90, 255, 98);
+}
+.logobanner
+{
+    margin-left: 2%;
+    height: 100px;
+    border-radius: 30%;
+    opacity: 40%;
+}
+img
+{
+    object-fit: cover;
+}
+h1
+{
+    font-size: 28px;
+    padding-left: 35%;
+}
+.navbar
+{
+    background-color: rgb(195, 195, 195);
+    min-height: 10px;
+    display: flex;
+    align-items: center;
+}
+li
+{
+    display: flex;
+    width: 20px;
+    padding:5px;
+}
+.home_btn
+{
+    padding-left: 10px;
+}
+.btn{
+    padding-left: 82%;
+}
+.nav_btn
+{
+    justify-content: center;
+    background-color: rgb(195, 195, 195);
+    border: 2px solid;
+    border: unset;
+    cursor: pointer;
+}
+.nav_btn:hover
+{
+    border-radius: 20%;
+    border: 1px solid rgba(139, 133, 133, 0.596);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+input{
+    padding-left: 8px;
 }
 .content
 {
@@ -38,61 +92,12 @@ body
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.note
-{
-    font-style: italic;
-    padding-right: 10px;
-}
-.opt_main
-{
-    width: vw;
-    display: block;
-    justify-content: center;
-    align-items: end;
-}
-.bar
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.check
-{
-    padding:0px 20px;
-}
-.button2,.button3
-{
-    margin-top: 6px;
-    margin-right: 5px;
-    padding:2px 15px;
-    background-image: url(img/delete.jpg);
-}
-.back{
-    margin-top: 6px;
-    margin-right: 5px;
-    padding:2px 15px;
-    background-image: url(img/g5.jpg);
-    margin-bottom: 10px;
-}
-.options
-{
-    border-top: 2px;
-    padding: 5px;
-    width: vw;
-    height: 75px;
-    display: block;
-    border: 2px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 25px;
-}
 table
 {
     margin-top: 5px;
-    background-image:url(img/g5.jpg);
     width: 70%;
     height: 100px;
-    padding:5px 5px;
+    padding:0.75% 2%;
     border-collapse: collapse;
     border-spacing: 5px;
     justify-content: center;
@@ -111,4 +116,7 @@ th
 hr
 {
     border-top: 2px dashed red;
+}
+tr:hover{
+    background-color: white;
 }

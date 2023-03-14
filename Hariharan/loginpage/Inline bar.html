@@ -3,23 +3,30 @@
 
 <head>
     <title>inline bar</title>
-    <link rel="stylesheet" href="Inlinebar.css">
+    <link rel="stylesheet" href="Style/Inlinebar.css">
 </head>
 
 <body>
     <nav>
         <h2><span id="ms">M&S</span> Software Engineering</h2>
-
         <ul>
-           <a href="https://www.m-s.ch/India"> <li>Home</li></a>
-            <a href="https://www.m-s.ch/india/location_chennai_2.aspx"><li>Location</li></a>
-           <a href="https://m-s.onlyfy.jobs/"> <li>Careers</li></a>
-            <a href="mailto:contact@m-s.in"><li>Contact</li></a>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="https://goo.gl/maps/u5uMUbBGcoRtXdn69">
+                <li>Location</li>
+            </a>
+            <a href="#">
+                <li>Careers</li>
+            </a>
+            <a href="mailto:contact@m-s.in">
+                <li>Contact</li>
+            </a>
         </ul>
 
         <form>
             <button type="button" class="signin" onclick="next()">Sign In</button>
-            <button class="signup" class="signup">Sign Up</button>
+            <button type="button" class="signup" class="signup" onclick="next1()">Sign Up</button>
         </form>
     </nav>
 
@@ -28,22 +35,43 @@
     </video>
 
     <script>
-
-        function next() {
+        function next() 
+        {
             window.open("loginpage.html", "_self");
 
         }
 
+        function next1() 
+        {
+            window.open("Register.html", "_self");
+        }
+        function search()
+        {
+            var string = document.getElementById('search1').value;
+            window.find(string);
+        }
     </script>
 
     <div id="sidebar">
         <ul id="products">
-           <a href="https://www.m-s.ch/akis.aspx"> <li>Products</li></a>
-            <a href="https://www.m-s.ch/(S(nltvkcrg40iah2pxu2tpnksy))/HTML/Page.ashx?ID=1"><li>Service</li></a>
-            <a href="https://www.m-s.ch/(S(nltvkcrg40iah2pxu2tpnksy))/HTML/Page.ashx?ID=1"><li>Tracking</li></a>
-            <a href="https://www.m-s.ch/(S(nltvkcrg40iah2pxu2tpnksy))/HTML/Page.ashx?ID=1"><li>History</li></a>
-            <a href="https://www.m-s.ch/(S(nltvkcrg40iah2pxu2tpnksy))/HTML/Page.ashx?ID=1"><li>Backup</li></a>
-            <a href="https://www.m-s.ch/(S(nltvkcrg40iah2pxu2tpnksy))/HTML/Page.ashx?ID=1"><li>About</li></a>
+            <a href="#">
+                <li>Products</li>
+            </a>
+            <a href="#">
+                <li>Service</li>
+            </a>
+            <a href="#">
+                <li>Tracking</li>
+            </a>
+            <a href="#">
+                <li>History</li>
+            </a>
+            <a href="#">
+                <li>Backup</li>
+            </a>
+            <a href="#">
+                <li>About</li>
+            </a>
         </ul>
 
         <div class="service">
@@ -60,38 +88,81 @@
     </div>
 </body>
 
-
-
+<div class="search">
+    <form class="Searchbar" method="get">
+        <input type="text" id="search1" class="bar" name="q" placeholder="Are you looking for..?">
+        <button type="button" class="submit" onclick="search()">search</button>
+    </form>
+</div>
 <div class="container">
 
     <div class="card">
 
         <h1>Vision</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ea culpa dolore exercitationem ex, facere
-            assumenda nobis, a qui at quidem rerum fugiat quae aliquam earum possimus ratione vel explicabo.</p>
-        <button>Read More</button>
+            assumenda nobis, a qui at quidem rerum fugiat quae aliquam earum possimus ratione vel explicabo. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Maiores dolore facere saepe ad corporis itaque voluptas
+            perferendis?</p>
+
     </div>
 
     <div class="card">
         <h1>Projects</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ea culpa dolore exercitationem ex, facere
-            assumenda nobis, a qui at quidem rerum fugiat quae aliquam earum possimus ratione vel explicabo.</p>
-        <button>Read More</button>
+            assumenda nobis, a qui at quidem rerum fugiat quae aliquam earum possimus ratione vel explicabo. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Maiores dolore facere saepe ad corporis itaque voluptas
+            perferendis?</p>
+
     </div>
 
     <div class="card">
         <h1>History</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ea culpa dolore exercitationem ex, facere
-            assumenda nobis, a qui at quidem rerum fugiat quae aliquam earum possimus ratione vel explicabo.</p>
-        <button>Read More</button>
+            assumenda nobis, a qui at quidem rerum fugiat quae aliquam earum possimus ratione vel explicabo. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Maiores dolore facere saepe ad corporis itaque voluptas
+            perferendis?</p>
+
+    </div>
+
+    <div class="card">
+        <h1>Misson</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ea culpa dolore exercitationem ex, facere
+            assumenda nobis, a qui at quidem rerum fugiat quae aliquam earum possimus ratione vel explicabo. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Maiores dolore facere saepe ad corporis itaque voluptas
+            perferendis?</p>
+
     </div>
 </div>
 
-<div class="search">
-    <form class="Searchbar" action="http://www.google.com/search" method="get">
-        <input type="text" class="bar" name="q" placeholder="Are you looking for..?">
-        <button class="submit">search</button>
-    </form>
+<div class="Box1">
+    <ul>
+        <li>Transform the way you work</li>
+        <li>Unique and powerful suite software</li>
+        <li>Runs your entire business</li>
+        <li>Run business without srtess</li>
+        <li>Manage Your All Asset List</li>
+    </ul>
+
+    <div class="insidebox">
+        <p>M&S</p>
+    </div>
+</div>
+
+
+
+<div class="box">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, animi eveniet excepturi sunt, deleniti beatae,
+        dolorem quam eaque iure atque eius odio sequi aliquid unde! Eligendi blanditiis quis possimus modi!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla molestiae sint aspernatur laboriosam saepe ipsa
+        doloribus, ex dolorum eaque veniam error delectus iure eveniet iusto veritatis autem sequi nesciunt culpa.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum, natus quod voluptate quam, quasi
+        excepturi ipsam delectus adipisci enim, aspernatur dolor ipsum sit! Iure quisquam sint eveniet soluta
+        distinctio.
+    </p>
+
+
+
 </div>
 
 

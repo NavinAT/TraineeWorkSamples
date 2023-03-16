@@ -4,7 +4,8 @@
     <title>  
     Register for Court
     </title> 
-    <link rel="stylesheet" href="Style sheet for 15-02-2023 Task.css"> 
+    <link rel="stylesheet" href="Style sheet for 15-02-2023 Task.css">
+    <script src="Main page Script.js"></script>
     </head>  
     <body>
    <img id="sportslogo" src="Logo for front page.png" alt="Sports logo">
@@ -16,15 +17,15 @@
     <table>
         <tr>
             <th><label for="fname"> Firstname: </label></th>     
-            <th><input id="fname" type="text" name="firstname" size="15" required></th>
+            <th><input id="fname" type="text" name="firstname" onkeypress="return onlyLetterKey(event)" required></th>
         </tr>  
         <tr>
             <th><label for="mname"> Middlename: </label></th>   
-            <th><input id="mname" type="text" name="middlename" size="15"></th>
+            <th><input id="mname" type="text" name="middlename" onkeypress="return onlyLetterKey(event)"></th>
         </tr>  
         <tr>
             <th><label for="lname"> Lastname: </label> </th>     
-            <th><input id="lname" type="text" name="lastname" size="15" required></th>
+            <th><input id="lname" type="text" name="lastname" onkeypress="return onlyLetterKey(event)" required></th>
         </tr>
       
         <tr>
@@ -58,7 +59,7 @@
         </tr>
         <tr>
             <th><label for="mobile">Phone No:</label></th>
-            <th><input id="mobile" type="number" name="phone" size="10" required></th>
+            <th><input id="mobile" type="text" onkeypress="return onlyNumberKey(event)" maxlength="10" name="phone" required></th>
         </tr> 
         <tr>
             <th><label>Address:</label></th> 
@@ -73,6 +74,5 @@
     <button id="reset" type="button" onclick="resetlocalStorage()">Reset Local Storage</button>
     </form>
    </div>
-    <script src="Main page Script.js"></script>
     </body>  
     </html>  

@@ -4,7 +4,8 @@
     <title>  
     User Edit Page
     </title> 
-    <link rel="stylesheet" href="Style sheet for 15-02-2023 Task.css"> 
+    <link rel="stylesheet" href="Style sheet for 15-02-2023 Task.css">
+    <script src="Edit page Script.js"></script>
     </head>  
     <body>
    <img id="sportslogo" src="Logo for front page.png" alt="Sports logo">
@@ -12,65 +13,64 @@
    <hr>
    <div id="border">
     <form name="form1" method="get">
-    <table>
-        <tr>
-            <th><label for="fname"> Firstname: </label></th>     
-            <th><input id="fname" type="text" name="firstname" size="15" required></th>
-        </tr>  
-        <tr>
-            <th><label for="mname"> Middlename: </label></th>   
-            <th><input id="mname" type="text" name="middlename" size="15"></th>
-        </tr>  
-        <tr>
-            <th><label for="lname"> Lastname: </label> </th>     
-            <th><input id="lname" type="text" name="lastname" size="15" required></th>
-        </tr>
-      
-        <tr>
-            <th><label for="nameofcourt">Select Court:</label></th>
-            <th>
-                <select id="nameofcourt" required>  
-                <option value="" name="Court">Select Court</option>  
-                <option value="Basketball" name="Court">Basketball</option>  
-                <option value="Tennis" name="Court">Tennis</option>  
-                <option value="Vollyball" name="Court">Volleyball</option>  
-                <option value="Cricket" name="Court">Cricket</option>  
-                <option value="Football" name="Court">Football</option></select>
-            </th>
-        </tr>
-        <tr>
-            <th><label for="dateofregistration">Date of Registration for Court:</label></th>
-            <th><input id="dateofregistration" type="date" name="date" required></th>
-        </tr>
-        <tr>
-            <th><label>Gender:</label></th>  
-            <th>
-                <div id="gender">
-                <input id="gendermale" type="radio" name="gender" value="Male" required>
-                <label for="gendermale">Male</label>
-                <input id="genderfemale" type="radio" name="gender" value="Female" required>
-                <label for="genderfemale">Female</label>
-                <input id="genderboth" type="radio" name="gender" value="Other" required>
-                <label for="genderboth">Other</label>
-                </div>
-            </th> 
-        </tr>
-        <tr>
-            <th><label for="mobile">Phone No:</label></th>
-            <th><input id="mobile" type="number" name="phone" size="10" required></th>
-        </tr> 
-        <tr>
-            <th><label>Address:</label></th> 
-            <th><textarea id="address" cols="80" rows="5" value="address" required></textarea></th>
-        </tr> 
-        <tr>
-            <th><label>Email:</label></th>
-            <th><input type="email" id="email" name="email" required></th>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <th><label for="fname"> Firstname: </label></th>     
+                <th><input id="fname" type="text" name="firstname" onkeypress="return onlyLetterKey(event)" required></th>
+            </tr>  
+            <tr>
+                <th><label for="mname"> Middlename: </label></th>   
+                <th><input id="mname" type="text" name="middlename" onkeypress="return onlyLetterKey(event)"></th>
+            </tr>  
+            <tr>
+                <th><label for="lname"> Lastname: </label> </th>     
+                <th><input id="lname" type="text" name="lastname" onkeypress="return onlyLetterKey(event)" required></th>
+            </tr>
+          
+            <tr>
+                <th><label for="nameofcourt">Select Court:</label></th>
+                <th>
+                    <select id="nameofcourt" required>  
+                    <option value="" name="Court">Select the Court</option>  
+                    <option value="Basketball" name="Court">Basketball</option>  
+                    <option value="Tennis" name="Court">Tennis</option>  
+                    <option value="Vollyball" name="Court">Volleyball</option>  
+                    <option value="Cricket" name="Court">Cricket</option>  
+                    <option value="Football" name="Court">Football</option></select>
+                </th>
+            </tr>
+            <tr>
+                <th><label for="dateofregistration">Date of Registration for Court:</label></th>
+                <th><input id="dateofregistration" type="date" name="date" required></th>
+            </tr>
+            <tr>
+                <th><label>Gender:</label></th>  
+                <th>
+                    <div id="gender">
+                    <input id="gendermale" type="radio" name="gender" value="Male" required>
+                    <label for="gendermale">Male</label>
+                    <input id="genderfemale" type="radio" name="gender" value="Female" required>
+                    <label for="genderfemale">Female</label>
+                    <input id="genderboth" type="radio" name="gender" value="Other" required>
+                    <label for="genderboth">Other</label>
+                    </div>
+                </th> 
+            </tr>
+            <tr>
+                <th><label for="mobile">Phone No:</label></th>
+                <th><input id="mobile" type="text" onkeypress="return onlyNumberKey(event)" maxlength="10" name="phone" required></th>
+            </tr> 
+            <tr>
+                <th><label>Address:</label></th> 
+                <th><textarea id="address" cols="80" rows="5" value="address" required></textarea></th>
+            </tr> 
+            <tr>
+                <th><label>Email:</label></th>
+                <th><input type="email" id="email" name="email" required></th>
+            </tr>
+        </table>
     <button id="submit" type="button" onclick="updateDetails()">Save</button>&nbsp;
     <button id="cancel" type="button" onclick="cancelEdit()">Cancel</button>
     </form>
-    <script src="Edit page Script.js"></script>
     </body>
     </html>

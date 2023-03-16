@@ -1,9 +1,9 @@
 let text = localStorage.getItem("testJSON");
 let obj = JSON.parse(text);
-for(let i=0;i<obj.length;i++)
+for(let i=0; i<obj.length; i++)
 {
     var user = obj[i];
-    j=i+1;
+    j = i+1;
     document.write('<tr><td>'+j+'</td><td>'+ user.fname+'</td><td>'+user.mname+'</td><td>'+user.lname+'</td><td>'+user.Court_Name+'</td><td>'+user.Registration_date+'</td><td>'
                     +user.Gender+'</td><td>'+user.Mobile_number+'</td><td>'+user.Address+'</td><td>'+user.Email+'</td></tr>');
 }
@@ -13,7 +13,7 @@ function editUser()
     var arr = JSON.parse(obj);
     if(obj)
     {
-        if(arr[0]==null)
+        if(arr[0] == null)
         {
             alert("Their is no Data for Edit");
         }
@@ -25,7 +25,7 @@ function editUser()
               {
                 var valid = lengthoftable>=numberofuser;
                 Boolean(valid);
-                if(0<numberofuser && valid)
+                if(0 < numberofuser && valid)
                 {
                   var numberofuser = document.getElementById("numberofuser").value;
                   localStorage.setItem("numberEdit",JSON.stringify(numberofuser));
@@ -33,12 +33,12 @@ function editUser()
                 }
                 else
                 {
-                  alert("Enter the Number inside the Table");
+                  alert("Enter valid number");
                 }
               }
               else
               {
-                alert("Enter the Valid Number");
+                alert("Enter valid number");
               }
             }
           }
@@ -57,7 +57,7 @@ function editUser()
           {
             var valid = lengthoftable>=numberofuser;
             Boolean(valid);
-            if(0<numberofuser && valid)
+            if(0 < numberofuser && valid)
             {
               if (confirm("Do you want to Delete?") == true)
               {
@@ -69,11 +69,11 @@ function editUser()
             }
             else
             {
-              alert("Enter the Number inside the Table");
+              alert("Enter valid number");
             }
           }
           else
           {
-            alert("Enter the Valid Number in the box");
+            alert("Enter valid number");
           }
         }

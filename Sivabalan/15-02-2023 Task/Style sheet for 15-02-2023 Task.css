@@ -3,12 +3,14 @@
   font-size: 20px;
   font-family: Calibri;
 }
+
 #sportslogo
 {
   width: 300px;
   margin-top: -65px;
   position:absolute;
 }
+
 h1
 {
   text-align: center;
@@ -17,15 +19,23 @@ h1
   color: rgb(29, 173, 16);
   text-shadow: 3px 4px 4px rgb(130, 27, 161);
 }
+
 form
 {
   font-size: 30px;
   margin-left:5%;
 }
+
 label
 {
   font-size: 20px;
 }
+
+input,select,textarea
+{
+  border-radius: 5px;
+}
+
 textarea
 {
   resize: none;
@@ -35,15 +45,15 @@ body
 {
   background-color: rgb(252, 252, 238);
 }
+
 #detailpage
 {
   position: fixed;
-  width: 200px;  
+  width: 175px;
+  margin-left: 25%;
+  margin-top: 3px;
 }
-#detailpage:hover
-{
-  transform: scale(1.1);
-}
+
 #reset
 {
   background-color: rgb(232, 198, 245);
@@ -54,6 +64,7 @@ body
   border-color:none;
   color: rgb(0, 0, 0);
 }
+
 #submit
 {
   background-color: rgb(232, 198, 245);
@@ -64,6 +75,7 @@ body
   border-color:none;
   color: rgb(0, 0, 0);
 }
+
 #cancel
 {
     background-color:rgb(232, 198, 245);
@@ -74,6 +86,7 @@ body
     border-color:none;
     color: rgb(0, 0, 0);
 }
+
 table,tr,th
 {
   padding: 8px;
@@ -86,24 +99,29 @@ table,tr,th
   padding: 15px;
   background: white;   
 }
+
 #nameofcourt
 {
-  margin-left: -90px;
-  height: 35px;
-  width:160px;
+  width: 250px;
+  height: 38px;
   border: 2px solid black;
-  text-align: left;
+  padding-left: 20%;
 }
+
 #dateofregistration
 {
-  margin-left: -90px;
+  width: 250px;
+  height: 38px;
   border: 2px solid black;
+  padding-left: 25%;
 }
+
 #address
 {
   height: 100px;
   border: 2px solid black;
 }
+
 #border
 {
   width: 450px;
@@ -112,22 +130,12 @@ table,tr,th
   background-color: rgb(243, 242, 235);
   border: 5px solid rgb(243, 242, 235);
 }
-#reset:hover
-{
-  transform: scale(1.2);
-}
-#submit:hover
-{
-  transform: scale(1.2);
-}
-#cancel:hover
-{
-  transform: scale(1.2);
-}
+
 #fname:hover,#mname:hover,#lname:hover,#nameofcourt:hover,#dateofregistration:hover,#mobile:hover,#address:hover,#email:hover
 {
   background-color: rgb(232, 241, 245);
 }
+
 #fname:focus,#mname:focus,#lname:focus,#nameofcourt:focus,#dateofregistration:focus,#mobile:focus,#address:focus,#email:focus
 {
   background-color: rgb(232, 241, 245);

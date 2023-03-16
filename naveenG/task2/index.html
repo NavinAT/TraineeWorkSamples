@@ -6,121 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alumni Form</title>
     <link rel="stylesheet" href="style.css">
-  
+    <script src="index.js"></script>
 </head>
 <body>
-    <h1><img src="clg1.jpg" width="6%" height="100px">NAVEEN COLLEGE OF ENGINEERING AND TECHNOLOGY,THENI-625531<img src="clg1.jpg" width="6%" height="100px"></h1>
+    <h1><img class="img1" src="clg1.jpg"  height="100px">NAVEEN COLLEGE OF ENGINEERING AND TECHNOLOGY,THENI-625531<img src="clg1.jpg" class="img2" height="100px"></h1>
     <div class="color"><p class="color">Welcome to the registration page for alumni,Please take a moment to fill out the form below.</p>
     <p class="color">Please supply all the requested information and click on SUBMIT,below.</p></div>
-     <form action="sample.html" method="get" target="_parent">
-        <div>
-            <label for="mem" >MEMBER OF INSTITUTE <span>*</span> :</label>
-            <input type="text" id="mem">
-
-        </div><br>
-        <div>
-            <label for="name">NAME <span>*</span> :</label>
-            <input type="text" id="name1" name="name1"  maxlength="20" placeholder="Name" >
-        </div><br>
-        <div>
-            <label for="name">FATHER NAME <span>*</span> :</label>
-            <input type="text" id="name2" name="name2" maxlength="20" required >
-        </div><br>
-        <div>
-            <label for="name">MOTHER NAME <span>*</span> :</label>
-            <input type="text" id="name3" name="name3"  maxlength="20">
-        </div><br>
-        <div>
-            <label for="year">YEAR OF LEAVING SCHOOL/COLLEGE <span>*</span> :</label>
-            <input type="text" id="completeyear"name="year"  maxlength="10">
-        </div><br>
-        <div>
-            <label for="add">ADDRESS <span>*</span> :</label>
-            <input type="text" id="adde" name="add"  maxlength="50" placeholder="Type address">
-        </div><br>
-        <div>
-            <label for="mail">EMAIL ID <span>*</span> :</label>
-            <input type="email" id="email" name="mail" maxlength="50" >
-        </div><br>
-        <div>
-            <label for="mobile">MOBILE NUMBER <span>*</span> :</label>
-            <input type="tel" id="mobile1" name="mobileno" maxlength="15" >
-        </div><br>
-        <div>
-            <label for="mobile">MOBILE NUMBER :</label>
-            <input type="tel" id="mobile" name="mobile" maxlength="15"  placeholder="optional">
-        </div><br>
-        <div>
-            <label for="status">PRESENT STATUS  :</label>
-            <input type="text" id="status" name="status" maxlength="50">
-        </div><br>
-        <div>
-            <label for="work">PRESENT WORKING PLACE :</label>
-            <input type="text" id="work" name="work" maxlength="50">
-        </div><br>
-        <div>
-            <label for="card">ID PROOF<span>*</span> :</label>
-            <input type="file" id="card" name="card"  maxlength="50">
-        </div><br>
-        <div>
-              <button type="submit" id="submit" class="button" onclick="addrow()">SUBMIT</button>
-                <button type="reset" class="button">RESET</button>
-          </div><br>
-        </div> 
-</form><hr>
-
-     <script>
-        function addrow()
-        {
-       
-            var member = document.getElementById('mem').value;
-            var candidate = document.getElementById('name1').value;
-            var fathername = document.getElementById('name2').value;
-            var mothername = document.getElementById('name3').value;
-            var year= document.getElementById('completeyear').value;
-            var address = document.getElementById('adde').value;
-            var mail= document.getElementById('email').value;
-            var mobile1 = document.getElementById('mobile1').value;
-            var mobile = document.getElementById('mobile').value;
-            var status = document.getElementById('status').value;
-            var work= document.getElementById('work').value;
-            var card= document.getElementById('card').value;
-    
-
-
-
-        let data = {member:member,candidate:candidate,fathername:fathername,mothername:mothername,year:year,address:address,mail:mail,mobile1:mobile1,mobile:mobile,status:status,work:work,card:card};
-         
-        var varobj = [];
-
-        var obj =  localStorage.getItem("value1");
-       
- 
-         
-        if(obj)
-      
-        {
-             var arr = JSON.parse(obj);     
-             arr.push(data);
-             localStorage.setItem("value1", JSON.stringify(arr));
-        }
-        else
-        {
-
-        varobj.push(data);
-
-        localStorage.setItem("value1", JSON.stringify(varobj));
-
-        }
-}
-
-   
-
-
-      
-     </script>
-     
-
-
+    <form action="sample.html" onsubmit="return validate()" name="myform" method="get" id="form" target="_parent" autocomplete="off">
+    <div>
+        <label for="mem" >MEMBER OF INSTITUTE <span>*</span> :</label>
+        <input type="text" id="mem" name="mem" >
+    </div>
+    <br>
+    <div>
+        <label for="name">NAME <span>*</span> :</label>
+        <input type="text" id="name1" name="name1"  maxlength="20" >
+    </div>
+    <br>
+    <div>
+        <label for="gender">Gender <span>*</span> :</label>
+        <select  id="select" name="gen" >
+            <option value="None">None</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="name">FATHER NAME  :</label>
+        <input type="text" id="name2" name="name2" maxlength="20">
+    </div><br>
+    <div>
+        <label for="name">MOTHER NAME :</label>
+        <input type="text" id="name3" name="name3"  maxlength="20">
+    </div><br>
+    <div>
+        <label for="year">YEAR OF LEAVING SCHOOL/COLLEGE <span>*</span> :</label>
+        <input type="text" id="completeyear"name="year"  maxlength="10"  >
+    </div><br>
+    <div>
+        <label for="add">ADDRESS <span>*</span> :</label>
+        <textarea type="text" id="adde" name="add"  maxlength="50"  ></textarea>
+    </div><br>
+    <div>
+        <label for="mail">EMAIL ID <span>*</span> :</label>
+        <input type="email" id="email" name="mail" maxlength="50">
+    </div><br>
+    <div>
+        <label for="mobile">MOBILE NUMBER 1<span>*</span> :</label>
+        <input type="tel" id="mobile1" name="mobileno" maxlength="15" >
+    </div><br>
+    <div>
+        <label for="mobile">MOBILE NUMBER 2:</label>
+        <input type="tel" id="mobile" name="mobile" maxlength="15">
+    </div><br>
+    <div>
+        <label for="status">PRESENT STATUS  :</label>
+        <input type="text" id="status" name="status" maxlength="50">
+    </div><br>
+    <div>
+        <label for="work">PRESENT WORKING PLACE :</label>
+        <input type="text" id="work" name="work" maxlength="50">
+    </div><br>
+    <div>
+        <label for="card">ID PROOF<span>*</span> :</label>
+        <input type="file" id="card" name="card"  maxlength="50"  >
+    </div><br>
+    <button type="submit" id="submit" class="button" onclick="addrow()">SUBMIT</button>
+</form>
+<div>
+    <button type="submit" id="view" class="button" onclick="viewData()"> View Data</button>
+</div>
+<br>
+<div>
+    <button type="reset" id="reset" class="button">RESET</button>
+</div>
+<hr>
 </body>
 </html>

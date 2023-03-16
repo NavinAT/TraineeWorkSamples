@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h1><img class="img1" src="clg1.jpg"  height="100px">NAVEEN COLLEGE OF ENGINEERING AND TECHNOLOGY,THENI-625531<img src="clg1.jpg" class="img2" height="100px"></h1>
+    <br>
+    <button id="but" onclick="back()">Back</button>
+    <form action="login.html" method="post" autocomplete="off">
+        <div class="log" >
+            <div>
+                <label for="firstname" class="firstname">Firstname</label>
+                <br>
+                <input id="firstname" type="text" >
+            </div>
+            <br>
+            <div>
+                <label for="lastname" class="lastname">Lastname</label>
+                <br>
+                <input id="lastname" type="text" >
+            </div>
+            <br>
+            <div>
+                <label for="email" class="email">Emal Id</label>
+                <br>
+                <input id="email" type="email" >
+            </div>
+            <br>
+            <div>
+                <label for="pass" class="password">Password</label>
+                <br>
+                <input id="pass" type="password" required maxlength="8" >
+            </div><br>
+            <button id="submit" onclick="signupsave()">Submit</button>
+        </div>
+    </form>
+    <script src="signup.js"></script>
+</body>
+</html>

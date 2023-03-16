@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editing page for contact form</title>
+    <link rel="stylesheet" type="text/css" href="styleindex2.css">
+</head>
+<body>
+    <div class="menus">
+        <ul id="list">
+            <li><a href="slideupintro.html">Intro</a></li>
+            <li><a href="contactform.html">Home</a></li>
+            <li><a href="index.html">Table</a></li>
+            <li><a href="index2.html">Edit Page</a></li>
+        </ul>
+    </div>
+    <div class="heading">
+        <h1>Contact Form (Editing Page)</h1>
+    </div><br>
+    <center>
+        <form action="index.html" method="get" target="_blank">
+    <div class="form1">
+        <label class="query">First Name :<span>*</span></label><input type="text" class="value" id="fname" placeholder="Enter your First Name"required><br><br>
+        <label class="query">Last Name :<span>*</span></label><input type="text" class="value" id="lname" placeholder="Enter your Last Name"required><br><br>
+        <div><label class="query">Mobile Number :<span>*</span></label><input type="text" class="value" id="mobilenumber" placeholder="Enter your Mobile Number"required><br><br></div>
+        <label class="query">Date of Birth :</label><input type="date" class="value" id="dob" placeholder="Enter your date of birth"required><br><br>
+        <label class="query">Gender :</label><select id="Gender" class="value">
+            <option value="male">male</option>
+            <option value="female">female </option></select><br><br>
+        <label class="query">Email :<span>*</span></label><input type="email" class="value" id="email" placeholder="Enter Your Email Id" required><br><br> 
+        <label class="query">Website :</label><input type="url" class="value" id="website" placeholder="Enter Your Website Name"><br><br>
+        <label class="query">Groups :</label><select id="Groups" class="value">
+            <option value="Important">Important</option>
+            <option value="Emergency">Emergency </option>
+            <option value="Not Assigned">Not Assigned </option></select><br><br>
+            <label class="query">Messager Accounts :</label>
+            <select id="messager" class="value">
+                <option value="Hangouts">Hangouts</option>
+                <option value="Skype">Skype </option>
+                <option value="Windows Live">Windows Live </option>
+                <option value="Yahoo">Yahoo </option>
+                <option value="QQ">QQ </option>
+            </select><br><br>
+        <label class="query">State :</label><select id="state" class="value">
+        <option value="TamilNadu">TamilNadu </option>
+        <option value="AndhraPradesh">AndhraPradesh </option>
+        <option value="Kerala">Kerala </option>
+        <option value="Karnataka">Karnataka </option>
+        </select><br></br>
+        <label class="query">Address :<span>*</span></label>
+        <textarea type="text" id="address" class="value" placeholder="Enter your Address"required></textarea><br><br>
+        <label class="query">Work Info :<span>*</span></label>
+        <input type="text" class="value" id="work"placeholder="Enter your Job Title" required><br><br>
+        <button type="submit" id="save1" onclick="savebutton()" class ="accept">Save</button>
+        <button type="reset" id="cancel1" onclick="cancelbutton()" class ="decline">Cancel</button>
+        <br><br><br>
+    </div></center></form>
+    <script type="text/javascript" src="scriptindex2.js">
+    </script>
+</html>

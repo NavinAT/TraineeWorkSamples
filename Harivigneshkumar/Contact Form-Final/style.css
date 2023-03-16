@@ -8,7 +8,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("background.jpg");
+  background-image: url("background1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -23,9 +23,10 @@ body {
 
 }
 .form1 {
-    height: 650px;
+    height: 670px;
     width: 350px;
-    background-image: url(back.jpg);
+    background-image: url(back1.jpg);
+    background-size: cover;
     margin: 100px ;
     border-radius: 30px;
     color: #666;
@@ -40,11 +41,13 @@ body {
     font-size: 17px;
 }
 .heading{
-    color: plum;
+    color: lightgrey;
     font-family: cursive;
     font-weight: 600px;
     font-size: xx-large;
     text-shadow: 2px 2px 3px rgb(152, 36, 206);
+
+
 }
 .accept{
     color: #666;
@@ -79,14 +82,14 @@ button:hover {
     transition: .5s;
 }
 #fname{
-    margin-left: 78px;
+    margin-left: 65px;
 }
 #lname{
-    margin-left: 78px;
+    margin-left: 65px;
 
 }
 #mobilenumber{
-    margin-left: 35px;
+    margin-left: 27px;
 
 }
 #dob{
@@ -111,10 +114,10 @@ button:hover {
     margin-left: 180px;
 }
 #address{
-    margin-left: 94px;
+    margin-left: 84px;
 }
 #work{
-    margin-left: 85px;
+    margin-left: 72px;
 }
 .value:hover{
     scale:131%;
@@ -123,4 +126,44 @@ button:hover {
 .value{
     border-radius: 12px;
     border-color: aliceblue;
+}
+.menus{
+    padding-bottom:800px;
+
+   
+}
+li{
+    border: #ffbdc7 3px solid;
+    background-color: lightgray;
+}
+ul li{
+    display: inline;
+    font-size: x-large;
+    
+ 
+}
+a:hover{
+    background-color: whitesmoke;
+}
+ul li a {
+   text-decoration: none;
+   color:grey;
+   padding: 20px;
+}
+@keyframes Slide_Up{
+    0%{
+        transform:translateY(250px);
+    }
+    100%{
+        transform:translateY(0)
+    }
+}
+span{
+    color: red;
+}
+img{
+
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }

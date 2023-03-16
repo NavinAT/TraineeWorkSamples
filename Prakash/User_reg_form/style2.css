@@ -5,6 +5,11 @@
     font-size: 18px;
     line-height: 1.75;
 }
+
+span{
+    color:red;
+}
+
 .header
 {
     background-image: url(img/g3.jpg);
@@ -22,6 +27,7 @@
     text-underline-offset: 8px;
     text-decoration-color:  rgb(90, 255, 98);
 }
+
 .logobanner
 {
     margin-left: 2%;
@@ -29,15 +35,18 @@
     border-radius: 30%;
     opacity: 50%;   
 }
+
 img
 {
     object-fit: cover;  
 }
+
 h1
 {
     font-size: 28px;
     padding-left: 40%;
 }
+
 .navbar
 {
     background-color: rgb(195, 195, 195);
@@ -46,12 +55,14 @@ h1
     justify-content: end;
     align-items: center;
 }
+
 li
 {
     display: inline;
     padding:5px;
     height: auto;
 }
+
 .nav_btn
 {
     padding:10px;
@@ -61,13 +72,8 @@ li
     border: unset;
     cursor: pointer;
 }
-.nav_btn:hover
-{
-    scale: 105%;
-    border-radius: 20%;
-    border: 1px solid rgba(139, 133, 133, 0.596);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+
+
 .main
 {
     width: vw;
@@ -76,6 +82,7 @@ li
     justify-content: center;
     align-items: center;
 }
+
 .content
 {
     font-family: sans-serif;
@@ -89,17 +96,20 @@ li
     display: flex;
     height: 100%;
 }
+
 .Quary
 {
     display: flex;
     border: 2px;
     border-color: black;
 }
+
 .Quary1
 {
     width: 105%;
     border: 2px solid black;
 }
+
 .value
 {
     background-color: rgb(255, 255, 255);
@@ -109,12 +119,8 @@ li
     padding-left: 15px;
     cursor: pointer;
 }
-.value:hover
-{
-    scale:105%;
-    border-color:rgb(98, 98, 98);
-    border-radius: 7%;
-}
+
+
 .button
 {
     padding: 15px 32px;
@@ -123,23 +129,27 @@ li
     margin: 5px 5px;
     margin-bottom:0%;
 }
+
 .submit
 {
     cursor: pointer; 
     opacity: 80%;      
 }
+
 .submit:hover
 {
     scale: 110%;
     opacity: 150%;
     border-radius: 20%;
 }
+
 .reset
 {
     margin-left: 25px;
     cursor: pointer;
     opacity: 80%; 
 }
+
 .reset:hover
 {
     scale: 110%;

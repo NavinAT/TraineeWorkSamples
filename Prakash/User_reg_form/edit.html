@@ -41,20 +41,20 @@
         <div class="content">               
             <form id = "myform" method="get">              
                 <div class="ifname">
-                    <label class="Quary" for="fname" >Name: </label>
+                    <label class="Quary" for="fname" >Name:<span>*</span></label>
                     <input class="value" type="text" id="fname" name="fname" placeholder="Enter Your name" Required>                  
                 </div>              
                 <div class="iemail">
-                    <label class="Quary" for="email">Email: </label>
+                    <label class="Quary" for="email">Email:<span>*</span> </label>
                     <input class="value" type="email" id="email" name="email" placeholder="Enter Your Email" Required>                  
                 </div>
                 <div class="icno">
-                    <label class="Quary" for="cno">Contact No: </label>
+                    <label class="Quary" for="cno">Contact No:<span>*</span> </label>
                     <input class="value" type="text" id="cno" name="cno" placeholder="Enter Contact No" Required>                  
                 </div>
                 <div class="iage">
-                    <label class="Quary" for="age">Age: </label>
-                    <input class="value" type="text" id="age" name="age" placeholder="Enter Your Age">                  
+                    <label class="Quary" for="age">Age:<span>*</span> </label>
+                    <input class="value" type="number" id="age" name="age" placeholder="Enter Your Age">                  
                 </div>   
                 <div class="igender">
                     <label class="Quary" for="gender" Required>
@@ -76,12 +76,12 @@
                 </div>         
                 <div class="button">
                     <div class="submit">
-                        <button class="button1" type="submit" id="submit" onclick="validateForm()">
+                        <button class="button1" type="button" id="submit" onclick="validateForm()">
                             <img src="img/Social_SVG/Save.svg" height="40px" width="40px">
                         </button>
                     </div>
                     <div class="reset">
-                        <button class="button2" type="reset" id="clear" 
+                        <button class="button2" type="button" id="clear"  onclick="details_table()"
                             value="Reset form"><img src="img/Social_SVG/cancel.svg"  height="40px" width="40px">
                         </button>
                     </div>

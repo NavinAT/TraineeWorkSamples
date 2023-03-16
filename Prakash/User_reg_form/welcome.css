@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 .header
 {
     background-image: url(img/g3.jpg);
@@ -17,6 +18,7 @@
     text-align: center;
     padding-top: 15px;
 }
+
 .logobanner
 {
     margin-left: 2%;
@@ -24,18 +26,21 @@
     background-color: beige;
     border-radius: 30%;
 }
+
 h1
 {
     font-size: 28px;
     padding-top: 2%;
     padding-left: 35%;
 }
+
 .main
 {
     background-image: Url(g3.jpg);
     justify-content: center;
     align-items: center;
 }
+
 .content
 {
     font-family: sans-serif;
@@ -49,34 +54,40 @@ h1
     height: (calc(100%-60%));
 
 }
+
 p
 {
     padding-top: 10px;
     text-indent: 50px;
     align-items: end;
 }
+
 .tittle
 {
     padding: 15px;
 }
+
 .about
 {
     font-family:Georgia, 'Times New Roman', Times, serif ;
     font-size: 20px;
     object-fit: cover;
 }
+
 .button
 {
     padding: 30px 0px;
     letter-spacing: 2px;
     word-spacing: 5px;
 }
+
 a 
 {
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
 }
+
 .a_button 
 {
     text-decoration: none;
@@ -85,6 +96,7 @@ a
     background-color: black;
     color: white;
 }
+
 .a_button:hover
 {
     background-color: hsla(158, 98%, 74%, 0.728); 
@@ -92,6 +104,7 @@ a
     background-color: 50%;
     border-radius: 10%;
 } 
+
 a:hover 
 {
     background-color: hsla(158, 98%, 74%, 0.728); 
@@ -99,37 +112,44 @@ a:hover
     border-radius: 45%;
     background-color: 50%;
 }
+
 .next
 {
     background-color: hsl(0, 0%, 1%);
     color: white;
 }
+
 .c_span
 {
     color: blue;
 }
+
 .foot
 {
     display: flex;
     min-height: 30%;
     max-height: 100%;
 }
+
 .f_area
 {
     display: flex;
     background-image: Url(img/g4.jpg);
 }
+
 .f_address
 {
     margin-top: 50px;
     margin-left: 10%;
     align-self: start;
 }
+
 li
 {
     display: inline;
     padding:15px;
 }
+
 .f_content
 {
     padding-top: 150px;
@@ -139,10 +159,12 @@ li
     text-decoration: underline;
     text-underline-offset: 8px;   
 }
+
 .Sm_btn
 {
     margin-top: 10px;
 }
+
 .f_span
 {
     color: rgb(255, 145, 0);

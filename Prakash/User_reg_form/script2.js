@@ -43,13 +43,22 @@ function validateForm()
     let x = document.forms["myform"]["fname"].value;
     let y = document.forms["myform"]["email"].value;
     let z = document.forms["myform"]["cno"].value;
+    let w = document.forms["myform"]["age"].value;
     if (x != "")
     {
         if (y != "")
         {
             if (z != "")
             {
-                fsave();
+                if (w != "")
+                {
+                    fsave();
+                }
+                else
+                {
+                    alert("Age must be filled out");
+                    return false;
+                }
             }
             else
             {

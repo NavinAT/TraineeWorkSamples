@@ -3,30 +3,39 @@ function validateForm()
     let x = document.forms["myform"]["fname"].value;
     let y = document.forms["myform"]["email"].value;
     let z = document.forms["myform"]["cno"].value;
+    let w = document.forms["myform"]["age"].value;
     if (x != "")
     {
         if (y != "")
         {
             if (z != "")
             {
-                myfun();
+                if (w != "")
+                {
+                    myfun();
+                }
+                else{
+                    alert("Age must be filled out");
+                    return true;
+                    
+                }
             }
             else
             {
                 alert("Contact No must be filled out");
-                return false;
+                return true;
             }
         }
         else
         {
             alert("Email must be filled out");
-            return false; 
+            return true; 
         }   
     }
     else
     {
         alert("Name must be filled out");
-        return false;
+        return true;
     }    
 }
 function myfun()
@@ -39,23 +48,23 @@ function myfun()
     var dob = document.getElementById("dob").value;
     var address = document.getElementById("address").value;
     var object1=
-            {   
-                fname:fname,email:email,cno:cno,age:age,
-                gender:gender,dob:dob,address:address
-            };
+        {   
+            fname:fname,email:email,cno:cno,age:age,
+            gender:gender,dob:dob,address:address
+        };
     var arrobj=[];
     var obj=localStorage.getItem("prakshJSON");
     if(obj)
-        {
-            var arr=JSON.parse(obj);
-            arr.push(object1)
-            localStorage.setItem("prakshJSON",JSON.stringify(arr));
-        }
-        else
-        {
-            arrobj.push(object1);
-            localStorage.setItem("prakshJSON",JSON.stringify(arrobj));
-        }
+    {
+        var arr=JSON.parse(obj);
+        arr.push(object1)
+        localStorage.setItem("prakshJSON",JSON.stringify(arr));
+    }
+    else
+    {
+        arrobj.push(object1);
+        localStorage.setItem("prakshJSON",JSON.stringify(arrobj));
+    }
     alert("Form Submitted");
     details_table1();
 }

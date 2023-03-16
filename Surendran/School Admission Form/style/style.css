@@ -11,7 +11,7 @@
 	background-image: linear-gradient(#033747,#012744);
 	width: 100%;
 	position: fixed;
-
+	z-index: 100;
 }.menu ul{
     padding: 0;
     margin: 0;
@@ -37,7 +37,7 @@
 	margin-top: 100px;
 	width: 20%;
 }.sn h2{
-    margin: 100px;
+	margin: 100px;
 	width: 100%;
     font-size: 80px;
     background: radial-gradient( #dba514, #eeb609, #b78628,#c69320);
@@ -71,7 +71,6 @@
 }
 
 /*intex page*/
-
 .form{
 	border: 2px solid #233;
 	width: 120vh;
@@ -81,6 +80,10 @@
     background-color: lightblue;
     border-radius: 30px;
     color: darkblue;
+	box-shadow: 10px 25px 40px 0px rgba(0,0,0,1);
+}form:hover{
+	transition: 0.3s; 
+	transform: scale(1.001);
 }.std label{
 	font-size: 25px;
 	text-align: left;
@@ -179,6 +182,10 @@
     font-size: 13px;
     display: inline-block;
     cursor: pointer;
+}.h{
+	width: 85px;
+	transform:translateX(-150px);
+	
 }.address div input::placeholder{
     font-size: 15px;
 	text-align: center;
@@ -219,6 +226,14 @@
 }.btn2 :hover{
 	transform: translate3d(0px, 2px, 2px);
 	box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24);
+}.thankbody{
+	
+	background-color: white;
+	height: 70vh;
+}.thank
+{
+	margin-left: 70vh;
+	margin-top: 230px;
 }
 /* output page*/
 .oppage{
@@ -290,8 +305,8 @@
     text-align: center;
     font-family: 'Dancing Script', cursive;
     background: radial-gradient(  #fcc201,#EEB609, #DBA514, #C69320,#B78628);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }.sn1 span{
 	text-align: center;
 	font-size: 32PX;
@@ -301,7 +316,7 @@
 	width: 40%;
 }.homebtn {
 	border: none;
-    margin-left: 82vh;
+    margin-left: 80vh;
 	border-radius: 20px;
 	margin-bottom: 180px;
 }.homebtn1{
@@ -324,6 +339,84 @@
 	text-align: center;
 	text-transform: uppercase;
 }
+
+
+/*login page*/
+
+.form1{
+	margin-left: 75vh;
+}.form-container{
+	width: 40vh;
+	height: 60vh;
+	background-color: rgb(240, 224, 224);
+	border-radius: 30px;
+}.form-container:hover{
+	color: #04619F;
+	box-shadow: 20px 15px 30px 0px rgba(0,0,0,5);
+	transition: 0.3s; 
+	transform: scale(1.01);
+}.icon{
+	font-size: 108px;
+	margin: 20vh 15vh;
+}.newuser{
+	margin-left: 21vh;
+	font-size: 25px;
+}.newuser a i:hover{
+	transform: scale(1.1);
+}.input-box{
+	font-size:25px;
+	margin-top: -190px;
+	margin-left: 40px;
+}.input-box label{
+	color: green;
+	font-size: 20px;
+}.input-box input{
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border-bottom: 1px solid black;
+	margin-left: 20px;
+	margin-top: -25px;
+	font-size: 22px;
+	text-align: center;
+}.input-box input::placeholder{
+	font-size: 13px;
+	text-align: center;
+}.input-box h4{
+	font-size: 13px;
+	margin-left: 45px;
+	margin-top: -19px;
+}.input-box h3{
+	font-size: 13px;
+	margin-left: 240px;
+	margin-top: -20px;
+	cursor: pointer;
+}.btnlogin{
+	font-size: 15px;
+	height: 30px;
+	width: 100px;
+	margin-left: 40%;
+	margin-top: 10%;
+	background-color:#04619F;
+	border-radius: 20px;
+}.btnlogin:hover{
+	background-color:  #000000;
+}.btnlogin span{
+	color: white;
+}.checkbox{
+	margin-top: 10%;
+	margin-left: -15px;
+}.thank{
+	margin-top: 100px;
+}.thank h2{
+	font-size: 100px;
+	background: radial-gradient( #dba514, #eeb609, #b78628,#c69320);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	font-family: 'Dancing Script', cursive;
+	margin-left: -370px;
+}
+	
 
 
 

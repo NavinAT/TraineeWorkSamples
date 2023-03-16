@@ -1,0 +1,123 @@
+@media only screen and (max-width: 1546px)
+ {
+    .homelogoimg{
+        width: 50%;
+        margin-left: 60vh;
+        margin-bottom: -50px;
+    }
+    .sn1 h2{
+       font-size: 70px;
+    }.homebtn{
+        margin-left: 490px ;
+    }
+    .logoimg{
+        width: 25%;
+    }.sn h2{
+        font-size: 50px;
+        margin-left: 25px;
+       
+    }.form h1{
+        font-size: 25px;
+
+    }.form label{
+        font-size: 20px;
+        margin-left: 20px;
+    }.pi label{
+        font-size: 20px;
+        margin-left: 150px;
+
+    }.address label{
+        font-size: 20px;
+        margin-left: 150px;
+
+    }.std1{
+        margin-left: 200px;
+    }.sec{
+        margin-left: 165px;
+
+    }.medium{
+        margin-left: 238px;
+
+    }.fn1 input{
+        margin-left: 170px ;
+    }.mn input{
+        margin-left: 160px ;
+    }.ln input{
+        margin-left: 173px;
+    }.dob input{
+        width: 38vh;
+        margin-left: 154px;
+    }.age input{
+        margin-left: 223px ;
+    }.fan input{
+        margin-left: 145px ;
+    }.man input{
+        margin-left: 137px ;
+    }.bg input{
+        margin-left: 165px ;
+    }.bldgb{
+        margin-left: 200px ;
+    }.mrf{
+        margin-left: 245px ;}
+    .a input{
+        margin-left: 155px ;
+     }.b input{
+        margin-left: 155px ;
+     }.c input{
+        margin-left: 235px ;
+     }.d input{
+        margin-left: 210px ;
+     }.e input{
+        margin-left: 230px ;
+     }.f input{
+        margin-left: 200px ;
+     }.g input{ 
+        margin-left: 145px ;
+        font-size: 13px;
+        display: inline-block;
+        cursor: pointer;
+     }.h{
+        width: 85px;
+        transform:translateX(450px);
+    }.oplogoimg{
+        width: 20%;
+    }.opsn h2{
+        font-size: 35px;
+        margin-left: 115px;
+    }.table{
+        font-size: 15px;
+    }.oppage_text{
+        font-size: 20px;
+        margin-left: 10px;
+    }.form-container{
+        width: 50vh;
+        height: 70vh;
+    }.icon{
+        margin: 15vh 19vh;
+        font-size: 80px;
+    }.newuser {
+        margin-left: 26vh;
+        font-size: 20px;
+    }.input-box{
+        margin-top: -15vh;
+        margin-left: 33px;
+        font-size: 20px;
+    }.input-box input{
+        font-size: 18px;
+    }.input-box h4{
+        font-size: 11px;
+    }.input-box h3{
+        font-size: 11px;
+        margin-left: 200px;
+        margin-top: -20px;
+        cursor: pointer;
+    }.btnlogin{
+        margin-top: 20px;
+        margin-left: 120px;
+    }.thank{
+	    margin-top: -10px;
+    }.thank h2{
+	    font-size: 50px;
+        margin-left: -240px;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Finger+Paint&family=Rampart+One&family=Sassy+Frass&display=swap" rel="stylesheet">  
+     <link rel="stylesheet" href="style/style.css">
+     <link rel="stylesheet" href="style/media.css">
+     <script type="text/javascript" src="js/intex.js"></script>
+     <title>forget password</title>
+</head>
+<body>
+     <header class="header">
+          <div class="container">
+               <nav class="menu">
+                    <ul>
+                         <li><a href="login.html">back</a></li>
+                    </ul>
+               </nav>
+          </div>
+     </header><br>
+<form class="form1">
+     <div class="form-container">
+          <div class="icon">
+               <i class="fa fa-user-circle" ></i>
+          </div>
+          <div class="user-login">
+               <div class="input-box"><br><br>
+                     <div>
+                          <i class="fa fa-address-book"></i> <input type="text" id="login_user"  placeholder="enter the username"> <br> <br>
+                    </div> 
+                    <i class="fa fa-fax" ></i><input type="number" id="phone" minlength="10" maxlength="10" placeholder="enter the phone number" required> <br><br>
+               </div> 
+               <button type="button" class="btnlogin" onclick="forget_btn()"><span>reset</span></button>
+          </div><br>
+     </div>
+</form>
+</body>
+</html>

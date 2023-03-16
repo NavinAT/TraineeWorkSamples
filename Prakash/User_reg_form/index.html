@@ -5,64 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reg_Form</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <div class="container">
-        <div class="header">
-            <h1>
-                Fill The Form
-            </h1>
+    <link rel="icon" href="img/favicon1.png">
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body >
+    <div class="head">
+        <div class="container">
+            <div class="header">
+                <div class="logobanner">
+                    <div class="logo">
+                        <img src="img/logo1_100px.png" height="100px" width="100px">
+                    </div>
+                </div>
+                <h1>
+                    Book Your Special Day
+                </h1>
+            </div>
+        </div> 
+        <div class="navbar">
+            <div class="elements">
+                <ul>
+                    <li>
+                        <button class="nav_btn"  onclick="main_form()">
+                            <img src="img/Social_SVG/home_app.svg">
+                        </button>    
+                    </li>
+                    <li>
+                        <button class="nav_btn"  onclick="details_table()">
+                            <img src="img/Social_SVG/table.svg">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav_btn"  onclick="about_form()">
+                            <img src="img/Social_SVG/info.svg">
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</head>
-<body>  
     <div class="main">      
         <div class="content">  
-            <form id = "myform" action="index.html" method="get">              
+            <form id = "myform" method="get">              
                 <div class="ifname">
-                    <label class="Quary" for="fname">Name: </label>
-                    <input class="value" type="text" id="fname" name="fname">                  
-                </div>
-                <div class="iage">
-                    <label class="Quary" for="age">Age: </label>
-                    <input class="value" type="text" id="age" name="age">                  
+                    <label class="Quary" for="fname" >Name:<span>*</span> </label>
+                    <input class="value" type="text" id="fname" name="fname" placeholder="Enter Your name">                  
                 </div>              
                 <div class="iemail">
-                    <label class="Quary" for="email">Email: </label>
-                    <input class="value" type="email" id="email" name="email">                  
+                    <label class="Quary" for="email">Email:<span>*</span> </label>
+                    <input class="value" type="email" id="email" name="email" placeholder="Enter Your Email" >                  
                 </div>
                 <div class="icno">
-                    <label class="Quary" for="cno">Contact No: </label>
-                    <input class="value" type="text" id="cno" name="cno">                  
+                    <label class="Quary" for="cno">Contact No:<span>*</span> </label>
+                    <input class="value" type="text" id="cno" name="cno" placeholder="Enter Contact No">                  
                 </div>
-                <div class="icity">
-                    <label class="Quary" for="city">City: </label>
-                    <input class="value" type="text" id="city" name="city">                  
+                <div class="iage">
+                    <label class="Quary" for="age">Age:<span>*</span> </label>
+                    <input class="value" type="number" id="age" name="age" placeholder="Enter Your Age">                  
+                </div> 
+                <div class="igender">
+                    <label class="Quary" for="gender" Required>Gender:</label>
+                    <select class="Quary1" id="gender" name="gender">
+                        <option class="value1" value="Not_Mentioned">Please select one…</option>
+                        <option class="value1" value="female">Female</option>
+                        <option class="value1" value="male">Male</option>
+                    </select>
                 </div>
-                <div class="iState">
-                    <label class="Quary" for="State">State: </label>
-                    <input class="value" type="text" id="State" name="State">                  
-                </div>          
+                <div class="idob">
+                    <label class="Quary" for="dob">Event Date: </label>
+                    <input class="value1" type="date" id="dob" name="dob">                  
+                </div>
+                <div class="iaddress">
+                    <label class="Quary" for="address">Address </label>
+                    <textarea class="value1" id="address" name="address" rows="3" cols="22" placeholder="Enter Full Address"></textarea>                
+                </div>     
                 <div class="button">
                     <div class="submit">
-                        <button class="button1" type="submit" id="submit" onclick="myfun()">
-                                submit</button>
+                        <button class="button1" type="button" id="submit" onclick="validateForm()">
+                            <img src="img/Social_SVG/Save.svg">
+                        </button>
                     </div>
                     <div class="reset">
-                            <button class="button2" type="reset" id="clear" 
-                                value="Reset form">Clear</button>
+                        <button class="button2" type="reset" id="clear" 
+                                value="Reset form"><img src="img/Social_SVG/cancel.svg">
+                        </button>
                     </div>
                 </div>
             </form>              
         </div>
-        <div class="viewform">
-            <p>To view details Click here</p>
-            <form id = "iviewform" action="output.html" method="get"> 
-                <button class="viewform1" type="submit" id="viewform" onclick="viewform()">
-                    view form</button>
-            </form>
-        </div>
-    </div>
-    <script src="script.js"></script>        
+    </div> 
+    <script src="script.js"></script>
 </body>
 </html>

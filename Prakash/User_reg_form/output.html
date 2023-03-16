@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Details</title>
     <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="img/favicon1.png">
+<head>
+    <title>
+        Details
+    </title>
 </head>
-<body>
-    <div class="content">
-        <div class="head1">
-            <h1>
-                Details:
-            </h1>
+<body> 
+    <div class="head">
+        <div class="container">
+            <div class="header">
+                <div class="logobanner">
+                    <div class="logo">
+                        <img src="img/logo1_100px.png" height="100px" width="100px">
+                    </div>
+                </div>
+                <h1>
+                    Details
+                </h1>
+            </div>
+        </div> 
+        <div class="navbar">
+            <div class="home_btn">
+                <button class="nav_btn"  onclick="main_form()">
+                    <img src="img/Social_SVG/home_app.svg">
+                </button> 
+            </div>
+            <div class="btn">
+                <ul>
+                    <li>
+                        <div class="iedit_row"> 
+                            <input class="value" type="number" id="editrow" name="edit_row" 
+                            placeholder="Enter S_No to Edit" >
+                        </div>
+                        <button class="nav_btn"  onclick="myedit()">
+                            <img src="img/Social_SVG/edit.svg" height="30px">
+                        </button>    
+                    </li>
+                    <li>
+                        <div class="idelete_row"> 
+                            <input class="value" type="number" id="delete_row" name="delete_row" 
+                            placeholder="Enter S_No to Delete">
+                        </div>
+                        <button class="nav_btn"  onclick="mydel()">
+                            <img src="img/Social_SVG/delete.svg" height="30px">
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
+    <div class="content">
         <div class="output">
             <center>
-                <table border="1px">
+                <table border="1px" id="myTable">
                 <tr>
+                    <th>S No</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Contact Number</th>
-                    <th>City</th>
-                    <th>State</th>
                     <th>Age</th>
+                    <th>Gender</th>
+                    <th>Event Date:</th>
+                    <th>Address</th>              
                 </tr>                                    
             </center>
-        </div>                  
-        <div class="options">
-            <div class="opt_main">
-                <div class="note">
-                    <p style="color:red;"> <i>*Note:Use Mail ID</i></p>
-                </div>
-                <div class="bar">
-                    <div class="check">
-                        <label for="verify">
-                            <div class="iedit_row"> 
-                                <input class="value" type="number" id="editrow" name="edit_row">
-                            </div>
-                            <button class="button2" type="submit" id="editrow"
-                                onclick="myedit()">Edit
-                            </button>       
-                        </label>               
-                    </div>
-                    <div class="delete">
-                        <label for="delete">
-                            <div class="idelete_row"> 
-                                <input class="value" type="number" id="delete_row" name="delete_row">
-                            </div>                                    
-                             <button class="button3" type="submit" id="delete" onclick="mydel()" >Delete</button>    
-                        </label>   
-                    </div>
-                </div>
-            </div>   
-        </div>    
-        <div class="mainform">
-            <form id = "iback" action="index.html" method="get"> 
-                <button class="back" type="submit" id="back" >
-                    main form </button>
-            </form>
-        </div>
+        </div> 
         <hr class="line">
     </div>
     <script src="script1.js"></script>              

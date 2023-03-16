@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="pagestyles.css">
+	</head>
+	<body>
+		<nav>
+      <img src="pagelogo.png" class="logo1">
+			<ul>
+				<li class="logo">Person Details Edit Page</li>
+			</ul>
+		</nav>
+	
+			<form action="tablestoredpage.html"  onsubmit="myFunction()">
+				<div class="row">
+					<div class="label-field ">
+						<label for="firstname">First Name:</label>
+					</div>
+					<div class="input-field">
+						<input type="text" id="firstname" name="firstname" >
+					</div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="lastname">Last Name:</label>
+					</div>
+					<div class="input-field"><input type="text" id="lastname" name="lastname" ></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="email">Email:</label>
+					</div>
+					<div class="input-field"><input type="email" id="email" name="email" ></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="phone">Phone:</label>
+					</div>
+					<div class="input-field"> <input type="number" id="phone" name="phone" ></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="dob">Date of Birth:</label>
+					</div>
+					<div class="input-field"><input type="date" id="dob" name="dob" ></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="address-line1">Door No:</label>
+					</div>
+					<div class="input-field"> <input type="text" id="addressline1" name="address-line1" ></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">  <label for="address-line2">Street Name:</label></div>
+					<div class="input-field" ><input type="text" id="addressline2" name="address-line2" ></div>
+				</div>
+				<div class="row">
+					<div class="label-field"> <label for="city">City:</label></div>
+					<div class="input-field"> <input type="text" id="city" name="city" ></div>
+				</div>
+				<div class="row">
+					<div class="label-field "><label for="state">State:</label></div>
+					<div class="input-field"> <input type="text" id="state" name="state"></div>
+				</div>
+				<div class="row">
+					<div class="label-field "><label for="zip">Zip Code:</label></div>
+					<div class="input-field"><input type="number" id="zip" name="zip"></div>
+				</div>
+				<div class="row">
+					<div class="label-field "><label for="country">Country:</label></div>
+					<div class="input-field"><input type="text" id="country" name="country" ></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="gender">Gender:</label>
+					</div>
+					<div class="input-field">
+						<select id="gender" name="gender" >
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="label-field "> <label for="occupation">Occupation:</label></div>
+					<div class="input-field"> <input type="text" id="occupation" name="occupation" ></div>
+				</div>
+				<div class="row">
+					<div class="label-field "> <label for="company">Company:</label></div>
+					<div class="input-field"> <input type="text" id="company" name="company"></div>
+				</div>
+				<button  onclick="update()">SUBMIT</button>
+				
+			</form>
+			<button id="cancel"  onclick="cancel()">Cancel</button>
+		<script src="thirdpage.js"></script>
+	</body>
+</html>

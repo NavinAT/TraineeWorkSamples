@@ -1,0 +1,93 @@
+body
+{
+  background-color: #f7f9f9;
+}
+.flex-div
+{
+  display: flex;
+  align-items: center;
+}
+nav
+{
+  padding: 1px 2%;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  display: flex;
+  position: sticky;
+  color: rgb(89, 202, 236);
+  cursor: default;
+  user-select: none;
+  min-width: 100%;
+  height: 160px;
+  position: fixed;
+  border: 2px solid black;
+  font-size: 70px;
+  background-color: #96c9c9;
+  text-shadow: 2px 2px 5px red,0 0 5px #0000FF,0 0 5px black;
+  font-family: 'Brush Script MT', cursive;
+}
+
+nav img
+{
+  position: absolute;
+  margin: -10px;
+  left:105px;
+  width: 106px;
+  cursor: default;
+  border-radius: 100px;
+  user-select: none;
+  box-shadow:1px 2px rgb(255, 255, 255);
+}
+
+table
+{
+  border: 2px solid black;
+  border-collapse: collapse ;
+  margin-top: -48px;
+}
+
+tr,th
+{
+  text-align: center;
+  background-color: rgb(246, 247, 248);
+  padding: 10px;
+  border:1px solid rgb(252, 244, 244);
+  color: white;
+}
+
+tr,th
+{
+  background-color: rgb(10, 12, 12);
+}
+
+td
+{
+  color: rgb(23, 22, 22);
+  background-color: rgb(226, 229, 232);
+  border: 1px solid rgb(15, 3, 27);
+  padding: 5px;
+}
+
+button:hover
+{
+  background-color: rgb(50, 136, 77);
+}
+
+form 
+{
+  text-align: center;
+  margin-top:10%;
+  margin-left:75%;
+}
+
+button
+{
+  border-radius: 6px;
+  padding: 5px;
+}
+
+img
+{
+  width: 15px;
+}

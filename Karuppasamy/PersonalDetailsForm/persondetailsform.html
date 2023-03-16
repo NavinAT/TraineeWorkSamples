@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="pagestyles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	</head>
+	<body>
+		<!--navbar-->
+		<div>
+		</div>
+		<nav>
+			<img src="pagelogo.png" class="logo1">
+			<ul>
+				<li class="logo">Person Details Form</li>
+			</ul>
+		</nav>
+		<!--sidebar-->
+		
+			<input type="checkbox" id="check">
+			<label for="check">
+			<i class="fas fa-bars" id="btn"></i>
+			<i class="fas fa-times" id="cancel"></i>
+			</label>
+			<div class="sidebar">
+				<header>My Profile</header>
+				<center>
+					<img src="Userlogo.webp" >
+				</center>
+				<a href="#" class="active">
+				<i class="fas fa-qrcode"></i>
+				<span>Dashboard</span>
+				</a>
+				<a href="#" >
+				<i class="fas fa-link"></i>
+				<span>Shortcuts</span>
+				</a>
+				<a href="#" id="userdetail" onclick="tableview();">
+				<i class="fas fa-stream"></i>
+				<span for="userdetail">Overview</span>
+				</a>
+				<a href="#">
+				<i class="fas fa-calendar"></i>
+				<span>Events</span>
+				</a>
+				<a href="#">
+				<i class="far fa-question-circle"></i>
+				<span>About</span>
+				</a>
+				<a href="#">
+				<i class="fas fa-sliders-h"></i>
+				<span>Services</span>
+				</a>
+				<a href="#">
+				<i class="far fa-envelope"></i>
+				<span>Contact</span>
+				</a>
+			</div>
+     
+			<!-- form field-->
+			<form action="tablestoredpage.html" target="_blank"  onsubmit="myFunction()">
+				<div class="row">
+					<div class="label-field ">
+						<label for="firstname">First Name:</label>
+					</div>
+					<div class="input-field">
+						<input type="text" id="firstname" name="firstname"  required >
+					</div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="lastname">Last Name:</label>
+					</div>
+					<div class="input-field"><input type="text" id="lastname" name="lastname" required></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="email">Email:</label>
+					</div>
+					<div class="input-field"><input type="email" id="email" name="email"  required></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="phone">Phone:</label>
+					</div>
+					<div class="input-field"> <input type="text" id="phone" name="phone" minlength="10" maxlength="10" required></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="dob">Date of Birth:</label>
+					</div>
+					<div class="input-field"><input type="date" id="dob" name="dob" required></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="address-line1">Door No:</label>
+					</div>
+					<div class="input-field"> <input type="number" id="addressline1" name="address-line1" required></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">  <label for="address-line2">Street Name:</label></div>
+					<div class="input-field" ><input type="text" id="addressline2" name="address-line2" required></div>
+				</div>
+				<div class="row">
+					<div class="label-field"> <label for="city">City:</label></div>
+					<div class="input-field"> <input type="text" id="city" name="city" required></div>
+				</div>
+				<div class="row">
+					<div class="label-field "><label for="state">State:</label></div>
+					<div class="input-field"> <input type="text" id="state" name="state" required></div>
+				</div>
+				<div class="row">
+					<div class="label-field "><label for="zip">Zip Code:</label></div>
+					<div class="input-field"><input type="number" id="zip" name="zip" required></div>
+				</div>
+				<div class="row">
+					<div class="label-field "><label for="country">Country:</label></div>
+					<div class="input-field"><input type="text" id="country" name="country" required></div>
+				</div>
+				<div class="row">
+					<div class="label-field ">
+						<label for="gender">Gender:</label>
+					</div>
+					<div class="input-field">
+						<select id="gender" name="gender" required>
+							<option value=""></option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="label-field "> <label for="occupation">Occupation:</label></div>
+					<div class="input-field"> <input type="text" id="occupation" name="occupation" required></div>
+				</div>
+				<div class="row">
+					<div class="label-field "> <label for="company">Company:</label></div>
+					<div class="input-field"> <input type="text" id="company" name="company" required></div>
+				</div>
+				<button   type="submit"  onclick="saveFormData()">SUBMIT</button>
+				<button type="button" onclick="localStorageclear()">TABLE RESET</button>
+			</form>
+		<script src="firstpageform.js"></script>
+	</body>
+</html>

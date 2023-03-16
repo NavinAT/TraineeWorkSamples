@@ -54,12 +54,20 @@ function checkfields()
         document.getElementById('submit').disabled = false;
     }
 }
-
 //View Button
-function View (){
-    window.location.href="final.html";
+function View ()
+{
+    var checkstorage = localStorage.getItem("storage")
+    var checksto = JSON.parse(checkstorage);
+    if(checksto == "" || checksto == null)
+    {
+        location.reload();
+    }
+    else
+    {
+        window.location.href="final.html";
+    }  
 }
-
 //Form Submission
 function submitForm() 
 {
@@ -75,7 +83,6 @@ function submitForm()
     var Department = document.getElementById("dept").value;
     var State = document.getElementById("state").value; 
     var City = document.getElementById("city").value; 
-    
     let data = {Resume:Resume,Fname:Fname,Lname:Lname,DOB:DOB,Contact:Contact,Address:Address,
     Gmail:Gmail,Gender:Gender,Qualification:Qualification,Department:Department,State:State,City:City};
     var arrObj = [];          
@@ -90,5 +97,10 @@ function submitForm()
     {
       arrObj.push(data);
       localStorage.setItem("storage", JSON.stringify(arrObj));
-    }          
+    }         
 }
+// signout button
+function signoutbutton() 
+{
+    window.location.href="login.html";
+} 

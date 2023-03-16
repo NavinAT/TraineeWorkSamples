@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1></h1>
+    <h2><span>VJ SOFTWARES</span></h2>
+    <img src="lhg.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="Backgroundlogin">
+  <h2 id="forgottext">FORGOT PASSWORD</h2>
+    <div class="forgotnameclass">
+      <label for="forgotname"><span id="textforgot">USERNAME</span></label>
+      <input type="text" id="forgotname" class="forgotname" name="forgotname"><br><br>
+      <label for="forgotgmail"><span id="textforgot">GMAIL</span></label>
+      <input type="text" id="forgotgmail" class="forgotgmail" name="forgotgmail"><br><br>
+      <button type="button" id="nextbutton" class="nextbutton" onclick="nextfunction()">NEXT</button>
+      <button type="button" id="cancelnext" class="cancelnext" onclick="signin()">CANCEL</button>
+    </div>
+    <div class="newpasswordclass" hidden>
+      <label for="newpassword"><span id="textnewpassword">NEW PASSWORD</span></label>
+      <input type="text" id="newpassword" class="newpassword" name="newpassword"><br><br>
+      <button type="button" id="changepass" class="changepass" onclick="changepass()">CONFIRM</button>
+      <button type="button" id="cancelnext" class="cancelnext" onclick="signin()">CANCEL</button>
+    </div>
+    <script  type="text/javascript" src="index.js"></script>
+</body>
+</html>

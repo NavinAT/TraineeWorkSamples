@@ -1,10 +1,12 @@
-.BackgroundEmployee{
+.BackgroundEmployee
+{
     background-image:url('bg.jpg');
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
 }
-h1 {
+h1 
+{
     position: fixed;
     background-color: rgb(194, 218, 232);
     padding: 2% 84% 7.5% 0%;
@@ -13,14 +15,17 @@ h1 {
     top:-23px;
     border-bottom:3px solid rgb(6, 6, 6);
 }
-h2 span{
+h2 span
+{
     margin-top:-6vh;
     margin-left:-70vh;
     position:fixed;
     font-size:6vh;
+    z-index: 1;
 }
-.View{
-    margin-left:165vh;
+.View
+{
+    margin-left:160vh;
     margin-top:-10vh;
     font-size: 20px;
     cursor:pointer;
@@ -28,35 +33,36 @@ h2 span{
     position:fixed;
     padding-right:3vh;
     padding-left:3vh;
-    padding-top:2vh;
+    padding-top:1vh;
     padding-bottom:2vh;
     z-index: 1;
-    background-color: aqua;
+    border:none;
+    background:none;
 }
-.View:hover {
-    background-color: rgb(255, 255, 255);
-}
-h2 {
+h2 
+{
     padding-top:9vh;
     margin-left:5vh;
     text-align:center;
     font-size:4vh;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h3 {
+h3 
+{
     padding-top:9vh;
     text-align:center;
     font-size:4vh;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-p {
+p 
+{
     text-align:center;
     font-size:3vh;
     padding-bottom:5vh;
     font-weight:bold;
 }
-form {
-  
+form 
+{
     padding-top:8vh;
     font-size: 22px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -64,112 +70,130 @@ form {
     background-color: rgb(194, 218, 232);
     box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
     border-radius: 10px;
-    margin-left:50vh;
-    padding-left:20vh;
+    margin-left:57.5vh;
+    padding-left:15vh;
     padding-right: 5vh;
     position:absolute;
     z-index: -1;
 }
-.resume input{
-    margin-left:18vh;
+.resume input
+{
+    margin-left:15vh;
 }
-.fname input{
+.fname input
+{
     margin-left:20.5%;  
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh;
 }
-.lname input{
+.lname input
+{
     margin-left:22.5%;
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh;
 }
-.dob input{
+.dob input
+{
     margin-left:38.5%;   
     width:34%;
     text-align:center;
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh;
 }
-.contact input{
+.contact input
+{
     margin-left:27.5%; 
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh;
 }
-.address textarea{
+.address textarea
+{
     margin-left:28%; 
+    width:34%;
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh;
 }
-.gmail input{
+.gmail input
+{
     margin-left:34%; 
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh;
 }
-.gender select{
-    margin-left:19vh;
-    width:34%;
+.gender select
+{
+    margin-left:15vh;
+    width:36%;
     text-align:center; 
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh;  
 }
-.qualification select{
+.qualification select
+{
     margin-left:13%;
-    width:35%;
+    width:36%;
     text-align:center;  
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh; 
 }
-.department select{
+.department select
+{
     margin-left:17.5%;
     text-align:center;
-    width:35%;
+    width:36%;
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh;
 }
-.state input{
-    margin-left:35.5%;
+.state input
+{
+    margin-left:34%;
+    width:35%;
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh;  
 }
-.city input{
-    margin-left:39.5%;
+.city input
+{
+    margin-left:38%;
+    width:35%;
     box-shadow:4px 3px 3px 0px;
     border-radius:1vh;  
 }
-img {
+img 
+{
     position:fixed;
     width:7%;
     top:3vh;
     left:15vh;
+    z-index: 1;
 }
-.submit {
+.submit 
+{
     cursor: pointer;
-    margin-left:19vh;
+    margin-left:15vh;
     margin-bottom:10px;
     font-family:fantasy;
     font-size:2.5vh;
 }
-.submit:hover{
+.submit:hover
+{
     background-color:rgb(0, 229, 255);
 }
-.deletebutton {
-    margin-left:30vh;
+.deletebutton 
+{
+    margin-left:140vh;
     margin-top:10vh;
-    border:2px solid rgb(0, 0, 0);
+    border:none;
+    background:none;
     font-size:3vh;
     cursor: pointer;
     font-family:fantasy;
     letter-spacing: 2px;
-    background-color: aqua;
 }
-.deletebutton:hover {
-    background-color:rgb(255, 255, 255);
-}
-.ind {
+.ind 
+{
     margin-left:30vh;
-
 }
-.finalbuttons {
+.finalbuttons 
+{
     border:2px solid rgb(0, 0, 0);
     position:fixed;
     padding: 2% 1% 1% 0%;
@@ -178,57 +202,52 @@ img {
     top:-135px;
     background-color:rgb(194, 218, 232);
     box-shadow:0px 0px 1px 1px;
-
 }
-.editbutton {
-    margin-left:55vh;
-    margin-top:20vh;
+.editbutton 
+{
+    margin-left:9vh;
+    margin-top:10vh;
     font-size:3vh;
-    border:2px solid rgb(0, 0, 0);
     cursor: pointer;
     font-family:fantasy;
     letter-spacing: 2px;
-    background-color: aqua;
-    
+    border:none;
+    background:none;
 }
-.editbutton:hover {
-    background-color:rgb(255, 255, 255);
-}
-.backgroundsp {
+.backgroundsp 
+{
     background-color: rgb(81, 212, 212);
 }
-.savebutton {
-    margin-top:10vh;
-    margin-left:85vh;
+.savebutton 
+{
+    margin-top:-10vh;
+    margin-left:150vh;
     font-size:20px;
     cursor: pointer;
     font-family:fantasy;
     letter-spacing: 2px;
     position:fixed;
     font-size: 3vh;
-    background-color: aqua;
+    border:none;
+    background:none;
 }
-.savebutton:hover {
-    background-color: rgb(255, 255, 255);
-}
-.cancelbutton {
+.cancelbutton 
+{
     font-size:20px;
     cursor: pointer;
-    margin-left:110vh;
-    margin-top:10vh;
+    margin-left:170vh;
+    margin-top:-10vh;
     font-family:fantasy;
     font-size: 3vh;
     letter-spacing: 2px;
     position:fixed;
-    background-color: aqua;
+    border:none;
+    background:none;
 }
-.cancelbutton:hover {
-    background-color: rgb(255, 255, 255);
-}
-
-.backbutton {
-    margin-left:50vh;
-    margin-top:20vh;
+.backbutton 
+{
+    margin-left:7vh;
+    margin-top:16vh;
     margin-bottom:5vh;
     position: relative;
     font-size:3vh;
@@ -236,48 +255,508 @@ img {
     cursor: pointer;
     font-family:fantasy;
     letter-spacing: 2px;
-    background-color: aqua;
+    border:none;
+    background:none;
 }
-.backbutton:hover {
+tr:hover 
+{
     background-color: rgb(255, 255, 255);
 }
-tr:hover {
-    background-color: rgb(255, 255, 255);
-}
-#table {
+#table 
+{
     margin-top:25vh;
     border:solid black;
     border-collapse: collapse;
-    margin: 12% 0.5% 0% 0.5%;
+    margin: 8% 0.5% 0% 0.5%;
     position:unset;
     height:40%;
     text-align:center;
     width:99%;
 }
-#table1 {
+#table1 
+{
     border:solid black;
     border-collapse: collapse;
-    margin: 10% 0.5% 0% 0%;
+    margin: 4% 0.5% 0% 0%;
     position:absolute;
     height:20%;
     text-align:center;
     width:99%;
 }
-td {
+td 
+{
     font-family:monospace;
     font-weight: bold;
     height:7vh;
 }
-th {
+th 
+{
     background-color: rgb(134, 222, 254);
     height:8vh;
 }
-tr:nth-child(odd) {
-    background-color: rgb(243, 232, 105);
+tr:nth-child(odd)
+{
+    background-color: rgb(191, 240, 250);
 }
-tr:nth-child(even) {
+tr:nth-child(even) 
+{
     background-color:rgb(233, 233, 233);
 }
-.BackgroundFinal {
+.BackgroundFinal 
+{
     background-color: aqua;
+}
+.Backgroundlogin 
+{
+    background-color:aqua;
+}
+.loginarea 
+{
+    border:2px solid black;
+    margin:15vh 0px 0px 70vh;
+    padding:25vh 9vh 7vh 10vh;
+    position:fixed;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    box-shadow: 0px 2px 15px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.user 
+{
+    font-size:30px;
+    margin-left:-2vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold;
+}
+.pass 
+{
+    font-size:30px;
+    margin-left:-2vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold;
+}
+#username 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+}
+#password
+{
+    font-size: 20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+}
+#logintext 
+{
+    font-family:Arial Black;
+    font-size:30px;
+    margin-left:1vh;
+    margin-top:-30vh;
+    margin-bottom:10vh;
+}
+.login 
+{
+    background: rgb(6, 4, 133);
+	font-size: 14px;
+	margin-top: 50px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	align-items: center;
+	width: 100%;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+}
+.login:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+    
+}
+#username:active,
+#username:focus
+ {
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#password:active,#password:focus
+ {
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#username:hover,#password:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+.forgot 
+{
+    color:red;
+    margin-left:8vh;
+}
+.signupbutton
+{
+    margin-left:160vh;
+    margin-top:-10vh;
+    font-size: 20px;
+    cursor:pointer;
+    font-family:fantasy;
+    border:none;
+    background:none;
+    position:fixed;
+    padding-right:3vh;
+    padding-left:3vh;
+    padding-top:0vh;
+    padding-bottom:2vh;
+    z-index: 1;
+}
+.signinbutton
+{
+    margin-left:140vh;
+    margin-top:-10vh;
+    font-size: 20px;
+    cursor:pointer;
+    font-family:fantasy;
+    position:fixed;
+    border:none;
+    background:none;
+    padding-right:3vh;
+    padding-left:3vh;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    z-index: 1;
+}
+#signupform 
+{
+    margin:10vh 0vh 0vh 70vh;
+    padding:10vh 10vh 8vh 9vh;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    box-shadow: 0px 2px 15px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.user1 
+{
+    margin-top: -7vh;
+    font-size:30px;
+    margin-left:-2vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold;
+}
+#username1 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+}
+.gm1 
+{
+    font-size:30px;
+    margin-left:-2vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold;
+}
+#gmail1 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+}
+.psw 
+{
+    font-size:30px;
+    margin-left:-2vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold;
+}
+#password1 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+}
+#username1:active,
+#username1:focus
+{
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#password1:active,#password1:focus
+{
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#username1:hover,#password1:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+#gmail1:active,
+#gmail1:focus 
+{
+    outline: none;
+	border-bottom-color: #3734f7;
+}
+#gmail1:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+#signuptxt 
+{
+    font-family:Arial Black;
+    font-size:30px;
+    margin-left:1vh;
+    margin-top:-4vh;
+    margin-bottom:10vh;
+}
+#signupconf 
+{
+    background: rgb(6, 4, 133);
+	font-size: 14px;
+	padding: 1vh 4vh 1vh 4vh;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+}
+#cancelsignup 
+{
+    background:rgb(232, 16, 16);
+	font-size: 14px;
+    margin-left:5vh;
+	padding: 1vh 4vh 1vh 4vh;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+}
+#signupconf:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+}
+#cancelsignup:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+}
+.Backgroundsignup 
+{
+    background-color:aqua;
+}
+.signinbuttonup
+{
+    margin-left:175vh;
+    margin-top:-10vh;
+    font-size: 20px;
+    cursor:pointer;
+    font-family:fantasy;
+    position:fixed;
+    border:none;
+    background:none;
+    padding-right:3vh;
+    padding-left:3vh;
+    padding-top:0vh;
+    padding-bottom:2vh;
+    z-index: 1;
+}
+.signout
+{
+    margin-left:175vh;
+    margin-top:-10vh;
+    font-size: 20px;
+    cursor:pointer;
+    font-family:fantasy;
+    position:fixed;
+    padding-right:3vh;
+    padding-left:3vh;
+    padding-top:1vh;
+    padding-bottom:2vh;
+    z-index: 1;
+    border:none;
+    background:none;
+}
+.forgotnameclass 
+{
+    border:2px solid black;
+    margin:7vh 0px 0px 65vh;
+    padding:8vh 9vh 7vh 10vh;
+    position:fixed;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    box-shadow: 0px 2px 15px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size:30px;
+    color: rgb(0, 0, 0);
+}
+#forgotname 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+    margin-bottom:1.5vh;
+}
+#forgotname:active,#forgotname:focus
+{
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#forgotname:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+#forgotgmail 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+    margin-bottom:1.5vh;
+}
+#forgotgmail:active,#forgotgmail:focus
+{
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#forgotgmail:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+#textforgot 
+{
+    font-size:40px;
+    margin-left:0vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold; 
+}
+.nextbutton 
+{
+    background: rgb(6, 4, 133);
+	font-size: 14px;
+	padding: 1vh 5vh 1vh 5vh;
+    margin-left:10vh;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+}
+.nextbutton:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+}
+.cancelnext 
+{
+    background: rgb(228, 9, 9);
+    margin-left:7vh;
+	font-size: 14px;
+	padding: 1vh 4vh 1vh 4vh;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+}
+.cancelnext:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+}
+.changepass 
+{
+    background: rgb(6, 4, 133);
+	font-size: 14px;
+	padding: 1vh 5vh 1vh 5vh;
+    margin-left:10vh;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+   
+}
+.changepass:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+}
+#textnewpassword {
+    font-size:40px;
+    margin-left:0vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold; 
+}
+#newpassword 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+    margin-bottom:1.5vh;
+}
+#newpassword:active,#newpassword:focus
+{
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#newpassword:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+.newpasswordclass 
+{
+    border:2px solid black;
+    margin:9vh 0px 0px 65vh;
+    padding:10vh 9vh 7vh 10vh;
+    position:fixed;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    box-shadow: 0px 2px 15px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size:30px;
+    color: rgb(0, 0, 0);
 }

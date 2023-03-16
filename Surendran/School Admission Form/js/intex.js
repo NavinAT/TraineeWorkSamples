@@ -11,7 +11,8 @@ function student_login()
         localStorage.setItem("row", JSON.stringify(row));
 }
 /*intex page */
-function getdata(){
+function getdata()
+{
         var std = document.getElementById("std").value; 
         var sec = document.getElementById("sec").value; 
         var medium = document.getElementById("medium").value;   
@@ -35,20 +36,22 @@ function getdata(){
         var obj = localStorage.getItem("txtvalue");  
         let text={"std": std,"sec": sec,"medium": medium, "fname": fname,"mname": mname,"lname": lname, "DOB": DOB,"age": age,farname :farname,momname: momname ,"bldgp": bldgp ,"mrf": mrf,"adds": adds, "adds2":adds2, "cty": cty, "dt": dt,"st":st, "pc": pc, "mf":mf};
         if(obj)
-        {
+        {       
                 var arr = JSON.parse(obj);     
                 arr.push(text);
                 localStorage.setItem("txtvalue", JSON.stringify(arr));
         }
         else
-        {
-               arrobj.push(text);
-               localStorage.setItem("txtvalue", JSON.stringify(arrobj));
+        {       
+                arrobj.push(text);
+                localStorage.setItem("txtvalue", JSON.stringify(arrobj));
                 location.reload();
+                
         } 
         var row=0;
         localStorage.setItem("row",JSON.stringify(row));
-        alert("application successfully submited")
+       
+        
 }
 /*edit page*/ 
 function save() 

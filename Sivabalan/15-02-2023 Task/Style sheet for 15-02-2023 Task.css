@@ -1,89 +1,142 @@
-*{
+*
+{
   font-size: 20px;
+  font-family: Calibri;
 }
-img{
-  width: 400px;
-  margin-top: 1px;
-  left:25px;
+
+#sportslogo
+{
+  width: 300px;
+  margin-top: -65px;
   position:absolute;
 }
-h1{
+
+h1
+{
   text-align: center;
   margin-top: 10px;
   font-size: 60px;
   color: rgb(29, 173, 16);
   text-shadow: 3px 4px 4px rgb(130, 27, 161);
-  position: relative;
 }
-form{
+
+form
+{
   font-size: 30px;
   margin-left:5%;
 }
-label{
-  font-size: 30px;
+
+label
+{
+  font-size: 20px;
 }
 
-body{  
-    font-family: Calibri;
-    background-color: rgb(252, 252, 238);
-  }  
-#reset{
+input,select,textarea
+{
+  border-radius: 5px;
+}
+
+textarea
+{
+  resize: none;
+}
+
+body
+{
+  background-color: rgb(252, 252, 238);
+}
+
+#detailpage
+{
+  position: fixed;
+  width: 175px;
+  margin-left: 25%;
+  margin-top: 3px;
+}
+
+#reset
+{
   background-color: rgb(232, 198, 245);
-  margin-left: 33%;
+  margin-left: 20%;
   width:max-content;
   height: max-content;
   padding: 1%;
   border-color:none;
   color: rgb(0, 0, 0);
 }
-#submit{
+
+#submit
+{
   background-color: rgb(232, 198, 245);
-  margin-left: 37%;
+  margin-left: 15%;
   width:max-content;
   height: max-content;
   padding: 1%;
   border-color:none;
   color: rgb(0, 0, 0);
 }
-#cancel{
+
+#cancel
+{
     background-color:rgb(232, 198, 245);
-    margin-left: 36%;
+    margin-left: 20%;
     width:max-content;
     height: max-content;
     padding: 1%;
     border-color:none;
     color: rgb(0, 0, 0);
 }
-textarea,select {  
-    padding: 15px;
-    background: white;
+
+table,tr,th
+{
+  padding: 8px;
 }
-table,tr,th{
+
+#fname,#mname,#lname,#mobile,#address,#email
+{
+  width: 250px;
+  height: 38px; 
   padding: 15px;
+  background: white;   
 }
-table{
-  border-color: black;
+
+#nameofcourt
+{
+  width: 250px;
+  height: 38px;
+  border: 2px solid black;
+  padding-left: 20%;
 }
-select{
-  width: min-content;
+
+#dateofregistration
+{
+  width: 250px;
+  height: 38px;
+  border: 2px solid black;
+  padding-left: 25%;
 }
-#fname,#mname,#lname,#mobile,#address,#email{
-    width: 400px;  
-    padding: 15px;
-    background: white; 
+
+#address
+{
+  height: 100px;
+  border: 2px solid black;
 }
-#border{
-  width: 1000px;
-  height: 1050px;
-  margin-left: 21%;
-  border: 5px solid rgb(0, 0, 0);
+
+#border
+{
+  width: 450px;
+  height: 670px;
+  margin-left: 35%;
+  background-color: rgb(243, 242, 235);
+  border: 5px solid rgb(243, 242, 235);
 }
-#reset:hover{
-  transform: scale(1.2);
+
+#fname:hover,#mname:hover,#lname:hover,#nameofcourt:hover,#dateofregistration:hover,#mobile:hover,#address:hover,#email:hover
+{
+  background-color: rgb(232, 241, 245);
 }
-#submit:hover{
-  transform: scale(1.2);
-}
-#cancel:hover{
-  transform: scale(1.2);
+
+#fname:focus,#mname:focus,#lname:focus,#nameofcourt:focus,#dateofregistration:focus,#mobile:focus,#address:focus,#email:focus
+{
+  background-color: rgb(232, 241, 245);
 }

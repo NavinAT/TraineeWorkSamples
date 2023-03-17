@@ -4,128 +4,73 @@
     <title>  
     User Edit Page
     </title> 
-    <link rel="stylesheet" href="Style sheet for 15-02-2023 Task.css"> 
+    <link rel="stylesheet" href="Style sheet for 15-02-2023 Task.css">
+    <script src="Edit page Script.js"></script>
     </head>  
     <body>
-   <img src="Logo for front page.png" alt="Sports logo">
-   <br><br><br><h1>Sports Court User Edit Form</h1><br><br>
+   <img id="sportslogo" src="Logo for front page.png" alt="Sports logo">
+   <h1>Sports Court User Edit Form</h1>
    <hr>
-   <br><br>
    <div id="border">
-    <form action="Next page.html" method="get" target="_blank">
-    <table>
-        <tr>
-            <th><label for="fname"> Firstname: </label></th>     
-            <th><input id="fname" type="text" name="firstname" size="15" required></th>
-        </tr>  
-        <tr>
-            <th><label for="mname"> Middlename: </label></th>   
-            <th><input id="mname" type="text" name="middlename" size="15"></th>
-        </tr>  
-        <tr>
-            <th><label for="lname"> Lastname: </label> </th>     
-            <th><input id="lname" type="text" name="lastname" size="15" required></th>
-        </tr>
-      
-        <tr>
-            <th><label for="nameofcourt">Select Court:</label></th>
-            <th>
-                <select id="nameofcourt" required>  
-                <option value="Court" name="Court">Court</option>  
-                <option value="Basketball" name="Court">Basketball</option>  
-                <option value="Tennis" name="Court">Tennis</option>  
-                <option value="Vollyball" name="Court">Vollyball</option>  
-                <option value="Cricket" name="Court">Cricket</option>  
-                <option value="Football" name="Court">Football</option></select>
-            </th>
-        </tr>
-        <tr>
-            <th><label for="dateofregistration">Date of Registration for Court:</label></th>
-            <th><input id="dateofregistration" type="date" name="date" required></th>
-        </tr>
-        <tr>
-            <th><label>Gender:</label></th>  
-            <th>
-                <div id="gender">
-                <input id="gendermale" type="radio" name="gender" value="Male" required>
-                <label for="gendermale">Male</label>
-                <input id="genderfemale" type="radio" name="gender" value="Female" required>
-                <label for="genderfemale">Female</label>
-                <input id="genderboth" type="radio" name="gender" value="Other" required>
-                <label for="genderboth">Other</label>
-                </div>
-            </th> 
-        </tr>
-        <tr>
-            <th><label for="mobile">Phone No:</label></th>
-            <th><input id="mobile" type="number" name="phone" size="10" required></th>
-        </tr> 
-        <tr>
-            <th><label>Address:</label></th> 
-            <th><textarea id="address" cols="80" rows="5" value="address" required></textarea></th>
-        </tr> 
-        <tr>
-            <th><label>Email:</label></th>
-            <th><input type="email" id="email" name="email" required></th>
-        </tr>
-    </table>
-    <button id="submit" type="submit" onclick="updateDetails()">Save</button><br><br>
+    <form name="form1" method="get">
+        <table>
+            <tr>
+                <th><label for="fname"> Firstname: </label></th>     
+                <th><input id="fname" type="text" name="firstname" onkeypress="return onlyLetterKey(event)" required></th>
+            </tr>  
+            <tr>
+                <th><label for="mname"> Middlename: </label></th>   
+                <th><input id="mname" type="text" name="middlename" onkeypress="return onlyLetterKey(event)"></th>
+            </tr>  
+            <tr>
+                <th><label for="lname"> Lastname: </label> </th>     
+                <th><input id="lname" type="text" name="lastname" onkeypress="return onlyLetterKey(event)" required></th>
+            </tr>
+          
+            <tr>
+                <th><label for="nameofcourt">Select Court:</label></th>
+                <th>
+                    <select id="nameofcourt" required>  
+                    <option value="" name="Court">Select the Court</option>  
+                    <option value="Basketball" name="Court">Basketball</option>  
+                    <option value="Tennis" name="Court">Tennis</option>  
+                    <option value="Vollyball" name="Court">Volleyball</option>  
+                    <option value="Cricket" name="Court">Cricket</option>  
+                    <option value="Football" name="Court">Football</option></select>
+                </th>
+            </tr>
+            <tr>
+                <th><label for="dateofregistration">Date of Registration for Court:</label></th>
+                <th><input id="dateofregistration" type="date" name="date" required></th>
+            </tr>
+            <tr>
+                <th><label>Gender:</label></th>  
+                <th>
+                    <div id="gender">
+                    <input id="gendermale" type="radio" name="gender" value="Male" required>
+                    <label for="gendermale">Male</label>
+                    <input id="genderfemale" type="radio" name="gender" value="Female" required>
+                    <label for="genderfemale">Female</label>
+                    <input id="genderboth" type="radio" name="gender" value="Other" required>
+                    <label for="genderboth">Other</label>
+                    </div>
+                </th> 
+            </tr>
+            <tr>
+                <th><label for="mobile">Phone No:</label></th>
+                <th><input id="mobile" type="text" onkeypress="return onlyNumberKey(event)" maxlength="10" name="phone" required></th>
+            </tr> 
+            <tr>
+                <th><label>Address:</label></th> 
+                <th><textarea id="address" cols="80" rows="5" value="address" required></textarea></th>
+            </tr> 
+            <tr>
+                <th><label>Email:</label></th>
+                <th><input type="email" id="email" name="email" required></th>
+            </tr>
+        </table>
+    <button id="submit" type="button" onclick="updateDetails()">Save</button>&nbsp;
     <button id="cancel" type="button" onclick="cancelEdit()">Cancel</button>
     </form>
-    <script>
-            var obj = localStorage.getItem("testJSON");
-            var arr = JSON.parse(obj);
-            var numberInsert = localStorage.getItem("numberEdit");
-            var No = JSON.parse(numberInsert);
-            localStorage.removeItem("numberEdit");
-            var user = arr[No-1];
-            localStorage.removeItem("numberEdit");
-            document.getElementById("fname").value = user.fname;
-            document.getElementById("mname").value = user.mname;
-            document.getElementById("lname").value = user.lname;
-            document.getElementById("nameofcourt").value = user.Court_Name;
-            document.getElementById("dateofregistration").value = user.Registration_date;
-            if (user.Gender == "Male"){
-                document.getElementById("gendermale").checked = user.Gender;
-            }
-            else if (user.Gender == "Female"){
-                document.getElementById("genderfemale").checked = user.Gender;
-            }
-            else{
-                document.getElementById("genderboth").checked = user.Gender;
-            }
-            document.getElementById("mobile").value = user.Mobile_number;
-            document.getElementById("address").value = user.Address;
-            document.getElementById("email").value = user.Email;
-        function updateDetails() {
-            var fname = document.getElementById("fname").value;
-            var mname = document.getElementById("mname").value;
-            var lname = document.getElementById("lname").value;
-            var Court_Name = document.getElementById("nameofcourt").value; 
-            var Registration_date = document.getElementById("dateofregistration").value;
-            var Mobile_number = document.getElementById("mobile").value; 
-            var Address = document.getElementById("address").value;
-            var Email = document.getElementById("email").value;
-            
-            if (document.getElementById('gendermale').checked == true){
-                var Gender = document.getElementById("gendermale").value;
-            }
-            else if (document.getElementById('genderfemale').checked == true){
-                var Gender = document.getElementById("genderfemale").value;
-            }
-            else{
-                var Gender = document.getElementById("genderboth").value;
-            }
-            var myObj = {fname: fname, mname: mname, lname: lname, Court_Name:Court_Name, Registration_date:Registration_date, Gender:Gender, 
-                        Mobile_number:Mobile_number, Address:Address, Email:Email};
-            var obj = localStorage.getItem("testJSON");
-            var arr = JSON.parse(obj);
-            arr.splice(No-1,1,myObj);
-            localStorage.setItem("testJSON", JSON.stringify(arr));
-        }
-        function cancelEdit(){
-            window.location.href = "Next page.html";
-        }
-    </script>
     </body>
     </html>

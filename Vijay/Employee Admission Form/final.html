@@ -4,96 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h1></h1>
+    <h2><span>VJ SOFTWARES</span></h2>
+    <img src="lhg.png">
     <link rel="sp" href="sp.html">
     <link rel="final" href="final.html">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: rgb(14, 203, 200);
-        }
-    </style>
-</head>
-
-<body>
-    <div class="fin">        
-        <button class="delbu" onclick="delet()">DELETE ROW </button>
-        <button class="backbut" onclick="backbut()">BACK</button>
-        <button class="edibu" onclick="editv()">EDIT ROW</button>
-        
-    </div>
-        <table id="tabl" >
-        
-        <tr>
-            <th>S.No</th>
-            <th>RESUME</th>
-            <th>FIRST NAME</th>
-            <th>LAST NAME</th>
-            <th>DOB</th>
-            <th>CONTACT</th>
-            <th>ADDRESS</th>
-            <th>GMAIL</th>
-            <th>GENDER</th>
-            <th>STATE</th>
-            <th>CITY</th>
-            <th>QUALIFICATION</th>
-            <th>DEPARTMENT</th>
-        </tr>
-
-<script>
-        
-        
-        var save=localStorage.getItem("testJSON");
-        var obj = JSON.parse(save);
-        
-        
-
-        function backbut (){
-            window.location.href="employee.html";
-        }
-
-        function delet() {
-            var n =prompt('ENTER THE ROW');
-            if(n)
-            {
-                var j=n;
-                document.getElementById("tabl").deleteRow(j);
-                var rws = JSON.parse(save)
-                rws.splice(j -1,1);      
-                location.reload();       
-                localStorage.setItem("testJSON",JSON.stringify(rws));
-                
-            }
-            else if(n == 0)
-            {              
-                alert('Please enter the row');
-            }  
-        }
-        
-        function editv() { 
-            var j = prompt('Enter the row number');
-            if(j)
-            {
-                localStorage.setItem('value1',JSON.stringify(j));
-                window.location.href="sp.html";
-            }
-            else if(j == 0)  
-            {
-                alert('Please enter the row');
-            }
-                  
-            }
-        for(let i=0;i<obj.length;i++){
-        var det = obj[i];
-        var num = 1;
-        num +=i;
-        document.write('<tr id="tabes1" onmouseover="getIndex(this)"><td>' + num +'</td><td>' + det.Resume + '</td><td>' + det.Fname + '</td><td>' + det.Lname + '</td><td>' + det.DOB + '</td><td>' + det.Contact + '</td><td>' + det.Address +
-             '</td><td>' + det.Gmail + '</td><td>' + det.Gender + '</td><td>' + det.State + '</td><td>' + det.City + '</td><td>' + det.Qualification + '</td><td>' + det.Department + '</td></tr>');
-             
-    } 
-</script>
-<script>
+    <link rel="stylesheet" href="style.css"> 
     
-</script>
+</head>
+<body class="BackgroundFinal">
+<div class="finalbuttons">        
+    <button class="deletebutton" onclick="delet()"><i class="fa fa-trash" style="font-size:70px;color:rgb(0, 0, 0)"></i></i> </button>
+    <button class="backbutton" onclick="backbut()"><i class="fa fa-mail-reply" style="font-size:70px;color:rgb(0, 0, 0)"></i></button>
+    <button class="editbutton" onclick="editv()"><i class="fa fa-edit" style="font-size:70px;color:rgb(0, 0, 0)"></i></button> 
+</div>
+<table id="table" border="">
+    <tr>
+        <th>S.No</th>
+        <th>RESUME</th>
+        <th>FIRST NAME</th>
+        <th>LAST NAME</th>
+        <th>DOB</th>
+        <th>CONTACT</th>
+        <th>ADDRESS</th>
+        <th>GMAIL</th>
+        <th>GENDER</th>
+        <th>QUALIFICATION</th>
+        <th>DEPARTMENT</th>
+        <th>STATE</th>
+        <th>CITY</th>
+    </tr>
+    <script type="text/javascript" src="final.js"></script>
 </table>
 </body>
 </html>

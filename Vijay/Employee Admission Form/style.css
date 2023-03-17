@@ -1,245 +1,762 @@
-.bdy{
+.BackgroundEmployee
+{
     background-image:url('bg.jpg');
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
 }
-
-h1 {
-
-    padding: 25px;
-    text-align: center;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(210, 212, 212);
-    box-shadow: 0px 0px 4px 4px rgb(0, 225, 255);
-    border-radius: 10px;
-    margin-left:30vh;
-    margin-top: 40px;
-    margin-right: 20px;  
-    position:fixed;
-    padding-left:60vh;
-    padding-right:60vh;
+h1 
+{
+    position: fixed;
+    background-color: rgb(194, 218, 232);
+    padding: 2% 84% 7.5% 0%;
+    left: 0px;
+    right:-1px;
+    top:-23px;
+    border-bottom:3px solid rgb(6, 6, 6);
 }
-h2 {
-    padding-top:20vh;
+h2 span
+{
+    margin-top:-6vh;
+    margin-left:-70vh;
+    position:fixed;
+    font-size:6vh;
+    z-index: 1;
+}
+.View
+{
+    margin-left:160vh;
+    margin-top:-10vh;
+    font-size: 20px;
+    cursor:pointer;
+    font-family:fantasy;
+    position:fixed;
+    padding-right:3vh;
+    padding-left:3vh;
+    padding-top:1vh;
+    padding-bottom:2vh;
+    z-index: 1;
+    border:none;
+    background:none;
+}
+h2 
+{
+    padding-top:9vh;
+    margin-left:5vh;
     text-align:center;
     font-size:4vh;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-p {
+h3 
+{
+    padding-top:9vh;
+    text-align:center;
+    font-size:4vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p 
+{
     text-align:center;
     font-size:3vh;
     padding-bottom:5vh;
+    font-weight:bold;
 }
-form {
-  
+form 
+{
     padding-top:8vh;
     font-size: 22px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 2px solid rgb(255, 255, 255);
-    background-color: rgb(210, 212, 212);
+    background-color: rgb(194, 218, 232);
     box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
     border-radius: 10px;
-    margin-left:70px;
-    margin-right:100vh;
+    margin-left:57.5vh;
     padding-left:15vh;
+    padding-right: 5vh;
     position:absolute;
     z-index: -1;
 }
-.nm input{
-    margin-left:50px;
-    padding-left:15px;
-    font-size:17px;
+.resume input
+{
+    margin-left:15vh;
 }
-.nm1 input{
-    margin-left:60px;
-    padding-left:15px;
-    font-size:17px;
+.fname input
+{
+    margin-left:20.5%;  
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
 }
-.db input{
-    margin-left:20vh;
-    font-size:17px;
+.lname input
+{
+    margin-left:22.5%;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
 }
-.cnt input{
-    margin-left:82px;
-    padding-left:15px;
-    font-size:17px;
-}
-.addr textarea{
-    margin-left:82px;
-    padding-left:15px;
-    padding-bottom:40px;
-    font-size:17px;
-}
-.gm input{
-    margin-left:110px;
-    padding-left:15px;
-    font-size:17px;
-}
-.qua select{
-    margin-left:90px;
-    font-size:17px;
-}
-.dep select{
-    margin-left:15px;
-    font-size:17px;
-    margin-top:10px;
-    padding-right:-40px;
-
-}
-.dep label{
-    padding-left:17vh;
-}
-.sta input{
-    margin-left:115px;
-    padding-left:15px;
-    font-size:17px;
-}
-.cit input{
-    margin-left:135px;
-    padding-left:15px;
-    font-size:17px;
-}
-.gend select{
-    margin-left:150px;
-    padding-left:15px;
-    font-size:17px;
-}
-.res input{
-    margin-left:100px;
-    padding-left:15px;
-    font-size:17px;
-}
-
-img {
-    width:10%;
-    height:40px;
-    padding-top:67px;
-    padding-left:400px;
-    position:fixed; 
-}
-table ,th,td{
-    border:2px solid black;
-    padding:10px;
+.dob input
+{
+    margin-left:38.5%;   
+    width:34%;
     text-align:center;
-    background-color: aliceblue;
-    size:auto;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
 }
-table {
-    margin-left:0vh;
+.contact input
+{
+    margin-left:27.5%; 
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
 }
-
-.subm {
-    font-size:large;
+.address textarea
+{
+    margin-left:28%; 
+    width:34%;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
+}
+.gmail input
+{
+    margin-left:34%; 
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
+}
+.gender select
+{
+    margin-left:15vh;
+    width:36%;
+    text-align:center; 
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;  
+}
+.qualification select
+{
+    margin-left:13%;
+    width:36%;
+    text-align:center;  
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh; 
+}
+.department select
+{
+    margin-left:17.5%;
+    text-align:center;
+    width:36%;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;
+}
+.state input
+{
+    margin-left:34%;
+    width:35%;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;  
+}
+.city input
+{
+    margin-left:38%;
+    width:35%;
+    box-shadow:4px 3px 3px 0px;
+    border-radius:1vh;  
+}
+img 
+{
+    position:fixed;
+    width:7%;
+    top:3vh;
+    left:15vh;
+    z-index: 1;
+}
+.submit 
+{
     cursor: pointer;
-    margin-left:25vh;
+    margin-left:15vh;
     margin-bottom:10px;
+    font-family:fantasy;
+    font-size:2.5vh;
 }
-.subm:hover{
+.submit:hover
+{
     background-color:rgb(0, 229, 255);
 }
-.reset {
-    font-size:large;
-    cursor: pointer;
-    margin-left:8vh;
-    margin-bottom:10px;
-}
-.reset:hover{
-    background-color:rgb(112, 205, 215);
-}
-.delbu {
-    margin-left:30vh;
+.deletebutton 
+{
+    margin-left:140vh;
     margin-top:10vh;
-    border:2px solid rgb(0, 0, 0);
-    font-size:2vh;
+    border:none;
+    background:none;
+    font-size:3vh;
     cursor: pointer;
-    
+    font-family:fantasy;
+    letter-spacing: 2px;
 }
-.delbu:hover {
-    background-color:aqua;
-}
-.ind {
+.ind 
+{
     margin-left:30vh;
-
 }
-.fin {
+.finalbuttons 
+{
     border:2px solid rgb(0, 0, 0);
-    border-radius: 20px;
     position:fixed;
-    margin-top:-35vh;
-    margin-left:5vh;
-    padding-right:84vh;
+    padding: 2% 1% 1% 0%;
+    left: 0px;
+    right:-1px;
+    top:-135px;
     background-color:rgb(194, 218, 232);
     box-shadow:0px 0px 1px 1px;
-
 }
-.edibu {
-    float: right;
-    margin-left:390px;
-    margin-right: -60vh;
-    margin-top:20vh;
-    font-size:2vh;
-    border:2px solid rgb(0, 0, 0);
+.editbutton 
+{
+    margin-left:9vh;
+    margin-top:10vh;
+    font-size:3vh;
     cursor: pointer;
-
-    
+    font-family:fantasy;
+    letter-spacing: 2px;
+    border:none;
+    background:none;
 }
-.edibu:hover {
-    background-color:aqua;
-}
-table {
-    margin-top:40vh;
-    overflow-y: scroll;
-}
-.tabes:hover {
-    background-color: rgb(89, 243, 243);
-}
-.spbg {
+.backgroundsp 
+{
     background-color: rgb(81, 212, 212);
 }
-.tabsp , tr, td{
-    margin-top:-35vh;
-    margin-left:0vh;
-    margin-right:0vh;
-}
-.savebu {
-    margin-top:40vh;
-    margin-left:85vh;
+.savebutton 
+{
+    margin-top:-10vh;
+    margin-left:150vh;
     font-size:20px;
     cursor: pointer;
-}
-.savebu:hover {
-    background-color: aqua;
-}
-.cancel {
-    font-size:20px;
-    cursor: pointer;
-    margin-left:10vh;
-}
-.cancel:hover {
-    background-color: aqua;
-}
-.View{
-    margin-left:147vh;
-    margin-top:50vh;
+    font-family:fantasy;
+    letter-spacing: 2px;
     position:fixed;
-    font-size: 20px;
-    cursor:pointer;
+    font-size: 3vh;
+    border:none;
+    background:none;
 }
-.View:hover {
-    background-color: aqua;
+.cancelbutton 
+{
+    font-size:20px;
+    cursor: pointer;
+    margin-left:170vh;
+    margin-top:-10vh;
+    font-family:fantasy;
+    font-size: 3vh;
+    letter-spacing: 2px;
+    position:fixed;
+    border:none;
+    background:none;
 }
-.backbut {
-    margin-left:50vh;
-    margin-top:20vh;
+.backbutton 
+{
+    margin-left:7vh;
+    margin-top:16vh;
     margin-bottom:5vh;
     position: relative;
-    font-size:2vh;
+    font-size:3vh;
     border:2px solid rgb(0, 0, 0);
     cursor: pointer;
+    font-family:fantasy;
+    letter-spacing: 2px;
+    border:none;
+    background:none;
 }
-.backbut:hover {
+tr:hover 
+{
+    background-color: rgb(255, 255, 255);
+}
+#table 
+{
+    margin-top:25vh;
+    border:solid black;
+    border-collapse: collapse;
+    margin: 8% 0.5% 0% 0.5%;
+    position:unset;
+    height:40%;
+    text-align:center;
+    width:99%;
+}
+#table1 
+{
+    border:solid black;
+    border-collapse: collapse;
+    margin: 4% 0.5% 0% 0%;
+    position:absolute;
+    height:20%;
+    text-align:center;
+    width:99%;
+}
+td 
+{
+    font-family:monospace;
+    font-weight: bold;
+    height:7vh;
+}
+th 
+{
+    background-color: rgb(134, 222, 254);
+    height:8vh;
+}
+tr:nth-child(odd)
+{
+    background-color: rgb(191, 240, 250);
+}
+tr:nth-child(even) 
+{
+    background-color:rgb(233, 233, 233);
+}
+.BackgroundFinal 
+{
     background-color: aqua;
+}
+.Backgroundlogin 
+{
+    background-color:aqua;
+}
+.loginarea 
+{
+    border:2px solid black;
+    margin:15vh 0px 0px 70vh;
+    padding:25vh 9vh 7vh 10vh;
+    position:fixed;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    box-shadow: 0px 2px 15px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.user 
+{
+    font-size:30px;
+    margin-left:-2vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold;
+}
+.pass 
+{
+    font-size:30px;
+    margin-left:-2vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold;
+}
+#username 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+}
+#password
+{
+    font-size: 20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+}
+#logintext 
+{
+    font-family:Arial Black;
+    font-size:30px;
+    margin-left:1vh;
+    margin-top:-30vh;
+    margin-bottom:10vh;
+}
+.login 
+{
+    background: rgb(6, 4, 133);
+	font-size: 14px;
+	margin-top: 50px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	align-items: center;
+	width: 100%;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+}
+.login:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+    
+}
+#username:active,
+#username:focus
+ {
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#password:active,#password:focus
+ {
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#username:hover,#password:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+.forgot 
+{
+    color:red;
+    margin-left:8vh;
+}
+.signupbutton
+{
+    margin-left:160vh;
+    margin-top:-10vh;
+    font-size: 20px;
+    cursor:pointer;
+    font-family:fantasy;
+    border:none;
+    background:none;
+    position:fixed;
+    padding-right:3vh;
+    padding-left:3vh;
+    padding-top:0vh;
+    padding-bottom:2vh;
+    z-index: 1;
+}
+.signinbutton
+{
+    margin-left:140vh;
+    margin-top:-10vh;
+    font-size: 20px;
+    cursor:pointer;
+    font-family:fantasy;
+    position:fixed;
+    border:none;
+    background:none;
+    padding-right:3vh;
+    padding-left:3vh;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    z-index: 1;
+}
+#signupform 
+{
+    margin:10vh 0vh 0vh 70vh;
+    padding:10vh 10vh 8vh 9vh;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    box-shadow: 0px 2px 15px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.user1 
+{
+    margin-top: -7vh;
+    font-size:30px;
+    margin-left:-2vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold;
+}
+#username1 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+}
+.gm1 
+{
+    font-size:30px;
+    margin-left:-2vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold;
+}
+#gmail1 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+}
+.psw 
+{
+    font-size:30px;
+    margin-left:-2vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold;
+}
+#password1 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+}
+#username1:active,
+#username1:focus
+{
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#password1:active,#password1:focus
+{
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#username1:hover,#password1:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+#gmail1:active,
+#gmail1:focus 
+{
+    outline: none;
+	border-bottom-color: #3734f7;
+}
+#gmail1:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+#signuptxt 
+{
+    font-family:Arial Black;
+    font-size:30px;
+    margin-left:1vh;
+    margin-top:-4vh;
+    margin-bottom:10vh;
+}
+#signupconf 
+{
+    background: rgb(6, 4, 133);
+	font-size: 14px;
+	padding: 1vh 4vh 1vh 4vh;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+}
+#cancelsignup 
+{
+    background:rgb(232, 16, 16);
+	font-size: 14px;
+    margin-left:5vh;
+	padding: 1vh 4vh 1vh 4vh;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+}
+#signupconf:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+}
+#cancelsignup:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+}
+.Backgroundsignup 
+{
+    background-color:aqua;
+}
+.signinbuttonup
+{
+    margin-left:175vh;
+    margin-top:-10vh;
+    font-size: 20px;
+    cursor:pointer;
+    font-family:fantasy;
+    position:fixed;
+    border:none;
+    background:none;
+    padding-right:3vh;
+    padding-left:3vh;
+    padding-top:0vh;
+    padding-bottom:2vh;
+    z-index: 1;
+}
+.signout
+{
+    margin-left:175vh;
+    margin-top:-10vh;
+    font-size: 20px;
+    cursor:pointer;
+    font-family:fantasy;
+    position:fixed;
+    padding-right:3vh;
+    padding-left:3vh;
+    padding-top:1vh;
+    padding-bottom:2vh;
+    z-index: 1;
+    border:none;
+    background:none;
+}
+.forgotnameclass 
+{
+    border:2px solid black;
+    margin:7vh 0px 0px 65vh;
+    padding:8vh 9vh 7vh 10vh;
+    position:fixed;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    box-shadow: 0px 2px 15px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size:30px;
+    color: rgb(0, 0, 0);
+}
+#forgotname 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+    margin-bottom:1.5vh;
+}
+#forgotname:active,#forgotname:focus
+{
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#forgotname:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+#forgotgmail 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+    margin-bottom:1.5vh;
+}
+#forgotgmail:active,#forgotgmail:focus
+{
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#forgotgmail:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+#textforgot 
+{
+    font-size:40px;
+    margin-left:0vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold; 
+}
+.nextbutton 
+{
+    background: rgb(6, 4, 133);
+	font-size: 14px;
+	padding: 1vh 5vh 1vh 5vh;
+    margin-left:10vh;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+}
+.nextbutton:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+}
+.cancelnext 
+{
+    background: rgb(228, 9, 9);
+    margin-left:7vh;
+	font-size: 14px;
+	padding: 1vh 4vh 1vh 4vh;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+}
+.cancelnext:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+}
+.changepass 
+{
+    background: rgb(6, 4, 133);
+	font-size: 14px;
+	padding: 1vh 5vh 1vh 5vh;
+    margin-left:10vh;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	color: #ffffff;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+    font-weight:bold
+   
+}
+.changepass:hover 
+{
+    border-color: rgb(255, 221, 0);
+    transform: scale(1.02);
+}
+#textnewpassword {
+    font-size:40px;
+    margin-left:0vh;
+    font-family:Courier New;
+    color:rgb(6, 15, 196);
+    font-weight:bold; 
+}
+#newpassword 
+{
+    font-size:20px;
+    padding-right:9vh;
+    border: none;
+	border-bottom: 2px solid #9b9999;
+	background: none;
+	width: 75%;
+    margin-bottom:1.5vh;
+}
+#newpassword:active,#newpassword:focus
+{
+	outline: none;
+	border-bottom-color: #3734f7;
+}
+#newpassword:hover 
+{
+    outline:none;
+    border-bottom-color:black;
+}
+.newpasswordclass 
+{
+    border:2px solid black;
+    margin:9vh 0px 0px 65vh;
+    padding:10vh 9vh 7vh 10vh;
+    position:fixed;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    box-shadow: 0px 2px 15px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size:30px;
+    color: rgb(0, 0, 0);
 }

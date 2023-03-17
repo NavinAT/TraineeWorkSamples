@@ -4,82 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h1></h1>
+    <h2><span>VJ SOFTWARES</span></h2>
+    <img src="lhg.png">
     <link rel="final" href="final.html">
     <link rel="employee" href="employee.html">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
 </head>
-<body class="spbg">
-    
-    <table id="tabl" class="tabsp" >
-        
-        <button class="savebu" onclick="savedat()">SAVE </button>
-        <button class="cancel" onclick="back()">CANCEL</button>
-        <tr id="tabes2" onmouseover="getIndex(this)" class="tabtr">
-            <th>S.No</th>
-            <th>RESUME</th>
-            <th>FIRST NAME</th>
-            <th>LAST NAME</th>
-            <th>DOB</th>
-            <th>CONTACT</th>
-            <th>ADDRESS</th>
-            <th>GMAIL</th>
-            <th>GENDER</th>
-            <th>STATE</th>
-            <th>CITY</th>
-            <th>QUALIFICATION</th>
-            <th>DEPARTMENT</th>
-        </tr>
-    <script>
-
-        function back (){
-            window.location.href="final.html";
-        }
-        
-        
-        var save=localStorage.getItem("testJSON");
-        var obj = JSON.parse(save);
-        
-        var val = localStorage.getItem('value1');
-        var i = JSON.parse(val);
-        var det = obj[i-1];
-        var num = 0;
-        num +=i;
-
-        
-
-              
-                      
-        
-
-        document.write('<tr id="tabes2" onmouseover="getIndex(this)" contenteditable="true"><td>' +num +'</td><td id="Resume">' + det.Resume + '</td><td id="Fname">' + det.Fname + '</td><td id="Lname">' + det.Lname + '</td><td id="DOB">' + det.DOB + '</td><td id="Contact">' + det.Contact + '</td><td id="Address">' + det.Address +
-             '</td><td id="Gmail">' + det.Gmail + '</td><td id="Gender">' + det.Gender + '</td><td id="State">' + det.State + '</td><td  id="City">' + det.City + '</td><td id="Qualification">' + det.Qualification + '</td><td id="Department">' + det.Department + '</td></tr>');
-
-        function savedat() {
-            var Resume = document.getElementById('Resume').innerHTML;
-            var Fname = document.getElementById('Fname').innerHTML;
-            var Lname = document.getElementById('Lname').innerHTML;
-            var DOB = document.getElementById('DOB').innerHTML;
-            var Contact = document.getElementById('Contact').innerHTML;
-            var Address = document.getElementById('Address').innerHTML;
-            var Gmail = document.getElementById('Gmail').innerHTML;
-            var Gender = document.getElementById('Gender').innerHTML;
-            var State = document.getElementById('State').innerHTML;
-            var City = document.getElementById('City').innerHTML;
-            var Qualification = document.getElementById('Qualification').innerHTML;
-            var Department = document.getElementById('Department').innerHTML;
-            let text = {Resume:Resume,Fname:Fname,Lname:Lname,DOB:DOB,Contact:Contact,Address:Address,
-            Gmail:Gmail,Gender:Gender,State:State,City:City,Qualification:Qualification,Department:Department};
-            obj.splice(i-1, 1,text);
-            var vje = JSON.stringify(obj);
-            localStorage.setItem("testJSON",vje);
-            window.location.href="final.html";
-}
-            
-            
-        
-        
-    </script>
-    
+<body class="backgroundsp">
+<h1></h1>
+<button id="savebutton" class="savebutton" onclick="savedat()" ><i class="fa fa-check-circle" style="font-size:70px;color:rgb(0, 0, 0)"></i></button>
+<button class="cancelbutton" onclick="back()" ><i class="fa fa-remove" style="font-size:70px;color:rgb(0, 0, 0)"></i></button>
+<table id="table1" border="" >
+<tr>
+    <th>S.No</th>
+    <th>RESUME</th>
+    <th>FIRST NAME</th>
+    <th>LAST NAME</th>
+    <th>DOB</th>
+    <th>CONTACT</th>
+    <th>ADDRESS</th>
+    <th>GMAIL</th>
+    <th>GENDER</th>   
+    <th>QUALIFICATION</th>
+    <th>DEPARTMENT</th>
+    <th>STATE</th>
+    <th>CITY</th>
+</tr>
+<script type="text/javascript" src="sp.js">
+</script>
 </body>
 </table>
 </html>

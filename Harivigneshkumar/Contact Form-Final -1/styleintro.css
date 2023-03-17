@@ -1,0 +1,45 @@
+body{
+   background-image:url("background1.jpg");
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 17em;
+}
+
+.inner{
+    text-align: center;
+    color:whitesmoke;
+    overflow:hidden;
+    padding:0.6em;
+}
+.inner>h1{
+    font-size: 4.5em;
+    animation: Slide_Up 1.4s ease;
+}
+.inner>p{
+    font-size: 1.5em;
+    animation: Slide_Up 2.1s ease;
+
+}
+.inner>button{
+    margin-top: 2em;
+    padding: 1em 2.5em;
+    font-size: 1.5em;
+    border-radius: 4em;
+    border:none;
+    background: #f25757;
+    color: whitesmoke;
+    animation: Slide_Up 2.4s ease;
+
+}
+
+
+@keyframes Slide_Up{
+    0%{
+        transform:translateY(250px);
+    }
+    100%{
+        transform:translateY(0)
+    }
+}

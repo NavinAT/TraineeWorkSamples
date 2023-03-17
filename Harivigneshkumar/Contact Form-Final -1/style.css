@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
-
-input {
+input 
+{
   caret-color: red;
 }
 
-body {
+body 
+{
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("background.jpg");
+  background-image: url("background1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -20,12 +21,14 @@ body {
   border: 30px;
   border-color: antiquewhite;
   border-radius: 100px;
-
 }
-.form1 {
-    height: 650px;
+
+.form1 
+{
+    height: 670px;
     width: 350px;
-    background-image: url(back.jpg);
+    background-image: url(back1.jpg);
+    background-size: cover;
     margin: 100px ;
     border-radius: 30px;
     color: #666;
@@ -39,14 +42,18 @@ body {
     margin-bottom: 0px;
     font-size: 17px;
 }
-.heading{
-    color: plum;
+
+.heading
+{
+    color: lightgrey;
     font-family: cursive;
     font-weight: 600px;
     font-size: xx-large;
     text-shadow: 2px 2px 3px rgb(152, 36, 206);
 }
-.accept{
+
+.accept
+{
     color: #666;
     background-color: #ffbdc7;
     border: none;
@@ -60,7 +67,9 @@ body {
     margin-top: 20px;
     margin-left: 185px;
 }
-.regret{
+
+.regret
+{
     color: #666;
     background-color: #ffbdc7;
     border: none;
@@ -74,53 +83,114 @@ body {
     margin-right:168px;
     margin-top:-46px;
 }
-button:hover {
-    background-color: #cc919a;
-    transition: .5s;
+#fname
+{
+    margin-left: 65px;
 }
-#fname{
-    margin-left: 78px;
-}
-#lname{
-    margin-left: 78px;
 
+#lname
+{
+    margin-left: 65px;
 }
-#mobilenumber{
-    margin-left: 35px;
 
+#mobilenumber
+{
+    margin-left: 27px;
 }
-#dob{
-    margin-left: 120px;
-}
-#Gender{
-    margin-left: 205px;
-}
-#email{
+
+#dob
+{
     margin-left: 110px;
 }
-#website{
+
+#Gender
+{
+    margin-left: 213px;
+}
+
+#email
+{
+    margin-left: 110px;
+}
+
+#website
+{
     margin-left: 90px;
 }
-#Groups{
+
+#Groups
+{
     margin-left: 170px;
 }
-#messager{
+
+#messager
+{
     margin-left:60px;
 }
-#state{
+
+#state
+{
     margin-left: 180px;
 }
-#address{
-    margin-left: 94px;
+
+#address
+{
+    margin-left: 84px;
 }
-#work{
-    margin-left: 85px;
+
+#work
+{
+    margin-left: 72px;
 }
-.value:hover{
-    scale:131%;
-    background-color: #ffbdc7;
-}
-.value{
+
+.value
+{
     border-radius: 12px;
     border-color: aliceblue;
+}
+
+.menus
+{
+    padding-bottom:800px;
+}
+
+li
+{
+    border: #ffbdc7 3px solid;
+    background-color: lightgray;
+}
+
+ul li
+{
+    display: inline;
+    font-size: x-large;
+}
+
+ul li a 
+{
+   text-decoration: none;
+   color:grey;
+   padding: 20px;
+}
+
+@keyframes Slide_Up
+{
+    0%{
+        transform:translateY(250px);
+    }
+    100%{
+        transform:translateY(0)
+    }
+}
+
+span
+{
+    color: red;
+}
+
+img
+{
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }

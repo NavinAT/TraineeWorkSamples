@@ -1,0 +1,108 @@
+table,th,td 
+{
+    border: 1px solid white;
+    text-align: center;
+    background-color: lightgrey;
+    border-width: 5px;
+    border-collapse: collapse;
+}
+
+#table
+{
+    font-size: x-large;
+    margin-top: 5%;
+}
+
+body
+{
+    background-image: url("background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#save:hover
+{
+  scale: 141%;
+  background-color: rgb(85, 134, 12);
+}
+
+.menus
+{
+    padding-bottom:1px;
+}
+
+li
+{
+  border: #ffbdc7 3px solid;
+  background-color: lightgray;
+}
+
+ul li
+{
+  display: inline;
+  font-size: x-large;
+}
+
+ul li a 
+{
+  text-decoration: none;
+  color:grey;
+  padding: 20px;
+}
+
+button
+{
+  font-size: large;
+}
+
+.container
+{
+  border: whitesmoke 2px solid;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-top: 7px;
+  display: flex;
+  justify-content: end;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#deleteRow
+{
+  margin-right: 0px;
+}
+
+#edit
+{
+  margin-left: 0px;
+}
+
+#number
+{
+  padding-top: 30px;
+  text-align: center;
+  margin-right: 0px;
+}
+
+#number1
+{
+  padding-top: 16px;
+  text-align: center;
+  margin-right: 0px;
+}
+
+.undo1
+{
+  display: flex;
+  justify-content: left;
+  margin-right: 72%;
+}
+
+.contact1
+{
+  display: flex;
+  justify-content: left;
+  margin-right: 1.5%;
+}

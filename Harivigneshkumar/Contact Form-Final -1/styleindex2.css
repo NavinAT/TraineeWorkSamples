@@ -1,0 +1,179 @@
+table,th,td 
+{
+    border: 1px solid lightgray;
+    text-align: center;
+    background-color: rgb(247, 206, 247);
+    border-width: 5px;
+}
+
+#table
+{
+    font-size: x-large;
+    margin-top: 12%;
+    border-collapse: collapse;
+}
+
+body
+{
+    background-image: url("background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size:x-large;   
+}
+
+h1
+{
+    color: lightgray;
+    text-shadow: 2px 2px 3px rgb(152, 36, 206);
+    text-align: center;
+}
+
+.form1 
+{
+    height: 695px;
+    width: 350px;
+    background-image: url(back1.jpg);
+    background-size: cover;
+    margin: 100px ;
+    border-radius: 30px;
+    color: #666;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+    bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+#save1:hover
+{
+    scale: 141%;
+    background-color:  rgb(85, 134, 12);
+}
+
+#cancel1:hover
+{
+    scale:141%;
+    background-color: crimson;
+}
+
+button
+{
+    color: cadetblue;
+}
+
+#fname
+{
+    margin-left: 39px;
+}
+
+#lname
+{
+    margin-left: 39px;
+
+}
+
+#mobilenumber
+{
+    margin-left:-6px;
+
+}
+
+#dob
+{
+    margin-left: 80px;
+}
+
+#Gender
+{
+    margin-left: 194px;
+}
+
+#email
+{
+    margin-left: 85px;
+}
+
+#website
+{
+    margin-left: 78px;
+}
+
+#Groups
+{
+    margin-left: 155px;
+}
+
+#messager
+{
+    margin-left:28px;
+}
+
+#state
+{
+    margin-left: 160px;
+}
+
+#address
+{
+    margin-left: 60px;
+}
+
+#work
+{
+    margin-left: 40px;
+}
+
+span
+{
+    color: red;
+}
+
+.value
+{
+    border-radius: 12px;
+    border-color: aliceblue;
+}
+
+.query
+{
+    padding-right: 0px;   
+}
+
+.menus
+{
+    padding-bottom:0px;
+}
+
+li
+{
+    border: #ffbdc7 3px solid;
+    background-color: lightgray;
+}
+
+ul li
+{
+    display: inline;
+    font-size: x-large;
+}
+
+ul li a 
+{
+   text-decoration: none;
+   color:grey;
+   padding: 20px;
+}
+
+#save1
+{
+    margin-right: 35px;
+   font-size: large;
+}
+
+#cancel1
+{
+    font-size: large;
+}

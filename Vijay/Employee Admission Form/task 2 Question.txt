@@ -1,0 +1,19 @@
+Task For you guys
+-------------------------
+1. Contact Form - Hari
+2. Person Detail Form - Karuppu
+3. Sports Court Booking Form - Siva
+4. School Admission Form - Surendran
+5. Employee Admission Form - Vijay
+6. College Alumni Form - Naveen
+
+Please take one task for a Person
+
+Will do review in the evening
+
+OutPut Expectations
+1. Proper use of Form tags
+2. CSS Styling
+3. Necessary Validations for the form fields
+4. Submit Form should navigate to the List view
+

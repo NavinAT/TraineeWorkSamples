@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Style for Next second page.css"> 
+    </head>
+    <body>
+    <div align="center" id="heading">
+        Registered Details
+    </div><br>
+    <hr><br>
+    <div align="center">
+      <input type="number" id="numberofuser" name="usernumber" placeholder="Enter the User Number in the Table" required><br><br>
+      <button type="button" onclick="editUser()"><img src="Edit image.png" alt="buttonpng" border="0" /></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" onclick="deleteUser()"><img src="Delete images.png" alt="buttonpng" border="0" /></button>
+    </div><br>
+    <table align="center">
+      <thead>
+    <tr>
+        <th>NO.</th>
+        <th>First name</th>
+        <th>Middle name</th>
+        <th>Last name</th>
+        <th>Court name</th>
+        <th>Date of Registration :</th>
+        <th>Gender</th>
+        <th>Mobile number</th>
+        <th>Address</th>
+        <th>Mail ID</th>
+    </tr>
+  </thead>
+    <tbody>
+      <script>  
+          let text = localStorage.getItem("testJSON");
+          let obj = JSON.parse(text);
+          for(let i=0;i<obj.length;i++){
+            var user = obj[i];
+            j=i+1;
+            document.write('<tr><td>'+j+'</td><td>'+ user.fname+'</td><td>'+user.mname+'</td><td>'+user.lname+'</td><td>'+user.Court_Name+'</td><td>'+user.Registration_date+'</td><td>'
+                            +user.Gender+'</td><td>'+user.Mobile_number+'</td><td>'+user.Address+'</td><td>'+user.Email+'</td></tr>');
+          }
+        function editUser(){
+          var obj = localStorage.getItem("testJSON");
+          var arr = JSON.parse(obj);
+          if(obj){
+            if(arr[0]==null){
+              alert("Their is no Data for Edit");
+            }
+            else{
+              var numberofuser = document.getElementById("numberofuser").value;
+              var lengthoftable = arr.length;
+              if (numberofuser){                
+                var valid = lengthoftable>=numberofuser;
+                Boolean(valid);
+                if(0<numberofuser && valid){
+                  var numberofuser = document.getElementById("numberofuser").value;
+                  localStorage.setItem("numberEdit",JSON.stringify(numberofuser));
+                  window.open("User Edit Page.html", '_blank');
+                }
+                else{
+                  alert("Enter the Number inside the Table");
+                }
+              }
+              else{
+                alert("Enter the Valid Number");
+              }
+            }
+          }
+          else{
+            alert("Their is no Data for Edit");
+          }
+        }
+        function deleteUser(){
+          var numberofuser = document.getElementById("numberofuser").value;
+          let text = localStorage.getItem("testJSON");
+          let obj = JSON.parse(text);
+          var lengthoftable = obj.length;
+          if (numberofuser){
+            var valid = lengthoftable>=numberofuser;
+            Boolean(valid);
+            if(0<numberofuser && valid){
+              if (confirm("Do you want to Delete?") == true){
+                var arr = JSON.parse(text);
+                arr.splice(numberofuser-1, 1);
+                location.reload();
+                localStorage.setItem("testJSON",JSON.stringify(arr));
+              }
+            }
+            else{
+              alert("Enter the Number inside the Table");
+            }
+          }
+          else{
+            alert("Enter the Valid Number in the box");
+          }
+        }
+    </script>
+  </tbody>
+  </table>
+  </body>
+</html>

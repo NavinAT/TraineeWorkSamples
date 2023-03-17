@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript" src="js/intex.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Finger+Paint&family=Rampart+One&family=Sassy+Frass&display=swap" rel="stylesheet">
+
+	<title>intex page</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+	    <nav class="menu">
+	    	<ul>
+	            	<li><a href="home.html">Home</a></li>
+	            	<li><a href="#register">Admission</a></li>
+	            	<li><a href="">Contact</a></li>
+	            	<li><a href="">About us</a></li>
+	       </ul>
+        </nav>
+        </div>
+	</header>
+
+		<section class="logo">
+		<div class="logoimg"><img src="images/logo4.png" width="50%"></div> 
+            <div class="sn">
+			<h2>ZKM matric.hr.sec.school<br><span>Bodinayakanur<span></h2>
+			
+			   </div></section>
+
+
+	<section id="register" class="register">
+		<marquee>Admission open</marquee></section>
+
+
+
+	
+<form class="form" action="output.html"  method="get" target="_parent">
+			<h1> Admission Form: </h1>
+			<section class="adm">
+	                   <div class="std">
+		                 <div> <label  class="label">Select the std:</label>
+				         <select  name="select" id="std" class="std1" > 
+		     
+		      	                     <option value="None"> None</option>
+                                             <option  value="6th" >6th</option> 
+                                             <option value="7th">7th</option>
+                                             <option value="8th" >8th</option>
+                                             <option value="9th">9th</option>
+                                             <option value="10th">10th</option> 
+                                             <option value="11th">11th</option>
+                                             <option value="12th">12th</option><br>
+                                   </select>	</div><br>
+
+
+
+
+                        <div><label for="fname">Select the section:</label>
+				      <select class="sec" id="sec" >
+		      	           <option value="None">None</option>
+                           <option   value="A">A</option> 
+                           <option  value="B">B</option>
+                           <option  value="C">C</option>
+                           <option  value="D">D</option>
+                           <option  value="E">E</option> 
+                           <option  value="F">F</option>
+                           <option  value="D">G</option><br>
+                            </select></div>  <br>
+
+
+
+
+                           <div><label for="fname">medium:</label>
+				     <select id="medium" class="medium" >
+		      	        <option value="None" >None</option>
+                                <option value="CBSC" >CBSC</option> 
+                                <option value="STATE BOARD" >STATE BOARD</option>
+                                <option value="MATRICULATION" >MATRICULATION</option>
+                             
+                             </select></div></div>
+                        
+                        </section>
+
+
+
+                  <h1 > Personal information: </h1>
+			<section class="pi">
+                       
+			
+                 <div class="fn1"> <label >First name<span style="color:red">*</span>:</label>
+                   <input type="text" id="fname" name="fname" placeholder="enter your full name" required></div><br>
+
+
+              <div class="mn"> <label >Middle name:</label>
+                    <input type="text" id="mname" name="mname"  placeholder="enter your middle name" ></div><br>
+
+              <div class="ln"> <label >Last name<span style="color:red">*</span>:</label>
+                    <input type="text" id="lname" name="lname" placeholder="enter your last name" required></div><br>
+
+             <div class="dob"> <label >Date of birth<span style="color:red">*</span>:</label>
+                    <input type="date" id="dob" name="dob" placeholder="DD/MM/year" required></div><br>
+
+              <div class="age"> <label >Age<span style="color:red">*</span>:</label>
+                 <input type="number" id="age" name="lname"  placeholder="enter your age"required></div><br>
+
+              <div class="fan"> <label >Father's name<span style="color:red">*</span>:</label>
+                    <input type="text" id="farname" name="farame" placeholder="enter your father name" required></div><br>
+
+              <div class="man"> <label >Mother's name<span style="color:red">*</span>:</label>
+                    <input type="text" id="momname" name="momname"  placeholder="enter your mother name" required></div><br>
+
+              <div class="bg"> <label >Blood group:</label>
+                    <input type="text" id="bldgp" name="bldgp"  placeholder="enter your blood group"></div><br>
+
+                    
+		
+		<div><label>Gender</label>
+		<select id="mrf" class="mrf" >
+                           <option value="None" >None</option>
+		      	    <option value="male" >Male</option>
+                           <option value="female" >Female</option> 
+                           <option value="others" >Others</option></select>
+                        </div>
+                  
+                  </section>
+        
+               
+                  
+              
+                <h1>Student address: </h1><br>
+              <section class="address">
+                	 
+                    <div class="a"><label for="adds">Address line 1:</label>
+
+                         <input type="text" id="adds" name="fname" value=""   placeholder="door number"></div><br>
+
+                    <div class="b"><label for="adds2">Address line 2:</label>
+                         <input type="text" id="adds2" name="lname" value="" placeholder="street/area"></div><br>
+
+                   <div class="c"><label for="cty">City:</label>
+                          <input type="text" id="cty" name="fname" value="" placeholder="enter your city/town/village"></div><br>
+
+                   <div class="d"><label for="dt">District:</label>
+                         <input type="text" id="dt" name="lname" value="" placeholder="enter your district"></div><br>
+
+                              <div class="e"><label for="st">State:</label>
+                         <input type="text" id="st" name="lname" value="" placeholder="enter your state"></div><br>
+
+                    <div class="f"><label for="pc">Pin code:</label>
+                         <input type="number" id="pc" name="lname" value=""  placeholder="enter the pincode"></div><br>
+
+                    <div class="g"><label for="mf"> TC Certificate<span style="color:red">*</span>: </label>
+                          <input type="file" id="mf" name="myfile" required><br><br></div>
+               
+             <button class="btn1" id="submit" onclick="getdata()" formaction="output.html"><span>Submit</span></button></section>
+
+       
+
+<script>
+      
+  function getdata(){
+                  var std     = document.getElementById("std").value; 
+                  var sec     = document.getElementById("sec").value; 
+                  var medium  = document.getElementById("medium").value;   
+                  var fname   = document.getElementById("fname").value;
+                  var mname   = document.getElementById("mname").value;
+                  var lname   = document.getElementById("lname").value;
+                  var DOB     = document.getElementById("dob").value; 
+                  var age     = document.getElementById("age").value;
+                  var farname = document.getElementById("farname").value;
+                  var momname = document.getElementById("momname").value;
+                  var bldgp   = document.getElementById("bldgp").value;
+                  var mrf     = document.getElementById("mrf").value;
+                  var adds    = document.getElementById("adds").value; 
+                  var adds2   = document.getElementById("adds2").value; 
+                  var cty     = document.getElementById("cty").value;
+                  var dt      = document.getElementById("dt").value; 
+                  var st      = document.getElementById("st").value; 
+                  var pc      = document.getElementById("pc").value;    
+                  var mf      = document.getElementById("mf").value;
+
+
+
+
+                       
+let text={"std": std,"sec": sec,"medium": medium, "fname": fname,"mname": mname,"lname": lname, "DOB": DOB,"age": age,farname :farname,momname: momname ,"bldgp": bldgp ,"mrf": mrf,"adds": adds, "adds2":adds2, "cty": cty, "dt": dt,"st":st, "pc": pc, "mf":mf};
+          
+          
+                        var arrobj=[];
+                        var obj = localStorage.getItem("txtvalue");  
+
+                        if(obj)
+                        {
+                          var arr = JSON.parse(obj);     
+                          arr.push(text);
+                          localStorage.setItem("txtvalue", JSON.stringify(arr));
+                        }
+                        else
+                        {
+                         arrobj.push(text);
+                          localStorage.setItem("txtvalue", JSON.stringify(arrobj));
+                        }
+                   } ;
+
+
+
+</script>
+</form>
+
+
+	   
+</body>
+</html>

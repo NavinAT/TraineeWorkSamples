@@ -1,0 +1,274 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+    <title>Information List</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            resize: both;
+            width: 100%;
+            position: relative;
+            background-color: rgb(211, 211, 211);
+            background-image: linear-gradient(to right, rgb(184, 229, 255), white);
+        }
+
+        table {
+            position: relative;
+            border-collapse: collapse;
+            line-height: 50px;
+            margin-left: 5px;
+        }
+
+        #btn {
+            width:auto;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        #btn button {
+            font-size: 14px;
+            border-radius: 10px;
+            background-color: transparent;
+            color: white;
+            padding: 10px;
+            margin-left: 10px;
+            border: none;
+
+        }
+
+        #btn button img {
+            width: 30px;
+            height: 30px;
+
+        }
+
+        #sidebar {
+            width: 300px;
+            height: 100vh;
+            float: left;
+            background-color: rgb(0, 47, 109);
+            top: 0px
+        }
+
+        #nav {
+            width: 100%;
+            height: 10vh;
+            top: 0px;
+            background-image: linear-gradient(to right, rgb(0, 47, 109), rgb(79, 79, 255), white);
+            display: flex;
+        }
+
+        #nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            padding-left: 50px;
+        }
+
+        #nav ul li {
+            display: block;
+            background-color: transparent;
+            margin: 30px;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            transform: translateX(80px);
+            border-radius: 8px;
+            width: max-content;
+            font-weight: bold;
+            font-size: large;
+            color: ivory;
+
+        }
+
+        #sidebar li {
+            display: block;
+            background-color: rgb(0, 47, 109);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            list-style: none;
+            border-bottom: 1px solid black;
+        }
+
+        #sidebar li:hover {
+            background-color: rgb(0, 5, 49);
+            transition: 0.8s;
+        }
+
+        #nav h1 {
+            font-style: italic;
+            font-size: 80px;
+            font-family: 'Courier New', Courier, monospace;
+            padding-left: 50px;
+            text-shadow: 1px 1px rgb(77, 0, 0);
+            color: white;
+        }
+
+        td {
+            text-align: center;
+            width: fit-content;
+        }
+
+        .list {
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        table {
+            transform: translateX(50px);
+        }
+
+        #mail {
+            color: blue;
+        }
+
+        #extra {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #userid img {
+            width: 60px;
+            height: 60px;
+            transform: translateY(7px);
+        }
+
+        #userid h5 {
+            color: black;
+            padding-top: 15px;
+            margin: 10px;
+        }
+
+        #userid {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            transform: translateX(200px);
+            margin: auto;
+        }
+
+        #userid button {
+            background-color: transparent;
+            border: none;
+
+        }
+
+        #userid button img {
+            width: 40px;
+            height: 40px;
+            transform: translateX(30px);
+            padding-top: 10px;
+
+        }
+   
+          thead tr {
+            background-color: rgb(98, 145, 214);
+          }
+
+
+          tr:hover{
+            background-color: rgb(170, 252, 255);
+            
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <div id="nav">
+        <h1>M&S</h1>
+        <ul>
+            <li><a href="Inline bar.html">Home</a></li>
+            <li><a href="Loginpage.html">Login</a></li>
+            <li><a href="Information Form.html">Form</a></li>
+            <li><a href="mailto:contact@m-s.in">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <div id="userid">
+            <img src="images/user.png" alt="userpic">
+            <h5 id="h5"></h5>
+            <button type="button"><img src="images/check-out.png" alt="logout" aria-placeholder="logout"
+                    onclick="location.href='Loginpage.html'"></button>
+        </div>
+
+    </div>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">User Information</a></li>
+            <li><a href="#">Mail</a></li>
+            <li><a href="#">Others</a></li>
+        </ul>
+    </div>
+
+    <H1>Information Of Users </H1>
+    <div id="btn">
+        <button class="del" onclick="del()"><img src="images/trash.png"></button>
+        <button class="edit" id="editbtn" onclick=  "showTableData()"><img
+                src="images/edit.png"></button>
+        <button class="add" id="addbtn" type="button" onclick="location.href='Information Form.html'"><img
+                src="images/more.png"> </button>
+
+
+    </div>
+
+    <div>
+
+        <table border="1px" width="80%" ; id="list">
+
+            <thead>
+                <tr>
+                    <th id="sno">S.No</th>
+                    <th id="Name">First Name</th>
+                    <th>Last Name</th>
+                    <th id="Gender">Gender</th>
+                    <th id="Age">Age</th>
+                    <th id="DOB">Date Of Birth</th>
+                    <th id="Education">Education</th>
+                    <th id="Domain">Domain</th>
+                    <th id="Email">Email</th>
+                    <th id="Studyintrest">Study Intrest</th>
+                    <th id="Resume">Resume</th>
+                    <th id="comments">Comments</th>
+                    <th>Edit</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+
+        </table>
+
+
+    </div>
+    <br>
+    <p id="extra">Please Enter Your Correct Details...</p>
+    <lable><b>For Any qury</b>
+        <a id="mail" href="mailto:contact@m-s.in">Contact to...💬</a>
+    </lable>
+    <script type="text/javascript" src="java script/data.js"></script>
+
+
+
+</body>
+
+</html>

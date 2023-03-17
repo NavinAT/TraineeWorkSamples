@@ -1,0 +1,111 @@
+body{
+   background-image: url('clg.avif');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+span{
+    color: red;
+    
+}
+img{
+    position: relative;
+    top: 32px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 3px 4px;
+}
+h1{
+    text-align: center;
+    position: relative;
+    background-color: rgb(151, 244, 244);
+    box-shadow: 0px 2px 3px 4px rgb(107, 197, 228);
+    padding: 1% 0% 4% 0%;
+    border-radius: 30px;
+    color:rgb(13, 117, 130);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+p{
+    text-align: center;
+    font-size: x-large;
+    position: relative;
+    color: darkcyan;
+}
+form{
+    text-align: left;
+    position: relative;
+    margin: 0% 0% 0% 40%;
+}
+input{
+    float: right;
+    position: relative;
+    margin: 0% 30% 0% 0%;
+}
+#mem{
+    width: 45%;
+}
+#name1{
+    width:25%;
+    position: relative;
+    margin-right: 50%;
+}
+#name2{
+    width:25%;
+    position: relative;
+    margin-right: 50%;
+}
+#name3{
+    width:25%;
+    position: relative;
+    margin-right: 50%;
+}
+#completeyear{
+    margin-right: 51%;
+    position: relative;
+}
+textarea{
+    margin-left:70px
+}
+#email{
+     margin-right : 67%;
+}
+#adde{
+    margin-right : 67%;
+}
+#mobile1,#mobile{
+    margin-right : 67%;
+}
+#status{
+    margin-right: 67%;
+}
+#work{
+    margin-right: 60%;
+}
+[class|=button]{
+    padding: 1%;
+    margin: 3% 0% 0% 2%;
+    background-color: rgb(185, 52, 52);
+    color: azure;
+}
+[class|=button]:hover{
+    background-color: darkgoldenrod;
+    color: turquoise;
+}
+input:hover{
+    background-color: slategray;
+    color: beige;
+
+}
+[class|=color]:hover{
+    background-color: darkseagreen;
+    color: rgb(100, 87, 16);
+}
+label{
+    color: rgb(197, 126, 126);
+}
+#table {
+    border-style: groove;
+   
+    
+}
+
+

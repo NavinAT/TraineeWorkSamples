@@ -1,0 +1,362 @@
+*{
+	margin: o;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}body,html{
+	
+	background-size: cover	;
+	background-repeat: none;
+}
+.header{
+	background-image: linear-gradient(#033747,#012744);
+	width: 100%;
+	position: fixed;
+
+}
+
+.menu ul{
+       padding: 0;
+       margin: 0;
+       list-style: none;
+}
+.menu ul li{
+	float: left;
+	margin: 20px; 
+
+	list-style: none; }
+
+.menu ul li a{
+	
+	font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+	padding:10px;
+    text-decoration: none;
+    cursor: pointer;
+    	
+}
+.menu ul li a:hover{
+	color: #FFA500;
+	transition: all 0.4s ease 0s;
+}
+.logo{
+display: inline-flex;
+ margin-left: 30px;
+
+
+}
+.logoimg{margin-top: 100px;
+	 width: 20%;
+
+
+}
+.sn h2{
+margin: 100px;
+
+	width: 100%;
+ font-size: 80px;
+background: radial-gradient(
+            #dba514, #eeb609, #b78628,#c69320);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+  text-align: center;
+  
+
+font-family: 'Dancing Script', cursive;
+
+
+
+}.sn span{
+	text-align: center;
+	font-size: 32PX;
+}
+.register{
+	text-align: center;
+    font-size: 20px;
+
+}
+
+/*intex page*/
+
+.form{
+	border: 2px solid #233;
+	width: 120vh;
+    height: auto;
+	margin-left: 40vh;
+	margin-bottom: 120px;
+    background-color: lightblue;
+    border-radius: 30px;
+    color: darkblue;}
+
+
+
+.std label{
+	font-size: 25px;
+	text-align: left;
+	margin-left: 15vh;
+}.std {
+	font-size: 20px;
+	border-radius: 50px;
+
+	margin-left: 20vh;
+	
+	 
+}
+.std1{
+	width: 180px;
+	margin-left: 18vh;
+}.sec{
+	width: 180px;
+	margin-left: 14vh;
+}.medium{
+	margin-left: 23vh;
+}
+.mrf{	width: 180px;
+	margin-left: 26vh;
+
+}
+ h1{
+	font-size: 35px;
+	text-align: left;
+	margin-left: 80px;
+
+}.pi label{
+	font-size: 25px;
+	margin-left: 35vh;
+}
+.pi input{
+	
+	font-size: 20px;
+	border-radius: 5px;
+	background-color: transparent;
+	color:darkblue;
+	height: 35px;
+	 outline: none;
+	border-color: transparent;
+	border-bottom: 1px solid rgb(0, 0, 0);
+	text-align: center;}
+
+
+
+
+.fn1 input{
+	margin-left: 170px ;}
+.mn input{margin-left: 155px ;}
+.ln input{margin-left: 173px;}
+
+.dob input{
+	
+	width: 25vh;
+	margin-left: 148px;}
+.age input{margin-left: 235px ;}
+.fan input{margin-left: 140px ;}
+.man input{margin-left: 130px ;}
+.bg input{margin-left: 165px ;}
+.pi input::placeholder{
+		font-size: 12px;
+	text-align: center;
+	color:rgb(54, 145, 176);}
+
+
+
+	
+
+select{
+	font-size: 20px;
+	border-radius: 50px;
+	color: darkblue;
+	margin-left: 30vh;
+	text-align: center;
+	
+}
+
+
+
+
+.address input{
+		font-size: 20px;
+	border-radius: 5px;
+	background-color: lightblue;
+	height: 35px;
+	 outline: none;
+	border-color: transparent;
+	border-bottom: 1px solid rgb(0, 0, 0);
+	text-align: center;
+	color: darkblue;
+	
+
+	
+}.address label{
+	font-size: 25px;
+	margin-left: 35vh;
+    text-align: left;
+
+
+}.a input{margin-left: 160px ;
+}
+.b input{margin-left: 160px ;
+	}
+.c input{margin-left: 260px ;
+	}
+.d input{margin-left: 230px ;
+	}
+.e input{margin-left: 255px ;
+	}
+.f input{margin-left: 220px ;
+	}
+.g input{ margin-left: 145px ;
+font-size: 13px;
+display: inline-block;
+cursor: pointer;
+}
+
+
+
+.address div input::placeholder{
+		font-size: 15px;
+		text-align: center;
+		color:rgb(54, 145, 176);
+} 
+.btn1 {
+	width: 10%;
+	height: 20px;
+	border-radius: 20px;
+	background: green;
+	border: none;
+	cursor: pointer; 
+	margin-left: 55vh;
+	margin-bottom: 50px;
+	margin-top: 150px;
+
+
+}.btn1 span:hover{
+	color: whitesmoke;}
+.btn2 {
+	width: 10%;
+	height: 20px;
+	border-radius: 20px;
+	background: red;
+	border: none;
+	cursor: pointer; 
+
+}.btn2 span:hover{
+color: whitesmoke;}
+
+
+
+	
+	/* output page*/
+.oppage{
+	margin:20px;
+	border: 2px solid #666;
+	height: 95vh;
+	
+}	
+
+.delete {
+   margin-top : 40px;
+	transform: translateX(160vh);
+	text-align: right;
+	font-size: 30px;
+	width: 3%;
+	background-color: white;
+
+	
+	
+	border: none;
+	cursor: pointer; 
+}.delete span:hover{
+color: red;}
+
+
+.btn1 button:hover{
+transform: translateX(10px);
+
+}.fn input::placeholder{
+	font-size: 5PX;
+}
+.table1 span{
+	color: orange;
+	
+}.table{
+	width: 100%;
+	font-size: 20px;
+	border-radius: 10px;
+
+}.optable:hover{
+	background-color: #EBECF0;
+}
+
+
+/*home page*/
+.homepage{
+	background-image: url("../images/img8.jpg");
+	border: 2px solid #666;
+	
+}
+.homelogo{
+	margin: 100px;
+
+
+
+
+
+
+
+}.homelogo h2{
+
+	margin: 100px;
+margin-left: 1px;
+	width: 100%;
+ font-size: 110px;
+text-align: center;
+  font-family: 'Dancing Script', cursive;
+  background: radial-gradient(  #fcc201,#EEB609, #DBA514, #C69320,#B78628);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+.sn1 span{
+	text-align: center;
+	font-size: 32PX;}
+
+.homelogoimg{
+margin-top: -60px;
+	margin-left: 68vh;
+	 width: 40%;
+
+}.homebtn {
+	border: none;
+
+
+
+	margin-left: 82vh;
+	border-radius: 20px;
+	margin-bottom: 180px;
+}.homebtn1{
+  background-color: goldenrod;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.homebtn :hover{
+	transform: translate3d(-2px, -2px, -2px);
+	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}.oppage_text{
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+
+}.select{
+	background-color:#B8E2F2;}
+
+
+
+

@@ -1,101 +1,107 @@
-table,th,td {
+table,th,td 
+{
     border: 1px solid white;
     text-align: center;
     background-color: lightgrey;
     border-width: 5px;
     border-collapse: collapse;
 }
-#table{
+
+#table
+{
     font-size: x-large;
     margin-top: 5%;
-
 }
-body{
+
+body
+{
     background-image: url("background1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-#save:hover{
+
+#save:hover
+{
   scale: 141%;
   background-color: rgb(85, 134, 12);
 }
-#deleteRow:hover{
-  scale: 141%;
-  background-color: rgb(211, 55, 55);
-}
-#edit:hover{
-  scale: 141%;
-  background-color:#3373b3;
-}
-#number:hover{
-  background-color: darkgray;
-}
-#number1:hover{
-  background-color: darkgray;
-}
-.menus{
-    padding-bottom:1px;
 
+.menus
+{
+    padding-bottom:1px;
 }
-li{
+
+li
+{
   border: #ffbdc7 3px solid;
   background-color: lightgray;
 }
-ul li{
+
+ul li
+{
   display: inline;
   font-size: x-large;
 }
-a:hover{
-  background-color: whitesmoke;
-}
-ul li a {
+
+ul li a 
+{
   text-decoration: none;
   color:grey;
   padding: 20px;
 }
-button{
+
+button
+{
   font-size: large;
 }
-.container{
+
+.container
+{
   border: whitesmoke 2px solid;
   margin-left: 0px;
   margin-right: 0px;
   background-color: whitesmoke;
   border-radius: 10px;
-  margin-top: 100px;
+  margin-top: 7px;
   display: flex;
   justify-content: end;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-
 }
 
-#deleteRow{
+#deleteRow
+{
   margin-right: 0px;
 }
-#edit{
+
+#edit
+{
   margin-left: 0px;
 }
-#number{
+
+#number
+{
   padding-top: 30px;
   text-align: center;
   margin-right: 0px;
 }
-#number1{
+
+#number1
+{
   padding-top: 16px;
   text-align: center;
   margin-right: 0px;
 }
-.undo1{
+
+.undo1
+{
   display: flex;
   justify-content: left;
-  margin-right: 70%;
+  margin-right: 72%;
 }
-#undo:hover{
-  scale:131%;
-  background-color: greenyellow;
-}
-.contact1{
+
+.contact1
+{
   display: flex;
   justify-content: left;
   margin-right: 1.5%;

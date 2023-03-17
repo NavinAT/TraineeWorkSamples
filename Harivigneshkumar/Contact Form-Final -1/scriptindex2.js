@@ -15,9 +15,8 @@ document.getElementById("address").value=max[len2-1].Address;
 document.getElementById("Groups").value=max[len2-1].Groups;
 document.getElementById("messager").value=max[len2-1].messager;
 document.getElementById("state").value=max[len2-1].state;
-
-
-function savebutton(){
+function savebutton()
+{
     var fname=document.getElementById("fname").value;
     var lname=document.getElementById("lname").value;
     var email=document.getElementById("email").value;
@@ -30,10 +29,8 @@ function savebutton(){
     var Groups=document.getElementById("Groups").value;
     var Messager=document.getElementById("messager").value;
     var state=document.getElementById("state").value;
-
     var myobj7 = {fname: fname, lname: lname, email: email,dob:dob, website:website,mobilenumber:mobilenumber,
         Address:Address, work:work,Groups:Groups,messager:Messager,state:state,Gender:Gender};
-           
     var obj6 = localStorage.getItem("testJSON");
     localStorage.removeItem("z");
     var arr6= JSON.parse(obj6);
@@ -41,8 +38,8 @@ function savebutton(){
     localStorage.setItem("testJSON", JSON.stringify(arr6));  
 
 }
-
-function cancelbutton(){
+function cancelbutton()
+{
     window.location.href="index.html";
 }
 

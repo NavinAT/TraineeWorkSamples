@@ -1,29 +1,35 @@
-       
-table,th,td {
+table,th,td 
+{
     border: 1px solid lightgray;
     text-align: center;
     background-color: rgb(247, 206, 247);
     border-width: 5px;
-    }
-#table{
+}
+
+#table
+{
     font-size: x-large;
     margin-top: 12%;
     border-collapse: collapse;
+}
 
-    }
-body{
+body
+{
     background-image: url("background1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-size:x-large;   
-    }
-h1{
+}
+
+h1
+{
     color: lightgray;
     text-shadow: 2px 2px 3px rgb(152, 36, 206);
     text-align: center;
+}
 
-    }
-.form1 {
+.form1 
+{
     height: 695px;
     width: 350px;
     background-image: url(back1.jpg);
@@ -40,98 +46,134 @@ h1{
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 24px;
-
-
 }
-#save1:hover{
+
+#save1:hover
+{
     scale: 141%;
     background-color:  rgb(85, 134, 12);
 }
-#cancel1:hover{
+
+#cancel1:hover
+{
     scale:141%;
     background-color: crimson;
 }
-button{
+
+button
+{
     color: cadetblue;
-        }
-#fname{
+}
+
+#fname
+{
     margin-left: 39px;
 }
-#lname{
+
+#lname
+{
     margin-left: 39px;
 
 }
-#mobilenumber{
+
+#mobilenumber
+{
     margin-left:-6px;
 
 }
-#dob{
-    margin-left: 90px;
+
+#dob
+{
+    margin-left: 80px;
 }
-#Gender{
+
+#Gender
+{
     margin-left: 194px;
 }
-#email{
+
+#email
+{
     margin-left: 85px;
 }
-#website{
+
+#website
+{
     margin-left: 78px;
 }
-#Groups{
+
+#Groups
+{
     margin-left: 155px;
 }
-#messager{
+
+#messager
+{
     margin-left:28px;
 }
-#state{
+
+#state
+{
     margin-left: 160px;
 }
-#address{
+
+#address
+{
     margin-left: 60px;
 }
-#work{
+
+#work
+{
     margin-left: 40px;
 }
-span{
+
+span
+{
     color: red;
 }
-.value{
+
+.value
+{
     border-radius: 12px;
     border-color: aliceblue;
 }
-.value:hover{
-    scale:131%;
-    background-color:#ffbdc7;
-}
-.query{
+
+.query
+{
     padding-right: 0px;   
 }
-.menus{
+
+.menus
+{
     padding-bottom:0px;
-   
 }
-li{
+
+li
+{
     border: #ffbdc7 3px solid;
     background-color: lightgray;
 }
-ul li{
+
+ul li
+{
     display: inline;
     font-size: x-large;
-    
- 
 }
-a:hover{
-    background-color: whitesmoke;
-}
-ul li a {
+
+ul li a 
+{
    text-decoration: none;
    color:grey;
    padding: 20px;
 }
-#save1{
+
+#save1
+{
     margin-right: 35px;
    font-size: large;
 }
-#cancel1{
+
+#cancel1
+{
     font-size: large;
 }

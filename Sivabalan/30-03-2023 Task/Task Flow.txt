@@ -1,0 +1,30 @@
+Design
+
+1. Contact Book Fields:
+
+	✨Name
+	✨Address
+	✨Phone No
+	✨Email ID
+	✨Favourite Contact
+	✨View All Contact
+
+2. Methods:
+
+	✨Create Contact.
+	✨View Specific Contact.
+	✨Update or Edit Contact.
+	✨Delete Contact.
+	✨Search of Contact.
+
+3. Flow of Task:
+
+	✨First get details from the user.
+	✨Second Update the details.
+	✨Third depend upon the user Seleting Method of Function
+	✨Fourth the Modified data also Update in the Storage.
+	✨Fifth Exit from the Console after all user Requirements are Completed.
+
+3. Hold of Contact Values:
+
+	✨Storing of Values of separate user Using Array Object.

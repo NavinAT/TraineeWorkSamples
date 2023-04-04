@@ -1,0 +1,15 @@
+Contact Book
+
+Operations:
+
+Create
+Read
+Update
+Delete
+Search
+
+Design
+   1. Contact Book Fields
+   2. Methods
+   3. Flow diagram - Algorithm
+   4. How to hold contact values

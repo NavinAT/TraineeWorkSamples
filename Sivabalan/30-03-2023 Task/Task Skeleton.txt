@@ -1,0 +1,17 @@
+Class of ContactPerson:
+
+	Name : String;
+	Phone : Long Integer;
+	Phone Type : String;
+	City : String;
+	E-Mail ID : String;
+	DOB : String;
+	Relationship : String;
+
+Methods of Contact Form:
+
+	CreateNewContact()
+	FindContact()
+	UpdateContact()
+	DeleteContact()
+	ViewAllContact()

@@ -1,0 +1,15 @@
+C:\Users\MS-10015\karthick\Tasks\Contact Book\bin\Debug\net6.0\Contact Book.exe
+C:\Users\MS-10015\karthick\Tasks\Contact Book\bin\Debug\net6.0\Contact Book.deps.json
+C:\Users\MS-10015\karthick\Tasks\Contact Book\bin\Debug\net6.0\Contact Book.runtimeconfig.json
+C:\Users\MS-10015\karthick\Tasks\Contact Book\bin\Debug\net6.0\Contact Book.dll
+C:\Users\MS-10015\karthick\Tasks\Contact Book\bin\Debug\net6.0\Contact Book.pdb
+C:\Users\MS-10015\karthick\Tasks\Contact Book\obj\Debug\net6.0\Contact Book.csproj.AssemblyReference.cache
+C:\Users\MS-10015\karthick\Tasks\Contact Book\obj\Debug\net6.0\Contact Book.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MS-10015\karthick\Tasks\Contact Book\obj\Debug\net6.0\Contact Book.AssemblyInfoInputs.cache
+C:\Users\MS-10015\karthick\Tasks\Contact Book\obj\Debug\net6.0\Contact Book.AssemblyInfo.cs
+C:\Users\MS-10015\karthick\Tasks\Contact Book\obj\Debug\net6.0\Contact Book.csproj.CoreCompileInputs.cache
+C:\Users\MS-10015\karthick\Tasks\Contact Book\obj\Debug\net6.0\Contact Book.dll
+C:\Users\MS-10015\karthick\Tasks\Contact Book\obj\Debug\net6.0\refint\Contact Book.dll
+C:\Users\MS-10015\karthick\Tasks\Contact Book\obj\Debug\net6.0\Contact Book.pdb
+C:\Users\MS-10015\karthick\Tasks\Contact Book\obj\Debug\net6.0\Contact Book.genruntimeconfig.cache
+C:\Users\MS-10015\karthick\Tasks\Contact Book\obj\Debug\net6.0\ref\Contact Book.dll

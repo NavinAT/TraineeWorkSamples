@@ -23,13 +23,26 @@ class ContactBook
         Console.Write("Enter Phonenumber: ");
         contact.Phonenumber = Console.ReadLine();
 
+        bool success = long.TryParse(contact.Phonenumber, out _);
+        if(success)
+        {
+            
+        }
+        else
+        {
+            Console.WriteLine("You Entered one is not a Number !!!");
+            Console.Write("Enter Correct Phonenumber: ");
+            contact.Phonenumber = Console.ReadLine();
+
+        }
+
         Console.Write("Enter Email: ");
         contact.Email = Console.ReadLine();
 
         Console.Write("Enter Address: ");
         contact.Address = Console.ReadLine();
 
-        contacts.Add(contact); 
+        contacts.Add(contact);
         Console.WriteLine("Contact added successfully!");
         Console.WriteLine("-----------------------------------------------");
     }
@@ -48,7 +61,18 @@ class ContactBook
     {
         Console.WriteLine("Enter the number of the contact to update:");
         string phonenumber = Console.ReadLine();
+        bool success = long.TryParse(phonenumber, out _);
+        if(success)
+        {
 
+        }
+        else
+        {
+            Console.WriteLine("You Entered one is not a Number !!!");
+            Console.Write("Enter Correct Phonenumber: ");
+            phonenumber = Console.ReadLine();
+
+        }
         Contact contact = contacts.Find(a => a.Phonenumber == phonenumber);
         if(contact == null)
         {
@@ -56,22 +80,59 @@ class ContactBook
             return;
         }
 
-        Console.WriteLine("Enter new name :");
-        string name = Console.ReadLine();
-        contact.Name = name;
-        Console.WriteLine("Enter new email address :");
-        string email = Console.ReadLine();
-        contact.Email = email;
-        Console.WriteLine("Enter new  address :");
-        string address = Console.ReadLine();
-        contact.Address = address;
-        Console.WriteLine("Contact updated successfully!");
-        Console.WriteLine("-----------------------------------------------");
+        Console.WriteLine("Select an field:");
+        Console.WriteLine("1. Name");
+        Console.WriteLine("2.Email");
+        Console.WriteLine("3.Address");
+        Console.Write(">>");
+        string choice = Console.ReadLine();
+
+        switch(choice)
+        {
+            case "1":
+                Console.WriteLine("Enter new name :");
+                string name = Console.ReadLine();
+                contact.Name = name;
+                Console.WriteLine("Contact updated successfully!");
+                Console.WriteLine("-----------------------------------------------");
+                break;
+            case "2":
+                Console.WriteLine("Enter new email address :");
+                string email = Console.ReadLine();
+                contact.Email = email;
+                Console.WriteLine("Contact updated successfully!");
+                Console.WriteLine("-----------------------------------------------");
+                break;
+            case "3":
+                Console.WriteLine("Enter new  address :");
+                string address = Console.ReadLine();
+                contact.Address = address;
+                Console.WriteLine("Contact updated successfully!");
+                Console.WriteLine("-----------------------------------------------");
+                break;
+            default:
+                Console.WriteLine("invaild choice");
+                Console.WriteLine("Contact updated successfully!");
+                Console.WriteLine("-----------------------------------------------");
+                break;
+        }
     }
     public void DeleteContact()
     {
         Console.WriteLine("Enter the number of the Contact to delete:");
         string phonenumber = Console.ReadLine();
+        bool success = long.TryParse(phonenumber, out _);
+        if(success)
+        {
+
+        }
+        else
+        {
+            Console.WriteLine("You Entered one is not a Number !!!");
+            Console.Write("Enter Correct Phonenumber: ");
+            phonenumber = Console.ReadLine();
+
+        }
 
         Contact contact = contacts.Find(a => a.Phonenumber == phonenumber);
         if(contact == null)
@@ -87,7 +148,18 @@ class ContactBook
     {
         Console.WriteLine("Enter the Number of the contact to Search:");
         string number = Console.ReadLine();
+        bool success = long.TryParse(number, out _);
+        if(success)
+        {
 
+        }
+        else
+        {
+            Console.WriteLine("You Entered one is not a Number !!!");
+            Console.Write("Enter Correct Phonenumber: ");
+            number = Console.ReadLine();
+
+        }
         Contact contact = contacts.Find(a => a.Phonenumber == number);
         if(contact == null)
         {
@@ -105,17 +177,19 @@ class Program
     {
         ContactBook myobj = new ContactBook();
 
+
+
         while(true)
         {
             Console.WriteLine("Select an operation:");
-            Console.WriteLine("1. Add contact");
-            Console.WriteLine("2. Read contact");
+            Console.WriteLine("1.Add contact");
+            Console.WriteLine("2.Read contact");
             Console.WriteLine("3.Update contact");
             Console.WriteLine("4.Delete contact");
             Console.WriteLine("5.Search contact");
-            Console.WriteLine(">>");
+            Console.WriteLine("6.Exit");
+            Console.Write(">>");
             string choice = Console.ReadLine();
-            
             switch(choice)
             {
                 case "1":
@@ -132,6 +206,9 @@ class Program
                     break;
                 case "5":
                     myobj.SearchContact();
+                    break;
+                case "6":
+                    Environment.Exit(-1);
                     break;
                 default:
                     Console.WriteLine("invaild choice");

@@ -1,0 +1,137 @@
+Contact Book :
+step1:
+
+In THE OUTPUT area it shows -
+Select an option:
+1.add contact
+2.read contact
+3.update contact 
+4.delete contact
+5.search contact
+
+
+step 2:
+
+
+then user make a selection above these options 
+if the user selects option 1 means, it shows 
+Enter name:
+then after press enter,it shows 
+Enter number:
+then after press enter ,it shows 
+Enter Email:
+then after press enter ,it shows 
+Enter Address:
+then after press enter ,it shows 
+Contact details Successfully added
+
+step3:
+
+After,the same menu options came in Front of the display
+then if the user select the option 2 means ,it shows
+the contact details that stored in the list.
+(it show all contact details at a same time)
+
+step 4:
+
+
+After,the same menu options came in Front of the display
+then if the user select the option 3 means ,it shows
+enter the number of the contact to update:
+if the user enter the previous saved contact number,then its shows
+Enter the new name:
+then after press enter ,it shows 
+Enter the new email:
+then after press enter ,it shows 
+Enter the new address:
+then after press enter ,it shows 
+Contact details updated successfully 
+
+
+step 5:
+
+
+After,the same menu options came in Front of the display
+then if the user select the option 4 means ,it shows
+enter the number of the contact to delete:
+if the user enter the previous saved contact number,then its shows
+Contact details deleted successfully 
+
+
+step 6:
+
+
+After,the same menu options came in Front of the display
+then if the user select the option 5 means ,it shows
+enter the name of the contact to search:
+if the user enter the previous saved contact name ,then its shows
+the contact details like eg:(Hari,9080515,efa@gmail.com,chennai)
+
+
+In these way we acheive the operations like Create,Find,Update,Delete,Search..
+
+
+
+                                                 How it is Running :(Structure of the Code)
+
+
+
+class Contact    //class Contact
+{
+    public string Name { get; set; }
+    public string Phonenumber { get; set; }
+    public string Email { get; set; }
+    public string Address { get; set; }
+}
+
+class ContactBook  //class ContactBook
+{
+    public List<Contact> contacts = new List<Contact>(); // List Decleration
+    public void AddContact()    ----->Add()method used here
+    public void ReadContact()   -----> // using foreach loop we attain all the contact details
+    public void UpdateContact() -----> Method()       Find and compare the fields here we use the find method eg:(Contact contact = contacts.Find(a => a.Phonenumber == phonenumber);)
+    public void DeleteContact() -----> //remove() method used to remove the specific contact detail
+    public void SearchContact() ----->Find(a => a.Phonenumber == number) method used to search the specific contact by using phonenumber.
+}
+class program
+{
+  static Void Main(string[] args)
+  { 
+     while(true)
+     {
+            Console.WriteLine("Select an operation:");
+            Console.WriteLine("1. Add contact");------->
+            Console.WriteLine("2. Read contact");------>
+            Console.WriteLine("3.Update contact");-----> Choices in the output Area
+            Console.WriteLine("4.Delete contact");----->
+            Console.WriteLine("5.Search contact");----->
+            string choice = Console.ReadLine();
+
+            switch(choice)   // Switch Case statement helps to make a choice in the output
+            {
+                case "1":
+                    myobj.AddContact();
+                    break;
+                case "2":
+                    myobj.ReadContact();
+                    break;
+                case "3":
+                    myobj.UpdateContact();           //enter the the switch case value to make the choice ,here the case values are (1,2,3,4,5)
+                    break;
+                case "4":
+                    myobj.DeleteContact();
+                    break;
+                case "5":
+                    myobj.SearchContact();
+                    break;
+                default:
+                    Console.WriteLine("invaild choice");
+                    break;
+            }
+            Console.WriteLine();
+
+        }
+    }
+}
+
+        

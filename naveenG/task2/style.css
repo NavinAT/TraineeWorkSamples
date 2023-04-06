@@ -1,19 +1,35 @@
-body{
-   background-image: url('clg.avif');
-   background-repeat: no-repeat;
-   background-size: cover;
+body
+{
+    background-image:linear-gradient(rgba(6, 6, 165,0.7),black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-span{
-    color: red;
-    
+label span
+{
+    color: rgb(238, 50, 17);  
 }
-img{
+label
+{
+    color: rgb(236, 201, 201);
+}
+input,textarea
+{
+    border-style:outset;
+}
+input,select,textarea{
+    background-color: rgb(114, 114, 223);
+    color: antiquewhite;
+}
+img
+{
     position: relative;
     top: 32px;
     border-radius: 50px;
     box-shadow: 0px 2px 3px 4px;
 }
-h1{
+h1
+{
     text-align: center;
     position: relative;
     background-color: rgb(151, 244, 244);
@@ -24,88 +40,396 @@ h1{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 100;
 }
-p{
+p
+{
     text-align: center;
     font-size: x-large;
     position: relative;
     color: darkcyan;
 }
-form{
+#form
+{
     text-align: left;
     position: relative;
     margin: 0% 0% 0% 40%;
 }
-input{
-    float: right;
-    position: relative;
-    margin: 0% 30% 0% 0%;
+#mem
+{
+    margin-left: 10.4%;
 }
-#mem{
-    width: 45%;
+#name1
+{
+    margin-left: 22%;
 }
-#name1{
-    width:25%;
-    position: relative;
-    margin-right: 50%;
+.gen
+{
+    margin-left: 2%;
 }
-#name2{
-    width:25%;
-    position: relative;
-    margin-right: 50%;
+#select
+{
+    margin-left: 22%;
+    width: 15.5%; 
 }
-#name3{
-    width:25%;
-    position: relative;
-    margin-right: 50%;
+#name2
+{
+    margin-left: 17.5%;
 }
-#completeyear{
-    margin-right: 51%;
-    position: relative;
+#name3
+{
+    margin-left: 16.7%;
 }
-textarea{
-    margin-left:70px
+#completeyear
+{
+    margin-left: 0.9%;
 }
-#email{
-     margin-right : 67%;
+#adde
+{
+    margin-left: 19.8%;
+    width:15%;
 }
-#adde{
-    margin-right : 67%;
+#email
+{
+    margin-left: 20%;
 }
-#mobile1,#mobile{
-    margin-right : 67%;
+#mobile1
+{
+    margin-left: 13.8%;
 }
-#status{
-    margin-right: 67%;
+#mobile
+{
+    margin-left: 14.9%;
 }
-#work{
-    margin-right: 60%;
+#status
+{
+    margin-left: 16%;
 }
-[class|=button]{
+#work
+{
+    margin-left: 9.5%;
+}
+#card
+{
+    margin-left: 20.6%;
+    width: 15%;
+}
+.img1
+{
+    margin-right: 5%;
+    width: 5.4%;
+}
+.img2
+{
+    margin-left: 5%;
+    width: 5.4%;
+}
+#submit
+{
     padding: 1%;
     margin: 3% 0% 0% 2%;
-    background-color: rgb(185, 52, 52);
-    color: azure;
+    background-color: rgb(6, 18, 85);
+    color: rgb(13, 83, 235);
+    border-radius: 20%;
 }
-[class|=button]:hover{
-    background-color: darkgoldenrod;
+#view
+{
+    position: relative;
+    top: -40px;
+    padding: 0.5%;
+    margin: 0% 0% 0% 50%;
+    background-color: rgb(6, 18, 85);
+    color: rgb(13, 83, 235);
+    border-radius: 20%;
+}
+#reset
+{
+    position: relative;
+    top: -97px;
+    padding: 0.5%;
+    margin: 0% 0% 0% 59%;
+    background-color: rgb(6, 18, 85);
+    color: rgb(13, 83, 235);
+    border-radius: 20%;
+}
+#submit:hover
+{
+    background-color: rgb(138, 102, 10);
     color: turquoise;
 }
-input:hover{
-    background-color: slategray;
-    color: beige;
-
+#view:hover
+{
+    background-color: rgb(138, 102, 10);
+    color: turquoise;
 }
-[class|=color]:hover{
+#reset:hover
+{
+    background-color: rgb(138, 102, 10);
+    color: turquoise;
+}
+[class|=color]:hover
+{
     background-color: darkseagreen;
     color: rgb(100, 87, 16);
 }
-label{
-    color: rgb(197, 126, 126);
+#table,th,td
+{
+    border-style:solid;
+    border-collapse : collapse;
+    text-align: center;
+    margin: 2% 1% 0% 1%;
 }
-#table {
-    border-style: groove;
-   
-    
+th
+{
+    background-color: rgb(149, 254, 219);
+    color: rgb(27, 125, 125);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+td
+{
+    font-style: italic;
+}
+tr:nth-child(even)
+{
+    background-color: aliceblue;
+    color: rgb(99, 97, 97);
+}
+tr:nth-child(odd)
+{
+    background-color: rgb(132, 179, 221);
+    color: rgb(75, 44, 201);
+}
+#number,#edituser
+{
+    color: rgb(228, 196, 14);
+}
+#edit,#save,#delRow,#cancel,#back
+{
+    background-color: rgb(144, 244, 244);
+    box-shadow: 0px 3px 0px 1px;
+    border-radius: 20%;
+}
+#save
+{
+    margin-left: 40%;
+}
+#cancel
+{
+   float: right;
+   margin-right: 40%;
+}
+#number
+{
+    margin: 0% 0% 0% 1.2%;
+}
+#edituser
+{
+    margin-left: 1.1%;
+}
+#delRow
+{
+    width: 5.7%;
+    margin-left: 1%;
+}
+#back
+{
+    float: right;
+    margin-right: 1%;
+}
+#edit
+{
+    margin-left: 1%;
+}
+@media only screen and (max-width:1536px)
+{
+    body
+    {
+        background-image:linear-gradient(rgba(6, 6, 165,0.7),black);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        overflow-y: scroll;
+    }
+    h1
+    {
+        font-size:larger;
+        text-align: center;
+        position: relative;
+        background-color: rgb(151, 244, 244);
+        margin: 2% 5% 0% 5%;
+        box-shadow: 0px 2px 3px 4px rgb(107, 197, 228);
+        padding: 0% 0% 4% 0%;
+        border-radius: 60px;
+        color:rgb(13, 117, 130);
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 100;
+    }
+    p
+    {
+        text-align: center;
+        font-size: large;
+        position: relative;
+        color: darkcyan;
+    }
+    #adde,#card
+    {
+        width: 15%;
+    }
+    #form
+    {
+        text-align: left;
+        position: relative;
+        margin: 0% 0% 0% 35%;
+    }
+    #mem
+    {
+        margin-left: 11.4%;
+    }
+    #name1
+    {
+        margin-left:25%;
+
+    }
+    .gen
+    {
+        margin-left:6%;
+    }
+    #select
+    {
+        margin-left:25.2%;
+        width: 17.2%; 
+    }
+    #name2
+    {
+        margin-left: 20%;
+    }
+    #name3
+    {
+        margin-left: 19.2%;
+    }
+    #completeyear
+    {
+        margin-left: 0.9%;
+    }
+    #adde
+    {
+        margin-left: 22.8%;
+        width:17%;
+    }
+    #email
+    {
+        margin-left: 23.2%;
+    }
+    #mobile1
+    {
+        margin-left: 16%;
+    }
+    #mobile
+    {
+        margin-left: 17.3%;
+    }
+    #status
+    {
+        margin-left: 18.4%;
+    }
+    #work
+    {
+        margin-left: 11%;
+    }
+    #card
+    {
+        margin-left: 24%;
+        width: 17%;
+    }
+    #submit
+    {
+        position: relative;
+        top: 8px;
+        padding: 1%;
+        margin: 0% 0% 0% 8%;
+        background-color: rgb(6, 18, 85);
+        color: rgb(13, 83, 235);
+        border-radius: 20%;
+    }
+    #view
+    {
+        position: relative;
+        top: -90px;
+        padding: 0.5%;
+        margin: 4% 0% 0% 50%;
+        background-color: rgb(6, 18, 85);
+        color: rgb(13, 83, 235);
+        border-radius: 20%;
+    }
+    #reset
+    {
+        position: relative;
+        top: -142.1px;
+        padding: 0.5%;
+        margin: 0% 0% 0% 60%;
+        background-color: rgb(6, 18, 85);
+        color: rgb(13, 83, 235);
+        border-radius: 20%;
+    }
+    #submit:hover
+    {
+        background-color: rgb(138, 102, 10);
+        color: turquoise;
+    }
+    #view:hover
+    {
+        background-color: rgb(138, 102, 10);
+        color: turquoise;
+    }
+    #reset:hover
+    {
+        background-color: rgb(138, 102, 10);
+        color: turquoise;
+    }
+    #table
+    {
+        border-collapse : collapse;
+        width: 80%;
+        margin: 2% 0% 0% 10%;
+        font-size: small;
+        text-align: center;
+    }
+    td
+    {
+        width: 12%;
+        font-style: italic;
+    }
+    th
+    {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+    #back
+    {
+        float: right;
+        margin-right: 10%;
+    }
+    #edit
+    {
+        margin-left: 10%;
+    }
+    #delRow
+    {
+        width: 7.2%;
+        margin-left: 10%;
+    }
+    .img2
+    {
+        margin-left: 5%;
+        border-radius: 8vh;
+        width:7%;
+    }
+    .img1
+    {
+        margin-right: 5%;
+        border-radius: 8vh;
+        width:7%;
+    } 
+}
+
+
+
 
 

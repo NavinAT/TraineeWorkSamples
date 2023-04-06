@@ -1,0 +1,28 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="/Style/Login.css">
+</head>
+<body>
+    <h2>mail Verification</h2>
+    <form id="form"  autocomplete="off" method="post">
+   <div id="OTP_send">
+      <h5> OTP sended For Your Register Mail</h5>
+      <div id="mail">
+      </div>
+        <div class="OTP"> <label><b>Enter OTP  :</b> <input type="text" minlength="5" max="15" name="username"
+                    id="username" placeholder="OTP"></label></div>
+                    <div class="btnGroup">
+                        <span class="Btn" id="verifiBtn">
+                          <button type="submit">Verify</button>
+                        </span>
+                        <span class="timer">
+                          <span id="counter"></span>
+                        </span>
+                    </div>
+    </form>
+  <script type="text/javascript" src="/java script/mail.js" ></script>
+</body>
+</html>

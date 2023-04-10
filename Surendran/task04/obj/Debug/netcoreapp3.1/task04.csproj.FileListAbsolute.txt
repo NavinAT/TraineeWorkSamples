@@ -1,0 +1,28 @@
+C:\Education\Trining\c sharp try\task04\task04\bin\Debug\netcoreapp3.1\task04.exe
+C:\Education\Trining\c sharp try\task04\task04\bin\Debug\netcoreapp3.1\task04.deps.json
+C:\Education\Trining\c sharp try\task04\task04\bin\Debug\netcoreapp3.1\task04.runtimeconfig.json
+C:\Education\Trining\c sharp try\task04\task04\bin\Debug\netcoreapp3.1\task04.runtimeconfig.dev.json
+C:\Education\Trining\c sharp try\task04\task04\bin\Debug\netcoreapp3.1\task04.dll
+C:\Education\Trining\c sharp try\task04\task04\bin\Debug\netcoreapp3.1\task04.pdb
+C:\Education\Trining\c sharp try\task04\task04\obj\Debug\netcoreapp3.1\task04.csproj.AssemblyReference.cache
+C:\Education\Trining\c sharp try\task04\task04\obj\Debug\netcoreapp3.1\task04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Education\Trining\c sharp try\task04\task04\obj\Debug\netcoreapp3.1\task04.AssemblyInfoInputs.cache
+C:\Education\Trining\c sharp try\task04\task04\obj\Debug\netcoreapp3.1\task04.AssemblyInfo.cs
+C:\Education\Trining\c sharp try\task04\task04\obj\Debug\netcoreapp3.1\task04.csproj.CoreCompileInputs.cache
+C:\Education\Trining\c sharp try\task04\task04\obj\Debug\netcoreapp3.1\task04.dll
+C:\Education\Trining\c sharp try\task04\task04\obj\Debug\netcoreapp3.1\task04.pdb
+C:\Education\Trining\c sharp try\task04\task04\obj\Debug\netcoreapp3.1\task04.genruntimeconfig.cache
+C:\Education\Trining\git\Surendran\task04\bin\Debug\netcoreapp3.1\task04.exe
+C:\Education\Trining\git\Surendran\task04\bin\Debug\netcoreapp3.1\task04.deps.json
+C:\Education\Trining\git\Surendran\task04\bin\Debug\netcoreapp3.1\task04.runtimeconfig.json
+C:\Education\Trining\git\Surendran\task04\bin\Debug\netcoreapp3.1\task04.runtimeconfig.dev.json
+C:\Education\Trining\git\Surendran\task04\bin\Debug\netcoreapp3.1\task04.dll
+C:\Education\Trining\git\Surendran\task04\bin\Debug\netcoreapp3.1\task04.pdb
+C:\Education\Trining\git\Surendran\task04\obj\Debug\netcoreapp3.1\task04.csproj.AssemblyReference.cache
+C:\Education\Trining\git\Surendran\task04\obj\Debug\netcoreapp3.1\task04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Education\Trining\git\Surendran\task04\obj\Debug\netcoreapp3.1\task04.AssemblyInfoInputs.cache
+C:\Education\Trining\git\Surendran\task04\obj\Debug\netcoreapp3.1\task04.AssemblyInfo.cs
+C:\Education\Trining\git\Surendran\task04\obj\Debug\netcoreapp3.1\task04.csproj.CoreCompileInputs.cache
+C:\Education\Trining\git\Surendran\task04\obj\Debug\netcoreapp3.1\task04.dll
+C:\Education\Trining\git\Surendran\task04\obj\Debug\netcoreapp3.1\task04.pdb
+C:\Education\Trining\git\Surendran\task04\obj\Debug\netcoreapp3.1\task04.genruntimeconfig.cache

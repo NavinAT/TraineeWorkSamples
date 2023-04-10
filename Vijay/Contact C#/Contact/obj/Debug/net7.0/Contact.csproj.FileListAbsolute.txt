@@ -1,0 +1,15 @@
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\bin\Debug\net7.0\Contact.exe
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\bin\Debug\net7.0\Contact.deps.json
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\bin\Debug\net7.0\Contact.runtimeconfig.json
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\bin\Debug\net7.0\Contact.dll
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\bin\Debug\net7.0\Contact.pdb
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\obj\Debug\net7.0\Contact.csproj.AssemblyReference.cache
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\obj\Debug\net7.0\Contact.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\obj\Debug\net7.0\Contact.AssemblyInfoInputs.cache
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\obj\Debug\net7.0\Contact.AssemblyInfo.cs
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\obj\Debug\net7.0\Contact.csproj.CoreCompileInputs.cache
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\obj\Debug\net7.0\Contact.dll
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\obj\Debug\net7.0\refint\Contact.dll
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\obj\Debug\net7.0\Contact.pdb
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\obj\Debug\net7.0\Contact.genruntimeconfig.cache
+C:\Users\ArunthandavanMullain\source\repos\Contact\Contact\obj\Debug\net7.0\ref\Contact.dll

@@ -2,149 +2,197 @@
 using System;
 using System.Collections.Generic;
 
-namespace contact_book
+namespace task04
 {
     public class Data
     {
-        public string name { get; set; }
-        public string phone { get; set; }
-        public string email { get; set; }
-        public string address { get; set; }
+        public string Name { get; set; }
+        public long Phone { get; set; }
+        public string Email { get; set; }
+        public string Address { get; set; }
         public override string ToString()
         {
-           return "    NAME: " + name + "   PHONE: " + phone + "    EMAIL: " + email + "   ADDRESS: " + address;
+            return "    NAME: " + Name + "   PHONE: " + Phone + "    EMAIL: " + Email + "   ADDRESS: " + Address;
         }
     }
-    public class create_contact
+    public class ContactDetails
     {
-        public static List<Data> user_details = new List<Data>();
-        private static void contact()
+        public static List<Data> UserDetails = new List<Data>();
+        public static void Contact()
         {
             Data data = new Data();
             Console.WriteLine("Enter Name :");
-            data.name = Console.ReadLine();
+            data.Name = Console.ReadLine();
             Console.WriteLine("Enter Phone :");
-            data.phone = Console.ReadLine();
+            data.Phone =Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("Enter Email :");
-            data.email = Console.ReadLine();
+            data.Email = Console.ReadLine();
             Console.WriteLine("Enter Address :");
-            data.address = Console.ReadLine();
-            user_details.Add(data);
+            data.Address = Console.ReadLine();
+            UserDetails.Add(data);
             Console.Write("\n    NEW CONTACT ADDED: \n    __________________\n");
-            Console.WriteLine("    Name: " + data.name + "   Phone: " + data.phone + "   Email: " + data.email + "   Address: " + data.address);
+            Console.WriteLine("    Name: " + data.Name + "   Phone: " + data.Phone + "   Email: " + data.Email + "   Address: " + data.Address);
             Console.WriteLine("\n press enter to continue. . .! \n ");
         }
         private static void Read()
         {
-            Console.WriteLine("    TOTAL CONTACTS:" + user_details.Count + " \n    ________________");
-            for(int i = 0; i < user_details.Count; i++)
-             {
+            Console.WriteLine("    TOTAL CONTACTS:" + UserDetails.ToArray().Length + " \n    ________________");
+            for(int i = 0; i < UserDetails.Count; i++)
+            {
                 Console.Write("\n    Contact: {0} \n", i + 1);
-                Console.WriteLine(user_details[i]+"\n");
-             }
+                Console.WriteLine(UserDetails[i] + "\n");
+            }
             Console.WriteLine("\n press enter to continue. . .! \n ");
         }
-        private static void update()
+        private static void Update()
         {
-            Console.WriteLine("    TOTAL CONTACTS:" + user_details.Count + " \n    ________________");
-            for(int i = 0; i < user_details.Count; i++)
+            Console.WriteLine("    TOTAL CONTACTS:" + UserDetails.Count + " \n    ________________");
+            Console.WriteLine("\n    Enter the phone number to edit: \n    _______________________________");
+            long a = Convert.ToInt64(Console.ReadLine());
+            for(int i = 0; i < UserDetails.ToArray().Length; i++)
             {
-                Console.Write("\n    Contact: {0} \n", i + 1);
-                Console.WriteLine(user_details[i] + "\n");
+                if(a.Equals(UserDetails[i].Phone))
+                {
+                    Console.Write("    user found: " + UserDetails[i].Name + "\n");
+                    Console.Write(UserDetails[i]);
+                    Console.WriteLine("\n    Select which is edit:  \n    _____________________\n    1.Name 2.Phone 3.Email 4.Address \n");
+                    string select = Console.ReadLine();
+                    bool res;
+                    int b;
+                    res = int.TryParse(select, out b);
+                    if(res == true)
+                    {
+                        switch(select)
+                        {
+                            case "1":
+                                Console.WriteLine("\n    Old Name: " + UserDetails[i].Name);
+                                Console.WriteLine("\n    Enter the New Name: ");
+                                UserDetails[i].Name = Console.ReadLine();
+                                break;
+                            case "2":
+                                Console.WriteLine("\n    Old Phone number: " + UserDetails[i].Phone);
+                                Console.WriteLine("\n    Enter the New Phone: ");
+                                UserDetails[i].Phone = Convert.ToInt64(Console.ReadLine());
+                                break;
+                            case "3":
+                                Console.WriteLine("\n    Old Email: " + UserDetails[i].Email);
+                                Console.WriteLine("\n    Enter the New Email: ");
+                                UserDetails[i].Email = Console.ReadLine();
+                                break;
+                            case "4":
+                                Console.WriteLine("\n    Old Address: " + UserDetails[i].Address);
+                                Console.WriteLine("\n    Enter the New Address: ");
+                                UserDetails[i].Address = Console.ReadLine();
+                                break;
+                            default:
+                                Console.WriteLine("Invalid number!! please enter the correct number  ");
+                                break;
+                        }
+                        Console.WriteLine("\n    Contact Successfully Updated :) \n ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("\n This is not a number!! please enter the  number ! \n");
+                    }
+                }
             }
-            Console.WriteLine("\n    Enter the contact number to edit: \n    ________________________________");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(user_details[a - 1]);
-            Console.WriteLine("\n    Select which is edit:  \n    _____________________\n    1.Name 2.Phone 3.Email 4.Address \n");
-            int b = Convert.ToInt32(Console.ReadLine());
-            switch(b)
-            {
-                case 1:
-                    Console.WriteLine(user_details[a - 1].name);
-                    Console.WriteLine("\n    Enter the New Name: ");
-                    user_details[a-1].name = Console.ReadLine();
-                    break;
-                case 2:
-                    Console.WriteLine(user_details[a - 1].phone);
-                    Console.WriteLine("\n    Enter the New Phone: ");
-                    user_details[a - 1].phone = Console.ReadLine();
-                    break;
-                case 3:
-                    Console.WriteLine(user_details[a - 1].email);
-                    Console.WriteLine("\n    Enter the New Email: ");
-                    user_details[a - 1].email = Console.ReadLine();
-                    break;
-                case 4:
-                    Console.WriteLine(user_details[a - 1].address);
-                    Console.WriteLine("\n    Enter the New Address: ");
-                    user_details[a - 1].address = Console.ReadLine();
-                    break;
-                default:
-                    Console.WriteLine("invalide number!! pls enter the crt number  ");
-                    break;
-            }
-
-            Console.WriteLine("\n    Contact Successfully Updated :) \n ");
-            Console.WriteLine(user_details[a - 1]);
             Console.WriteLine("\n Press enter to continue. . .! \n ");
         }
         private static void Delete()
-		{
-            Console.WriteLine("    TOTAL CONTACTS:"+ user_details.Count + " \n    _______________");
-            for(int i = 0; i < user_details.Count; i++)
-            {
-                Console.Write("    Contact: {0} \n", i + 1);
-                Console.WriteLine(user_details[i] + "\n");
+        {
+            Console.WriteLine("\n    Enter the Phone Number (or) Email Id to Delete: \n    _______________________________________________ ");
+            string a = Console.ReadLine();
+            bool res;
+            int b;
+            res = int.TryParse(a, out b);
+            for(int i = 0; i < UserDetails.ToArray().Length; i++)
+			{
+               if(res == true)
+                {
+                    long Long = long.Parse(a);
+                    if(Long.Equals(UserDetails[i].Phone))
+                    {
+                        Console.Write("    user found: " + UserDetails[i].Name + "\n");
+                        Console.Write(UserDetails[i]);
+                        UserDetails.RemoveAt(i);
+                        Console.WriteLine("\n    contact Successfully deleted  :) ");
+                    }
+                }
+                else if(string.Equals(UserDetails[i].Email, a))
+                {
+                    Console.Write("    user found: " + UserDetails[i].Name + "\n");
+                    Console.Write(UserDetails[i]);
+                    UserDetails.RemoveAt(i);
+                    Console.WriteLine("\n    contact Successfully deleted  :) ");
+                }
             }
-            Console.WriteLine("\n    Enter the contact number to Delete: ");
-            int a = Convert.ToInt32(Console.ReadLine());
-             user_details.RemoveAt(a-1);
-            Console.WriteLine("\n    contact Successfully deleted  :) ");
             Console.WriteLine("\n press enter to continue. . .! \n ");
         }
-
         private static void Search()
         {
-            Console.WriteLine("\n    Enter the Name or Phone Number ");
-            string a = Console.ReadLine();
-            for(int i = 0; i < user_details.Count; i++)
+            Console.WriteLine("\n    Enter the Phone Number (or) Email Id to Search :\n    _______________________________________________");
+            string a =Console.ReadLine();
+            bool res;
+            int b;
+            res = int.TryParse(a, out b);
+            for(int i = 0; i < UserDetails.ToArray().Length; i++)
             {
-                if(string.Equals(user_details[i].name, a) || string.Equals(user_details[i].phone, a))
+                if(res == true)
                 {
-                    Console.Write("    user found: "+ user_details[i].name+"\n");
-                    Console.Write(user_details[i]);
-                 }
-		    }
+                    long e = long.Parse(a);
+                    if(e.Equals(UserDetails[i].Phone))
+                    {
+                        Console.Write("    user found: " + UserDetails[i].Name + "\n");
+                        Console.Write(UserDetails[i]);
+                    }
+                }
+                else if(string.Equals(UserDetails[i].Email,a))
+                {
+                    Console.Write("    user found: " + UserDetails[i].Name + "\n");
+                    Console.Write(UserDetails[i]);
+                }
+            }
+            Console.WriteLine("\n press enter to continue. . .! \n ");
         }
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             while(true)
             {
                 Console.WriteLine(" CONTACT BOOk\n ____________\n");
-                Console.WriteLine(" 1.Create \n 2.Read \n 3.Update \n 4.Delete \n 5.Search \n \n  Enter your choice: \n  __________________");
-                int number = Convert.ToInt32(Console.ReadLine());
-                create_contact con = new create_contact();
-                switch(number)
+                Console.WriteLine(" 1.Create \n 2.Read \n 3.Update \n 4.Delete \n 5.Search \n 6.Exit \n \n  Enter your choice: \n  __________________");
+                string number = Console.ReadLine();
+                bool res;
+                int a;
+                res = int.TryParse(number, out a);
+                if(res == true)
                 {
-                    case 1:
-                        contact();
-                        break;
-                    case 2:
-                        Read();
-                        break;
-                    case 3:
-                        update();
-                       break;
-                    case 4:
-                        Delete();
-                        break;
-                    case 5:
-                        Search();
-                        break;
-                    
-                    default:
-                        Console.WriteLine("invalide number!! pls enter the crt number  ");
-                        break;
+                    switch(number)
+                    {
+                        case "1":
+                            Contact();
+                            break;
+                        case "2":
+                            Read();
+                            break;
+                        case "3":
+                            Update();
+                            break;
+                        case "4":
+                            Delete();
+                            break;
+                        case "5":
+                            Search();
+                            break;
+                        case "6":
+                            return;
+                        default:
+                            Console.WriteLine("Invalid number!! please enter the correct number  ");
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("This is not a number!! please enter the  number ! \n");
                 }
                 Console.ReadLine();
             }
@@ -152,22 +200,3 @@ namespace contact_book
     }
 }
 
-
-
-/*
- Contact Book
-
-Operations:
-
-Create
-Read
-Update
-Delete
-Search
-
-Design
-
-   1. Contact Book Fields
-   2. Methods
-   3. Flow diagram - Algorithm
- */

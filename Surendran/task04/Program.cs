@@ -24,7 +24,7 @@ namespace task04
             Console.WriteLine("Enter Name :");
             data.Name = Console.ReadLine();
             Console.WriteLine("Enter Phone :");
-            data.Phone =Convert.ToInt64(Console.ReadLine());
+            data.Phone = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("Enter Email :");
             data.Email = Console.ReadLine();
             Console.WriteLine("Enter Address :");
@@ -49,12 +49,14 @@ namespace task04
             Console.WriteLine("    TOTAL CONTACTS:" + UserDetails.Count + " \n    ________________");
             Console.WriteLine("\n    Enter the phone number to edit: \n    _______________________________");
             long a = Convert.ToInt64(Console.ReadLine());
+            bool result = true;
             for(int i = 0; i < UserDetails.ToArray().Length; i++)
             {
                 if(a.Equals(UserDetails[i].Phone))
                 {
                     Console.Write("    user found: " + UserDetails[i].Name + "\n");
                     Console.Write(UserDetails[i]);
+                    result = false;
                     Console.WriteLine("\n    Select which is edit:  \n    _____________________\n    1.Name 2.Phone 3.Email 4.Address \n");
                     string select = Console.ReadLine();
                     bool res;
@@ -96,6 +98,10 @@ namespace task04
                     }
                 }
             }
+            if(result == true)
+            {
+                Console.Write("\n    User not found  :( \n");
+            }
             Console.WriteLine("\n Press enter to continue. . .! \n ");
         }
         private static void Delete()
@@ -103,11 +109,12 @@ namespace task04
             Console.WriteLine("\n    Enter the Phone Number (or) Email Id to Delete: \n    _______________________________________________ ");
             string a = Console.ReadLine();
             bool res;
+            bool result = true;
             int b;
             res = int.TryParse(a, out b);
             for(int i = 0; i < UserDetails.ToArray().Length; i++)
-			{
-               if(res == true)
+            {
+                if(res == true)
                 {
                     long Long = long.Parse(a);
                     if(Long.Equals(UserDetails[i].Phone))
@@ -116,6 +123,7 @@ namespace task04
                         Console.Write(UserDetails[i]);
                         UserDetails.RemoveAt(i);
                         Console.WriteLine("\n    contact Successfully deleted  :) ");
+                        result = false;
                     }
                 }
                 else if(string.Equals(UserDetails[i].Email, a))
@@ -124,15 +132,21 @@ namespace task04
                     Console.Write(UserDetails[i]);
                     UserDetails.RemoveAt(i);
                     Console.WriteLine("\n    contact Successfully deleted  :) ");
+                    result = false;
                 }
+            }
+            if(result == true)
+            {
+                Console.Write("\n    User not found  :( \n");
             }
             Console.WriteLine("\n press enter to continue. . .! \n ");
         }
         private static void Search()
         {
             Console.WriteLine("\n    Enter the Phone Number (or) Email Id to Search :\n    _______________________________________________");
-            string a =Console.ReadLine();
+            string a = Console.ReadLine();
             bool res;
+            bool result = true;
             int b;
             res = int.TryParse(a, out b);
             for(int i = 0; i < UserDetails.ToArray().Length; i++)
@@ -144,13 +158,19 @@ namespace task04
                     {
                         Console.Write("    user found: " + UserDetails[i].Name + "\n");
                         Console.Write(UserDetails[i]);
+                        result = false;
                     }
                 }
-                else if(string.Equals(UserDetails[i].Email,a))
+                else if(string.Equals(UserDetails[i].Email, a))
                 {
                     Console.Write("    user found: " + UserDetails[i].Name + "\n");
                     Console.Write(UserDetails[i]);
+                    result = false;
                 }
+            }
+            if(result == true) 
+            {
+                Console.Write("\n    User not found  :( \n");
             }
             Console.WriteLine("\n press enter to continue. . .! \n ");
         }
